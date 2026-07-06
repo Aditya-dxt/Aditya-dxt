@@ -264,12 +264,12 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=adityadxt1910&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=8B5CF6&text_color=C9D1D9&count_private=true"/>
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=adityadxt1910&theme=tokyonight&hide_border=true&background=0D1117&ring=8B5CF6&fire=A78BFA&currStreakLabel=A78BFA"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Aditya-dxt&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=8B5CF6&text_color=C9D1D9&count_private=true"/>
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Aditya-dxt&theme=tokyonight&hide_border=true&background=0D1117&ring=8B5CF6&fire=A78BFA&currStreakLabel=A78BFA"/>
 
 <br/>
 
-<img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adityadxt1910&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9"/>
+<img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aditya-dxt&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9"/>
 
 </div>
 
@@ -281,7 +281,7 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=adityadxt1910&theme=discord&no-frame=true&row=1&column=6&margin-w=8"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Aditya-dxt&theme=discord&no-frame=true&row=1&column=6&margin-w=8"/>
 
 </div>
 
@@ -293,7 +293,7 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 
 <div align="center">
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=adityadxt1910&theme=react-dark&hide_border=true&bg_color=0D1117&color=A78BFA&line=8B5CF6&point=C9D1D9"/>
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Aditya-dxt&theme=react-dark&hide_border=true&bg_color=0D1117&color=A78BFA&line=8B5CF6&point=C9D1D9"/>
 
 </div>
 
@@ -305,7 +305,7 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/adityadxt1910/adityadxt1910/output/github-contribution-grid-snake-dark.svg"/>
+<img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/output/github-contribution-grid-snake-dark.svg"/>
 
 </div>
 
