@@ -265,7 +265,7 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 <div align="center">
 
 <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Aditya-dxt&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=8B5CF6&text_color=C9D1D9&count_private=true"/>
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Aditya-dxt&theme=tokyonight&hide_border=true&background=0D1117&ring=8B5CF6&fire=A78BFA&currStreakLabel=A78BFA"/>
+<img width="49%" src="https://streak-stats.demolab.com/?user=Aditya-dxt&theme=tokyonight&hide_border=true&background=0D1117&ring=8B5CF6&fire=A78BFA&currStreakLabel=A78BFA"/>
 
 <br/>
 
@@ -281,7 +281,7 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Aditya-dxt&theme=discord&no-frame=true&row=1&column=6&margin-w=8"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Aditya-dxt&theme=onedark&no-frame=true&row=1&column=6&margin-w=8"/>
 
 </div>
 
