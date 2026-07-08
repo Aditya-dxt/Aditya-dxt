@@ -22,9 +22,9 @@
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=adityadxt1910&style=flat-square&color=8B5CF6&label=PROFILE+VIEWS"/>
-<img src="https://img.shields.io/github/followers/adityadxt1910?style=flat-square&color=7C3AED&label=FOLLOWERS&logo=github"/>
-<img src="https://img.shields.io/github/stars/adityadxt1910?style=flat-square&color=A78BFA&label=STARS&logo=github"/>
+<img src="https://komarev.com/ghpvc/?username=Aditya-dxt&style=flat-square&color=8B5CF6&label=PROFILE+VIEWS"/>
+<img src="https://img.shields.io/github/followers/Aditya-dxt?style=flat-square&color=7C3AED&label=FOLLOWERS&logo=github"/>
+<img src="https://img.shields.io/github/stars/Aditya-dxt?style=flat-square&color=A78BFA&label=STARS&logo=github"/>
 
 </div>
 
