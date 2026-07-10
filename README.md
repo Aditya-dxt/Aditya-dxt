@@ -15,10 +15,10 @@
 
 <br/><br/>
 
-<a href="https://your-portfolio-link.com"><img src="https://img.shields.io/badge/Portfolio-6D28D9?style=for-the-badge&logo=vercel&logoColor=white"/></a>
-<a href="https://linkedin.com/in/adityadixit"><img src="https://img.shields.io/badge/LinkedIn-4C1D95?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://aditya-dixit.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-6D28D9?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/aditya-dixit-fs/"><img src="https://img.shields.io/badge/LinkedIn-4C1D95?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:adityadxt1910@gmail.com"><img src="https://img.shields.io/badge/Email-5B21B6?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://github.com/adityadxt1910"><img src="https://img.shields.io/badge/GitHub-1E1B4B?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://github.com/Aditya-dxt"><img src="https://img.shields.io/badge/GitHub-1E1B4B?style=for-the-badge&logo=github&logoColor=white"/></a>
 
 <br/><br/>
 
