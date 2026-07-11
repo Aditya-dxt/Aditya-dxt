@@ -9,7 +9,7 @@
 <br/>
 
 <img src="https://img.shields.io/badge/B.Tech-Computer%20Science-6D28D9?style=flat-square&logo=googlescholar&logoColor=white"/>
-<img src="https://img.shields.io/badge/GPA-7.72-7C3AED?style=flat-square&logo=bookstack&logoColor=white"/>
+<img src="https://img.shields.io/badge/GPA-7.27-7C3AED?style=flat-square&logo=bookstack&logoColor=white"/>
 <img src="https://img.shields.io/badge/National%20Finalist-India%20Innovates%202026-8B5CF6?style=flat-square&logo=trophy&logoColor=white"/>
 <img src="https://img.shields.io/badge/Location-Kanpur%2C%20India-9333EA?style=flat-square&logo=googlemaps&logoColor=white"/>
 
