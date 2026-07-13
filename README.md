@@ -210,7 +210,7 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 | Recognition | Details |
 |---|---|
 | 🥇 **National Finalist** | India Innovates 2026 — National-level innovation competition (team project) |
-| 🏀 **State-Level Athlete** | Represented Uttar Pradesh in Basketball at the state level |
+| 🏀 **State-Level Athlete** | Represented Kanpur Nagar in Basketball at the state level |
 | ☁️ **AWS Summit Champion** | Badge awarded at AWS Summit India Online 2026 |
 | 🎤 **E-Summit IIT Kanpur** | Attended entrepreneurship summits — 2K24 & 2K25 editions |
 | 🧩 **Bitathon & TATA Crucible** | Competitive tech hackathon & campus quiz participation — 2025 |
