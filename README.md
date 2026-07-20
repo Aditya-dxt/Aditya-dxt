@@ -249,7 +249,12 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 
 <div align="center">
 
-<img src="https://leetcode-badge-showcase.vercel.app/api?username=DEVELOPER-404&theme=github-dark&animated=true" alt="LeetCode Badges" />
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://assets.leetcode.com/static_assets/others/100_1080_1080.png" width="65" title="100 Days Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://assets.leetcode.com/static_assets/others/50_1080_1080.png" width="65" title="50 Days Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://assets.leetcode.com/static_assets/others/lg2550.png" width="65" title="50 Days Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://leetcode.com/static/images/badges/dcc-2026-5.png" width="65" title="May Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://leetcode.com/static/images/badges/dcc-2026-4.png" width="65" title="Apr Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://leetcode.com/static/images/badges/dcc-2025-12.png" width="65" title="Dec Badge"/></a>
 
 <br/><br/>
 
@@ -263,7 +268,6 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 <br/>
 
 ---
-
 ---
 
 ### 📊 GitHub Analytics
