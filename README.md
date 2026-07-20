@@ -249,12 +249,12 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 
 <div align="center">
 
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://assets.leetcode.com/static_assets/others/100_1080_1080.png" width="65" title="100 Days Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://assets.leetcode.com/static_assets/others/50_1080_1080.png" width="65" title="50 Days Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://assets.leetcode.com/static_assets/others/lg2550.png" width="65" title="50 Days Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://leetcode.com/static/images/badges/dcc-2026-5.png" width="65" title="May Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://leetcode.com/static/images/badges/dcc-2026-4.png" width="65" title="Apr Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://leetcode.com/static/images/badges/dcc-2025-12.png" width="65" title="Dec Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/100days.svg" width="80" title="100 Days Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/50days-apr.svg" width="80" title="50 Days Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/50days-dec.svg" width="80" title="50 Days Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/may-badge.svg" width="80" title="May Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/apr-badge.svg" width="80" title="Apr Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/dec-badge.svg" width="80" title="Dec Badge"/></a>
 
 <br/><br/>
 
