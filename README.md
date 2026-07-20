@@ -248,7 +248,11 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 ### 💻 Coding Profiles
 
 <div align="center">
+
 <img src="https://leetcode-badge-showcase.vercel.app/api?username=DEVELOPER-404&theme=github-dark&animated=true" alt="LeetCode Badges" />
+
+<br/><br/>
+
 <a href="https://leetcode.com/adityadxt1910"><img src="https://img.shields.io/badge/LeetCode-200%2B%20Problems-FFA116?style=for-the-badge&logo=leetcode&logoColor=white"/></a>
 <a href="https://hackerrank.com/adityadxt1910"><img src="https://img.shields.io/badge/HackerRank-4%E2%98%85%20Java-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white"/></a>
 <a href="https://geeksforgeeks.org/user/adityadxt1910"><img src="https://img.shields.io/badge/GeeksforGeeks-Profile-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white"/></a>
