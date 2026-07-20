@@ -249,12 +249,12 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 
 <div align="center">
 
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/assets/badges/100days.svg" width="80" title="100 Days Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/assets/badges/50days-apr.svg" width="80" title="50 Days Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/assets/badges/50days-dec.svg" width="80" title="50 Days Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/assets/badges/may-badge.svg" width="80" title="May Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/assets/badges/apr-badge.svg" width="80" title="Apr Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/assets/badges/dec-badge.svg" width="80" title="Dec Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/100days.svg" width="80" title="100 Days Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/50days-apr.svg" width="80" title="50 Days Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/50days-dec.svg" width="80" title="50 Days Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/may-badge.svg" width="80" title="May Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/apr-badge.svg" width="80" title="Apr Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/badges/dec-badge.svg" width="80" title="Dec Badge"/></a>
 
 <br/><br/>
 
