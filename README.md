@@ -1,28 +1,21 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,17,24&height=220&section=header&text=ADITYA%20DIXIT&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20AI%2FML%20Engineer%20%7C%20Full%20Stack%20Developer&descAlignY=58&descSize=18"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,17,24&height=200&section=header&text=ADITYA%20DIXIT&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38"/>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=2DD4BF&center=true&vCenter=true&width=650&lines=Building+Scalable+Full-Stack+Systems;Engineering+AI%2FML-Powered+Products;RAG+Pipelines+%7C+LLM+Integrations;Turning+Ideas+Into+Production-Grade+Code" alt="Typing SVG" />
-</a>
+<h3>Full-Stack Software Engineer · AI/ML Engineer · Builder of 7 Live Products</h3>
 
-<br/>
+<p align="center">
+<b>B.Tech CSE</b> @PSIT Kanpur | 🏆 <b>National Finalist</b> @IndiaInnovates2026 | Engineering <b>Full-Stack Systems</b> with React · Node.js · MongoDB | Building <b>Agentic AI · RAG Pipelines · LangChain</b> workflows | <b>7 Live Deployed Projects</b> spanning E-Commerce, Civic-Tech, Multi-Tenant SaaS & AI Ops | <b>200+ LeetCode Problems</b> | HackerRank <b>4★ Java</b> | AWS Summit <b>Champion</b> | Simulations @<b>JP Morgan</b> & @<b>Deloitte</b> | Hardcore <b>DSA Practitioner</b> ❤️ | Open Source Contributor
+</p>
 
-<img src="https://img.shields.io/badge/B.Tech-Computer%20Science-0F766E?style=flat-square&logo=googlescholar&logoColor=white"/>
-<img src="https://img.shields.io/badge/GPA-7.27-0891B2?style=flat-square&logo=bookstack&logoColor=white"/>
-<img src="https://img.shields.io/badge/National%20Finalist-India%20Innovates%202026-06B6D4?style=flat-square&logo=trophy&logoColor=white"/>
-<img src="https://img.shields.io/badge/Location-Kanpur%2C%20India-14B8A6?style=flat-square&logo=googlemaps&logoColor=white"/>
-
-<br/><br/>
-
-<a href="https://aditya-dixit.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-0F766E?style=for-the-badge&logo=vercel&logoColor=white"/></a>
-<a href="https://www.linkedin.com/in/aditya-dixit-fs/"><img src="https://img.shields.io/badge/LinkedIn-0E7490?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="mailto:adityadxt1910@gmail.com"><img src="https://img.shields.io/badge/Email-155E63?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://github.com/Aditya-dxt"><img src="https://img.shields.io/badge/GitHub-134E4A?style=for-the-badge&logo=github&logoColor=white"/></a>
-<a href="https://leetcode.com/u/DEVELOPER-404/"><img src="https://img.shields.io/badge/LeetCode-0F766E?style=for-the-badge&logo=leetcode&logoColor=white"/></a>
-<a href="https://docs.google.com/document/d/1bM6zAa_Rfs-UfpFfdDMZEvY1iYNph6Kbm1TspEHTXcw/edit?usp=sharing"><img src="https://img.shields.io/badge/Resume-0E7490?style=for-the-badge&logo=readdotcv&logoColor=white"/></a>
-
-<br/><br/>
+<p align="center">
+  <a href="https://aditya-dixit.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-0F766E?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/aditya-dixit-fs/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0E7490?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://github.com/Aditya-dxt" target="_blank"><img src="https://img.shields.io/badge/GitHub-134E4A?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://leetcode.com/u/DEVELOPER-404/" target="_blank"><img src="https://img.shields.io/badge/LeetCode-0F766E?style=for-the-badge&logo=leetcode&logoColor=white"/></a>
+  <a href="mailto:adityadxt1910@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-155E63?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://docs.google.com/document/d/1bM6zAa_Rfs-UfpFfdDMZEvY1iYNph6Kbm1TspEHTXcw/edit?usp=sharing" target="_blank"><img src="https://img.shields.io/badge/Resume-0891B2?style=for-the-badge&logo=readdotcv&logoColor=white"/></a>
+</p>
 
 <img src="https://komarev.com/ghpvc/?username=Aditya-dxt&style=flat-square&color=2DD4BF&label=PROFILE+VIEWS"/>
 <img src="https://img.shields.io/github/followers/Aditya-dxt?style=flat-square&color=0E7490&label=FOLLOWERS&logo=github"/>
@@ -30,94 +23,45 @@
 
 </div>
 
-<br/>
-
 ---
 
-### 🧠 About Me
+## 🧠 About Me
 
-<img align="right" width="380" src="https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg"/>
+- 🏗️ **Full-Stack Engineer & AI/ML Builder** — B.Tech Computer Science, PSIT Kanpur
+- 🚀 Shipping **full-stack products end-to-end** — 7 of my projects are live and deployed, not just repos
+- 🧠 Layering **LLM intelligence** on top of traditional stacks — RAG pipelines, semantic search, LangChain workflows, prompt engineering
+- 🏆 **National Finalist, India Innovates 2026** — for CivicSentinel, an AI civic-tech platform
+- 🔐 Comfortable across the full stack: **auth systems, payment infra (Stripe), multi-tenant architecture, database design, deployment**
+- 💼 Completed structured engineering simulations at **JP Morgan** (Software Engineering) and **Deloitte** (Technology Consulting)
+- ❤️ Hardcore DSA practitioner — **200+ problems solved on LeetCode**, HackerRank **4★ in Java**
+- ☁️ **AWS Summit Champion** — AWS Summit India Online 2026
+- 🎓 MERN Full-Stack Certified — **Tryst, IIT Delhi**
+- 📞 Open to **Software Engineering Internships**, **AI/ML roles**, and **open source collaboration**
 
-Third-year Computer Science undergraduate at **PSIT Kanpur**, building production-grade full-stack systems with **React, Node.js, and MongoDB**, and layering **LLM-powered intelligence** on top through **RAG pipelines, semantic search, and prompt engineering**. My shipped work spans **e-commerce with real payment infrastructure, multi-tenant SaaS platforms, and AI civic-tech** — recognized as a **National Finalist at India Innovates 2026**. I optimize for performance, security, and user impact, not just working code — and I ship fast enough to have **7 live, deployed projects** to show for it.
+<br/>
 
 ```yaml
-engineer:
-  name: "Aditya Dixit"
-  role: "Full-Stack Software Engineer & AI/ML Enthusiast"
-  focus:
-    - Building and deploying full-stack products end-to-end
-    - Designing AI/ML systems using LLMs, RAG & LangChain
-    - Writing clean, scalable, and secure backend architectures
-    - Crafting performant, motion-rich frontend experiences
-  philosophy: "Ship fast, engineer for scale, design with intent"
+philosophy: "Ship fast, engineer for scale, design with intent"
+currently:
+  building: "Production-grade AI-powered SaaS applications"
+  learning: "Advanced System Design & Distributed Architectures"
+  exploring: "Vector Databases, Agentic AI, Multi-Agent Workflows"
 ```
 
-**🎯 Open To:** `Software Engineering Internships` · `AI/ML Engineering Roles` · `Full-Stack Development` · `Open Source Collaboration`
-
 <br/>
 
 ---
 
-### 🛠️ Tech Stack
-
-<br/>
-
-**Languages**
-
-<img src="https://skillicons.dev/icons?i=java,python,c,cpp,js,ts&theme=dark"/>
-
-<br/><br/>
-
-**Frontend Engineering**
-
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css,threejs&theme=dark"/>
-
-<br/><br/>
-
-**Backend & Databases**
-
-<img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,postgres,mysql,redis&theme=dark"/>
-
-<br/><br/>
-
-**Cloud, DevOps & Tooling**
-
-<img src="https://skillicons.dev/icons?i=git,github,vercel,render,postman,vscode&theme=dark"/>
-
-<br/>
-
----
-
-### 🤖 AI / ML Expertise
+## 🎓 Education
 
 <div align="center">
 
-| Domain | Proficiency | Details |
-|---|:---:|---|
-| **LLM Integration** | ⭐⭐⭐⭐☆ | OpenAI API, Gemini API — production-grade prompt orchestration |
-| **RAG Pipelines** | ⭐⭐⭐⭐☆ | Retrieval-augmented generation for real-time contextual response systems |
-| **LangChain** | ⭐⭐⭐⭐☆ | Chained LLM workflows for semantic classification & retrieval |
-| **Prompt Engineering** | ⭐⭐⭐⭐⭐ | Structured prompting for consistent, high-precision model output |
-| **Semantic Search** | ⭐⭐⭐⭐☆ | Context-aware query retrieval over custom knowledge bases |
-
-</div>
-
-<br/>
-
----
-
-### ⭐ Key Highlights
-
-<div align="center">
-
-| 🏆 Technical & Coding | 🎯 Recognition & Beyond |
+| | |
 |---|---|
-| 🥇 National Finalist — India Innovates 2026 | 🏀 State-Level Basketball Athlete (Kanpur Nagar) |
-| 💻 200+ Problems Solved on LeetCode | ☁️ AWS Summit Champion — AWS Summit India Online 2026 |
-| ⭐ HackerRank 4★ in Java | 🎤 E-Summit IIT Kanpur — 2K24 & 2K25 editions |
-| 🎓 MERN Full-Stack Certified — Tryst, IIT Delhi | 🧩 Bitathon & TATA Crucible Participant — 2025 |
-| 💼 Simulations completed at JP Morgan & Deloitte | 🤖 3-Day AI/ML Bootcamp Graduate |
-| 🚀 7 Live, Deployed Full-Stack Projects | 📊 GPA 7.27 — B.Tech CSE, PSIT Kanpur |
+| **Degree** | B.Tech, Computer Science & Engineering |
+| **Institute** | PSIT Kanpur |
+| **GPA** | 7.27 |
+| **Location** | Kanpur, Uttar Pradesh, India |
 
 </div>
 
@@ -125,7 +69,105 @@ engineer:
 
 ---
 
-### 🚀 Featured Projects
+## 🛠️ How I Build
+
+<table align="center">
+  <tr>
+    <th>Languages</th>
+    <th>Frontend</th>
+    <th>Backend</th>
+    <th>Database</th>
+    <th>AI / ML</th>
+    <th>Cloud & Tools</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://skillicons.dev/icons?i=java" width="32"/><br/>Java</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=react" width="32"/><br/>React</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=nodejs" width="32"/><br/>Node.js</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=mongodb" width="32"/><br/>MongoDB</td>
+    <td align="center"><img src="https://img.shields.io/badge/-000?style=flat-square&logo=openai&logoColor=white" width="32" height="20"/><br/>OpenAI API</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=git" width="32"/><br/>Git</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://skillicons.dev/icons?i=python" width="32"/><br/>Python</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=nextjs" width="32"/><br/>Next.js</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=express" width="32"/><br/>Express</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=postgres" width="32"/><br/>PostgreSQL</td>
+    <td align="center"><img src="https://img.shields.io/badge/-1C3C3C?style=flat-square&logo=langchain&logoColor=white" width="32" height="20"/><br/>LangChain</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=github" width="32"/><br/>GitHub</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://skillicons.dev/icons?i=cpp" width="32"/><br/>C++</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=tailwind" width="32"/><br/>Tailwind</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=prisma" width="32"/><br/>Prisma</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=mysql" width="32"/><br/>MySQL</td>
+    <td align="center"><img src="https://img.shields.io/badge/-FF6F00?style=flat-square&logo=chainlink&logoColor=white" width="32" height="20"/><br/>RAG</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=vercel" width="32"/><br/>Vercel</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://skillicons.dev/icons?i=ts" width="32"/><br/>TypeScript</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=threejs" width="32"/><br/>Three.js</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=django" width="32"/><br/>Django</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=redis" width="32"/><br/>Redis</td>
+    <td align="center"><img src="https://img.shields.io/badge/-purple?style=flat-square&logo=vectorworks&logoColor=white" width="32" height="20"/><br/>Vector DB</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=render" width="32"/><br/>Render</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://skillicons.dev/icons?i=c" width="32"/><br/>C</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=html" width="32"/><br/>HTML</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=vite" width="32"/><br/>Vite</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=firebase" width="32"/><br/>Firebase</td>
+    <td align="center"><img src="https://img.shields.io/badge/-6D28D9?style=flat-square&logo=probot&logoColor=white" width="32" height="20"/><br/>Prompt Eng.</td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=postman" width="32"/><br/>Postman</td>
+  </tr>
+</table>
+
+<br/>
+
+---
+
+## 🤖 AI / ML Proficiency
+
+<div align="center">
+
+| Domain | Level | Where I've Applied It |
+|---|:---:|---|
+| **Prompt Engineering** | 🟩🟩🟩🟩🟩 | Structured prompting across every AI project I've shipped |
+| **LLM Integration** | 🟩🟩🟩🟩⬜ | OpenAI & Gemini APIs — production prompt orchestration (CivicSentinel) |
+| **RAG Pipelines** | 🟩🟩🟩🟩⬜ | Real-time contextual retrieval over civic-complaint knowledge bases |
+| **LangChain** | 🟩🟩🟩🟩⬜ | Chained workflows for semantic classification & retrieval |
+| **Semantic Search** | 🟩🟩🟩🟩⬜ | Context-aware query retrieval over custom knowledge bases |
+
+</div>
+
+<br/>
+
+---
+
+## 📌 Pinned Repositories
+
+<p align="center">
+  <a href="https://github.com/Aditya-dxt/society-maintenance-tracker">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Aditya-dxt&repo=society-maintenance-tracker&theme=tokyonight&icon_color=2DD4BF&text_color=E2E8F0&bg_color=0D1117&title_color=2DD4BF"/>
+  </a>
+  <a href="https://github.com/Aditya-dxt/sprout-task-tracker">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Aditya-dxt&repo=sprout-task-tracker&theme=tokyonight&icon_color=2DD4BF&text_color=E2E8F0&bg_color=0D1117&title_color=2DD4BF"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/Aditya-dxt/brew-and-co-coffee-roasters">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Aditya-dxt&repo=brew-and-co-coffee-roasters&theme=tokyonight&icon_color=2DD4BF&text_color=E2E8F0&bg_color=0D1117&title_color=2DD4BF"/>
+  </a>
+  <a href="https://github.com/Aditya-dxt/Aditya-dxt">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Aditya-dxt&repo=Aditya-dxt&theme=tokyonight&icon_color=2DD4BF&text_color=E2E8F0&bg_color=0D1117&title_color=2DD4BF"/>
+  </a>
+</p>
+
+<br/>
+
+---
+
+## 🚀 Featured Projects
 
 <br/>
 
@@ -145,8 +187,6 @@ Enterprise-style e-commerce platform with secure role-based authentication and e
 | **Live Demo** | [sneakervault-india.vercel.app](https://sneakervault-india.vercel.app/) |
 | **Repository** | [View Source](https://github.com/adityadxt1910/sneakervault) |
 
-Architected using a **modular MVC backend**, with protected admin dashboard routes and secure session handling across the full transaction lifecycle.
-
 </details>
 
 <br/>
@@ -161,13 +201,9 @@ An AI-powered civic-tech platform enabling real-time complaint ingestion, semant
 |---|---|
 | **Stack** | React · Node.js · Python · OpenAI API · RAG · LangChain |
 | **Scale** | Real-time ingestion pipeline with geolocation-tagged civic complaint processing |
-| **Performance** | Context-aware LLM responses via semantic query retrieval over a live knowledge base |
-| **Security** | Structured API-layer request validation for authority-facing endpoints |
 | **Impact** | 🏆 **National Finalist — India Innovates 2026** |
 | **Live Demo** | [Citizen Dashboard](https://civicsentinel-ai-pszx.onrender.com/) · [Admin Dashboard](https://civicsentinel-admin.onrender.com/) |
 | **Repository** | [View Source](https://github.com/adityadxt1910/civicsentinel) |
-
-Features an **AI CivicCopilot** for semantic query resolution, **reverse geocoding** for automatic incident tagging, and a **dynamic knowledge graph** visualizing city-issue relationships.
 
 </details>
 
@@ -182,12 +218,9 @@ A fully isolated, multi-tenant complaint and notice-board platform for apartment
 | Category | Details |
 |---|---|
 | **Stack** | React · Vite · Node.js · Express · Prisma · PostgreSQL |
-| **Scale** | Admin + resident auth, complaint lifecycle, notice board, overdue detection, photo & email pipelines |
-| **Architecture** | Enforced multi-tenant isolation at the query layer — no shared data leakage between societies by design |
-| **Design** | Custom "Aangan" (courtyard) identity — warm plaster palette, corkboard-style marketing hero |
+| **Architecture** | Enforced multi-tenant isolation at the query layer by design |
+| **Design** | Custom "Aangan" (courtyard) identity — warm plaster palette, corkboard-style hero |
 | **Repository** | [View Source](https://github.com/Aditya-dxt/society-maintenance-tracker) |
-
-Built as a foundation for a shared-backend React Native companion app, with the frontend already responsive enough to wrap as a PWA.
 
 </details>
 
@@ -197,18 +230,15 @@ Built as a foundation for a shared-backend React Native companion app, with the 
 <summary><b>🌱 Sprout — MERN Task Tracker That Grows With You</b></summary>
 <br/>
 
-A full-stack Kanban task tracker with a botanical twist — every task visually grows from seed to sprout to bloom as it moves across the board, backed by a clean, fully deployed MERN stack.
+A full-stack Kanban task tracker where every task visually grows from seed to sprout to bloom as it moves across the board.
 
 | Category | Details |
 |---|---|
 | **Stack** | React · Vite · Node.js · Express · MongoDB (Atlas) · Mongoose |
-| **Scale** | Full CRUD, native HTML5 drag-and-drop, live search, priority filters, overdue highlighting |
-| **Experience** | Growth-stem animation on every card, toast notifications, skeleton loading, fully responsive |
+| **Experience** | Native drag-and-drop, growth-stem animation, toast notifications, fully responsive |
 | **Deployment** | Backend on Render, frontend on Vercel — live end to end |
 | **Live Demo** | [sprout-task-tracker.vercel.app](https://sprout-task-tracker.vercel.app/) |
 | **Repository** | [View Source](https://github.com/Aditya-dxt/sprout-task-tracker) |
-
-Zero UI framework on the frontend — hand-built CSS and a custom growth-stem SVG system power the entire visual identity.
 
 </details>
 
@@ -218,14 +248,12 @@ Zero UI framework on the frontend — hand-built CSS and a custom growth-stem SV
 <summary><b>☕ Brew & Co. — Artisan Coffee Roasters</b></summary>
 <br/>
 
-A highly interactive, premium coffee shop web experience with a dark aesthetic, scroll-driven animations, and a custom 3D glassmorphism card engine.
+A highly interactive coffee shop web experience with a custom 3D glassmorphism card engine.
 
 | Category | Details |
 |---|---|
 | **Stack** | React 18 · Vite · TypeScript · Tailwind CSS · Framer Motion |
-| **Highlight** | Custom-built interactive 3D tilt engine — coffee bags tilt in 3D space on hover with a glassmorphism/parallax effect |
-| **Experience** | Tabbed brewing guides (Chemex, French Press, V60), smart hash routing, fully responsive |
-| **Engineering** | Strictly type-checked with TypeScript, zero build errors across CI/CD |
+| **Highlight** | Custom interactive 3D tilt engine — coffee bags tilt in 3D space on hover |
 | **Live Demo** | [brew-and-co-opal.vercel.app](https://brew-and-co-opal.vercel.app/) |
 | **Repository** | [View Source](https://github.com/Aditya-dxt/brew-and-co-coffee-roasters) |
 
@@ -237,18 +265,15 @@ A highly interactive, premium coffee shop web experience with a dark aesthetic, 
 <summary><b>🚂 RailSage AI — Autonomous Railway Operations Assistant <i>(Team Project)</i></b></summary>
 <br/>
 
-An AI-powered railway operations command center built for the **FAR AWAY Hackathon 2026**, combining live train telemetry, weather data, and Claude-powered reasoning to autonomously handle disruptions — built collaboratively with **[@indeedvaibhav](https://github.com/indeedvaibhav)**.
+An AI-powered railway operations command center built for the **FAR AWAY Hackathon 2026**, built collaboratively with **[@indeedvaibhav](https://github.com/indeedvaibhav)**.
 
 | Category | Details |
 |---|---|
-| **Stack** | React 19 · Vite · Node.js · Express · Anthropic Claude API · Leaflet · GSAP · Framer Motion |
-| **Scale** | 3-panel operations dashboard (network map, AI reasoning feed, multilingual announcements), scenario simulator, live train telemetry |
-| **AI Layer** | Multi-step Claude-powered reasoning feed with full transparency into rerouting and dispatch decisions |
-| **Localization** | Multilingual passenger announcements in English, Hindi, and Japanese |
+| **Stack** | React 19 · Vite · Node.js · Express · Anthropic Claude API · Leaflet · GSAP |
+| **AI Layer** | Multi-step Claude-powered reasoning feed with full operator transparency |
+| **Localization** | Multilingual announcements in English, Hindi, and Japanese |
 | **Live Demo** | [railsage-ai.vercel.app](https://railsage-ai.vercel.app/) |
 | **Repository** | [View Source](https://github.com/indeedvaibhav/railsage-ai) |
-
-Built for the hackathon theme *"Autonomous Systems for Public Infrastructure"* — demonstrates continuous monitoring, multi-step AI reasoning, automated action, and full operator transparency.
 
 </details>
 
@@ -258,19 +283,14 @@ Built for the hackathon theme *"Autonomous Systems for Public Infrastructure"* �
 <summary><b>🧭 Career Navigator — Skill Gap Analyser & Learning Roadmap</b></summary>
 <br/>
 
-A privacy-first, fully client-side career intelligence tool that analyses resumes locally and generates personalised upskilling roadmaps — zero external API dependency.
+A privacy-first, fully client-side career intelligence tool that analyses resumes locally and generates personalised upskilling roadmaps.
 
 | Category | Details |
 |---|---|
 | **Stack** | React · Vite · Custom CSS · Lucide React |
-| **Scale** | In-browser resume parsing engine with role-specific gap analysis (SWE, AI/ML, DevOps) |
-| **Performance** | Fully local RegEx + scoring engine — no external API calls required |
-| **Security** | Zero data leaves the client — complete on-device processing |
-| **Impact** | Auto-generates week-by-week personalised learning roadmaps with curated resources |
+| **Performance** | Fully local RegEx + scoring engine — zero external API calls |
 | **Live Demo** | [career-navigator-app.netlify.app](https://career-navigator-app.netlify.app/) |
 | **Repository** | [View Source](https://github.com/adityadxt1910/career-navigator) |
-
-Includes a **print-optimised one-click PDF export** via custom `@media print` styling, wrapped in a glassmorphic dark UI with neon accents and micro-animations.
 
 </details>
 
@@ -278,44 +298,53 @@ Includes a **print-optimised one-click PDF export** via custom `@media print` st
 
 ---
 
-### 💼 Experience
+## 💼 Experience
 
-**Software Engineering Job Simulation** · **JP Morgan** · *2026*
+<table align="center">
+<tr>
+<td valign="top" width="50%">
 
-Completed a structured simulation of real-world engineering workflows used at JP Morgan, focused on practical software delivery scenarios.
+**JP Morgan** · *2026*
+Software Engineering Job Simulation
 
-- Practiced designing and reasoning through backend engineering tasks in a simulated enterprise environment
-- Strengthened understanding of production-grade software engineering practices
+- Practiced backend engineering workflows in a simulated enterprise environment
+- Strengthened production-grade software delivery practices
 
-`Software Engineering` `Problem Solving` `Enterprise Systems`
+`Software Engineering` `Problem Solving`
 
-<br/>
+</td>
+<td valign="top" width="50%">
 
-**Technology Job Simulation** · **Deloitte** · *2026*
+**Deloitte** · *2026*
+Technology Job Simulation
 
-Engaged in a technology consulting simulation modeled on Deloitte's real client engagement workflows.
+- Applied structured problem-solving to business technology challenges
+- Practiced consulting-grade technical documentation
 
-- Applied structured technical problem-solving to simulated business technology challenges
-- Developed exposure to consulting-grade technical documentation practices
+`Tech Consulting` `Client Solutions`
 
-`Technology Consulting` `Technical Analysis` `Client Solutions`
+</td>
+</tr>
+</table>
 
 <br/>
 
 ---
 
-### 🏆 Achievements
+## 🏆 Achievements & Certifications
 
 <div align="center">
 
 | Recognition | Details |
 |---|---|
-| 🥇 **National Finalist** | India Innovates 2026 — National-level innovation competition (team project) |
-| 🏀 **State-Level Athlete** | Represented Kanpur Nagar in Basketball at the state level |
-| ☁️ **AWS Summit Champion** | Badge awarded at AWS Summit India Online 2026 |
-| 🎤 **E-Summit IIT Kanpur** | Attended entrepreneurship summits — 2K24 & 2K25 editions |
-| 🧩 **Bitathon & TATA Crucible** | Competitive tech hackathon & campus quiz participation — 2025 |
-| 🤖 **AI Bootcamp Graduate** | 3-Day hands-on Artificial Intelligence & Machine Learning workshop |
+| 🥇 **National Finalist** | India Innovates 2026 — National-level innovation competition |
+| 🏀 **State-Level Athlete** | Basketball, representing Kanpur Nagar |
+| ☁️ **AWS Summit Champion** | AWS Summit India Online 2026 |
+| 🎓 **MERN Full-Stack Certified** | Tryst, IIT Delhi |
+| 🎤 **E-Summit IIT Kanpur** | 2K24 & 2K25 editions |
+| 🧩 **Bitathon & TATA Crucible** | Hackathon & quiz participation, 2025 |
+| 🤖 **AI Bootcamp Graduate** | 3-Day AI/ML workshop |
+| 💼 **JP Morgan & Deloitte** | Software Engineering & Technology simulations |
 
 </div>
 
@@ -323,30 +352,7 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 
 ---
 
-### 📜 Certifications
-
-**Full-Stack Development**
-
-<img src="https://img.shields.io/badge/MERN%20Full--Stack-Tryst%2C%20IIT%20Delhi-0F766E?style=flat-square&logo=react&logoColor=white"/>
-
-**Cloud**
-
-<img src="https://img.shields.io/badge/AWS%20Summit%20Champion-AWS%20Summit%20India-FF9900?style=flat-square&logo=amazonaws&logoColor=white"/>
-
-**Corporate Simulations**
-
-<img src="https://img.shields.io/badge/Software%20Engineering-JP%20Morgan-000000?style=flat-square&logo=jpmorgan&logoColor=white"/>
-<img src="https://img.shields.io/badge/Technology-Deloitte-86BC25?style=flat-square&logo=deloitte&logoColor=white"/>
-
-**AI / ML**
-
-<img src="https://img.shields.io/badge/AI%20for%20All-TCS%20iON-0E7490?style=flat-square&logo=tensorflow&logoColor=white"/>
-
-<br/>
-
----
-
-### 💻 Coding Profiles
+## 💻 Coding Profiles
 
 <div align="center">
 
@@ -366,18 +372,68 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 <br/>
 
 ---
----
 
-### 📊 GitHub Analytics
+## 🔥 Streak Stats
 
-<div align="center">
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Aditya-dxt&show_icons=true&hide_border=true&bg_color=0D1117&title_color=2DD4BF&icon_color=22D3EE&text_color=C9D1D9&count_private=true"/>
-<img width="49%" src="https://streak-stats.demolab.com/?user=Aditya-dxt&hide_border=true&background=0D1117&ring=22D3EE&fire=2DD4BF&currStreakLabel=2DD4BF"/>
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=Aditya-dxt&hide_border=true&background=0D1117&ring=22D3EE&fire=2DD4BF&currStreakLabel=2DD4BF"/>
+</p>
 
 <br/>
 
-<img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aditya-dxt&layout=compact&hide_border=true&bg_color=0D1117&title_color=2DD4BF&text_color=C9D1D9"/>
+---
+
+## 📊 GitHub Stats & Top Languages
+
+<p align="center">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Aditya-dxt&show_icons=true&hide_border=true&bg_color=0D1117&title_color=2DD4BF&icon_color=22D3EE&text_color=C9D1D9&count_private=true"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aditya-dxt&layout=compact&hide_border=true&bg_color=0D1117&title_color=2DD4BF&text_color=C9D1D9"/>
+</p>
+
+<br/>
+
+---
+
+## 🏅 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Aditya-dxt&theme=onedark&no-frame=true&row=1&column=6&margin-w=8"/>
+</p>
+
+<br/>
+
+---
+
+## 📈 Contribution Activity
+
+<p align="center">
+  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Aditya-dxt&theme=react-dark&hide_border=true&bg_color=0D1117&color=2DD4BF&line=22D3EE&point=C9D1D9"/>
+</p>
+
+<br/>
+
+---
+
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/output/github-contribution-grid-snake-dark.svg"/>
+</p>
+
+<br/>
+
+---
+
+## 🎯 What I'm Focused On
+
+<div align="center">
+
+| Area | Focus |
+|---|---|
+| 📚 **Learning** | Advanced System Design & Distributed Architectures · Deep Learning Fundamentals |
+| 🏗️ **Building** | Production-grade AI-powered SaaS applications · Scalable full-stack systems |
+| 🔍 **Exploring** | Vector Databases · Advanced RAG Architectures · Agentic AI & Multi-Agent Workflows |
+| 🎯 **Open To** | Software Engineering Internships · AI/ML Collaborations · Open Source Contributions |
 
 </div>
 
@@ -385,76 +441,18 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 
 ---
 
-### 🏅 GitHub Trophies
+## 📧 Connect With Me
 
-<div align="center">
+<p align="center">
+  <a href="https://www.linkedin.com/in/aditya-dixit-fs/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a>
+  <a href="https://github.com/Aditya-dxt" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+  <a href="mailto:adityadxt1910@gmail.com" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/gmail.png"/></a>
+  <a href="https://aditya-dixit.vercel.app/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/domain.png"/></a>
+</p>
 
-<img src="https://github-profile-trophy.vercel.app/?username=Aditya-dxt&theme=onedark&no-frame=true&row=1&column=6&margin-w=8"/>
-
-</div>
-
-<br/>
-
----
-
-### 📈 Contribution Activity
-
-<div align="center">
-
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Aditya-dxt&theme=react-dark&hide_border=true&bg_color=0D1117&color=2DD4BF&line=22D3EE&point=C9D1D9"/>
-
-</div>
-
-<br/>
-
----
-
-### 🐍 Contribution Snake
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/output/github-contribution-grid-snake-dark.svg"/>
-
-</div>
-
-<br/>
-
----
-
-### 🎯 Current Focus
-
-```yaml
-current_focus:
-  learning:
-    - Advanced System Design & Distributed Architectures
-    - Deep Learning Fundamentals & Model Fine-Tuning
-  building:
-    - Production-grade AI-powered SaaS applications
-    - Scalable full-stack systems with clean architecture
-  exploring:
-    - Vector Databases & Advanced RAG Architectures
-    - Agentic AI Workflows & Multi-Agent Systems
-  open_to:
-    - Software Engineering Internships
-    - AI/ML Engineering Collaborations
-    - Open Source Contributions
-```
-
-<br/>
-
----
-
-### 📬 Connect With Me
-
-<div align="center">
-
-<a href="mailto:adityadxt1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-155E63?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://www.linkedin.com/in/aditya-dixit-fs/"><img src="https://img.shields.io/badge/LinkedIn-0E7490?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="https://github.com/Aditya-dxt"><img src="https://img.shields.io/badge/GitHub-134E4A?style=for-the-badge&logo=github&logoColor=white"/></a>
-<a href="https://aditya-dixit.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-0F766E?style=for-the-badge&logo=vercel&logoColor=white"/></a>
-<a href="https://docs.google.com/document/d/1bM6zAa_Rfs-UfpFfdDMZEvY1iYNph6Kbm1TspEHTXcw/edit?usp=sharing"><img src="https://img.shields.io/badge/Resume-0891B2?style=for-the-badge&logo=readdotcv&logoColor=white"/></a>
-
-</div>
+<p align="center">
+  <a href="https://github.com/Aditya-dxt?tab=followers"><img src="https://img.shields.io/github/followers/Aditya-dxt?label=Followers&style=social" alt="GitHub Badge"></a>
+</p>
 
 <br/>
 
