@@ -249,12 +249,16 @@ Engaged in a technology consulting simulation modeled on Deloitte's real client 
 
 <div align="center">
 
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://cdn.jsdelivr.net/gh/Aditya-dxt/Aditya-dxt@main/assets/badges/100days.svg" width="80" title="100 Days Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://cdn.jsdelivr.net/gh/Aditya-dxt/Aditya-dxt@main/assets/badges/50days-apr.svg" width="80" title="50 Days Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://cdn.jsdelivr.net/gh/Aditya-dxt/Aditya-dxt@main/assets/badges/50days-dec.svg" width="80" title="50 Days Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://cdn.jsdelivr.net/gh/Aditya-dxt/Aditya-dxt@main/assets/badges/may-badge.svg" width="80" title="May Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://cdn.jsdelivr.net/gh/Aditya-dxt/Aditya-dxt@main/assets/badges/apr-badge.svg" width="80" title="Apr Badge"/></a>
-<a href="https://leetcode.com/DEVELOPER-404"><img src="https://cdn.jsdelivr.net/gh/Aditya-dxt/Aditya-dxt@main/assets/badges/dec-badge.svg" width="80" title="Dec Badge"/></a>
+<a href="https://leetcode.com/DEVELOPER-404">
+  <img src="https://leetcode-badge-showcase.vercel.app/api?username=DEVELOPER-404&theme=shades-of-purple&animated=true" alt="LeetCode Badges" />
+</a>
+
+<br/><br/>
+
+<a href="https://leetcode.com/adityadxt1910"><img src="https://img.shields.io/badge/LeetCode-200%2B%20Problems-FFA116?style=for-the-badge&logo=leetcode&logoColor=white"/></a>
+<a href="https://hackerrank.com/adityadxt1910"><img src="https://img.shields.io/badge/HackerRank-4%E2%98%85%20Java-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white"/></a>
+<a href="https://geeksforgeeks.org/user/adityadxt1910"><img src="https://img.shields.io/badge/GeeksforGeeks-Profile-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white"/></a>
+<a href="https://codechef.com/users/adityadxt1910"><img src="https://img.shields.io/badge/CodeChef-Profile-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/></a>
 
 <br/><br/>
 
