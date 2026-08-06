@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/banner.png" alt="Aditya Dixit Banner"/>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/Aditya-dxt/banner.png" alt="Aditya Dixit Banner"/>
 
 <h3>Full-Stack Software Engineer · AI/ML Engineer · Builder of 7 Live Products</h3>
 
