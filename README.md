@@ -269,7 +269,7 @@ Technology Job Simulation
 ## 🔥 Streak Stats
 
 <p align="center">
-  <img src="https://github-readme-streak-stats-eight.vercel.app/?user=Aditya-dxt&hide_border=true&background=0D1117&ring=22D3EE&fire=2DD4BF&currStreakLabel=2DD4BF"/>
+  <img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/generated/streak-stats.svg"/>
 </p>
 
 <br/>
@@ -277,16 +277,8 @@ Technology Job Simulation
 ## 📊 GitHub Stats & Top Languages
 
 <p align="center">
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Aditya-dxt&theme=github_dark"/>
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Aditya-dxt&theme=github_dark"/>
-</p>
-
-<br/>
-
-## 🏅 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Aditya-dxt&theme=onedark&no-frame=true&row=1&column=6&margin-w=8"/>
+  <img width="49%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/generated/stats.svg"/>
+  <img width="49%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/generated/top-langs.svg"/>
 </p>
 
 <br/>
