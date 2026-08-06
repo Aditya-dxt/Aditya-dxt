@@ -39,13 +39,6 @@ jobs:
           THEME: tokyonight
           OUTPUT_PATH: assets/generated/streak-stats.svg
 
-      - name: Generate trophy card
-        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
-        with:
-          username: ${{ github.repository_owner }}
-          output_path: assets/generated/trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Commit and push generated cards
         run: |
           git config user.name "github-actions[bot]"
