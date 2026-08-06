@@ -168,9 +168,7 @@ currently:
 
 <br/>
 
-<details open>
-<summary><b>🛒 SneakerVault — Full-Stack E-Commerce Platform</b></summary>
-<br/>
+### 🛒 SneakerVault — Full-Stack E-Commerce Platform
 
 Enterprise-style e-commerce platform with secure role-based authentication and end-to-end payment infrastructure, built for production deployment.
 
@@ -184,13 +182,9 @@ Enterprise-style e-commerce platform with secure role-based authentication and e
 | **Live Demo** | [sneakervault-india.vercel.app](https://sneakervault-india.vercel.app) |
 | **Repository** | [View Source](https://github.com/Aditya-dxt) |
 
-</details>
-
 <br/>
 
-<details>
-<summary><b>🏛️ CivicSentinel — AI Civic Intelligence Portal</b></summary>
-<br/>
+### 🏛️ CivicSentinel — AI Civic Intelligence Portal
 
 An AI-powered civic-tech platform enabling real-time complaint ingestion, semantic classification, and actionable insight generation for civic authorities — recognized nationally for innovation impact.
 
@@ -202,65 +196,9 @@ An AI-powered civic-tech platform enabling real-time complaint ingestion, semant
 | **Live Demo** | Citizen Dashboard · Admin Dashboard |
 | **Repository** | [View Source](https://github.com/Aditya-dxt) |
 
-</details>
-
 <br/>
 
-<details>
-<summary><b>🏘️ Aangan — Multi-Tenant Society Maintenance Tracker</b></summary>
-<br/>
-
-A fully isolated, multi-tenant complaint and notice-board platform for apartment societies — each society gets a unique join code, and every backend query is scoped so no cross-society data can ever leak.
-
-| Category | Details |
-|---|---|
-| **Stack** | React · Vite · Node.js · Express · Prisma · PostgreSQL |
-| **Architecture** | Enforced multi-tenant isolation at the query layer by design |
-| **Design** | Custom "Aangan" (courtyard) identity — warm plaster palette, corkboard-style hero |
-| **Repository** | [View Source](https://github.com/Aditya-dxt/society-maintenance-tracker) |
-
-</details>
-
-<br/>
-
-<details>
-<summary><b>🌱 Sprout — MERN Task Tracker That Grows With You</b></summary>
-<br/>
-
-A full-stack Kanban task tracker where every task visually grows from seed to sprout to bloom as it moves across the board.
-
-| Category | Details |
-|---|---|
-| **Stack** | React · Vite · Node.js · Express · MongoDB (Atlas) · Mongoose |
-| **Experience** | Native drag-and-drop, growth-stem animation, toast notifications, fully responsive |
-| **Deployment** | Backend on Render, frontend on Vercel — live end to end |
-| **Live Demo** | [sprout-task-tracker.vercel.app](https://sprout-task-tracker.vercel.app) |
-| **Repository** | [View Source](https://github.com/Aditya-dxt/sprout-task-tracker) |
-
-</details>
-
-<br/>
-
-<details>
-<summary><b>☕ Brew & Co. — Artisan Coffee Roasters</b></summary>
-<br/>
-
-A highly interactive coffee shop web experience with a custom 3D glassmorphism card engine.
-
-| Category | Details |
-|---|---|
-| **Stack** | React 18 · Vite · TypeScript · Tailwind CSS · Framer Motion |
-| **Highlight** | Custom interactive 3D tilt engine — coffee bags tilt in 3D space on hover |
-| **Live Demo** | [brew-and-co-opal.vercel.app](https://brew-and-co-opal.vercel.app) |
-| **Repository** | [View Source](https://github.com/Aditya-dxt/brew-and-co-coffee-roasters) |
-
-</details>
-
-<br/>
-
-<details>
-<summary><b>🚂 RailSage AI — Autonomous Railway Operations Assistant <i>(Team Project)</i></b></summary>
-<br/>
+### 🚂 RailSage AI — Autonomous Railway Operations Assistant *(Team Project)*
 
 An AI-powered railway operations command center built for the FAR AWAY Hackathon 2026, built collaboratively with @indeedvaibhav.
 
@@ -271,25 +209,6 @@ An AI-powered railway operations command center built for the FAR AWAY Hackathon
 | **Localization** | Multilingual announcements in English, Hindi, and Japanese |
 | **Live Demo** | [railsage-ai.vercel.app](https://railsage-ai.vercel.app) |
 | **Repository** | [View Source](https://github.com/Aditya-dxt) |
-
-</details>
-
-<br/>
-
-<details>
-<summary><b>🧭 Career Navigator — Skill Gap Analyser & Learning Roadmap</b></summary>
-<br/>
-
-A privacy-first, fully client-side career intelligence tool that analyses resumes locally and generates personalised upskilling roadmaps.
-
-| Category | Details |
-|---|---|
-| **Stack** | React · Vite · Custom CSS · Lucide React |
-| **Performance** | Fully local RegEx + scoring engine — zero external API calls |
-| **Live Demo** | [career-navigator-app.netlify.app](https://career-navigator-app.netlify.app) |
-| **Repository** | [View Source](https://github.com/Aditya-dxt) |
-
-</details>
 
 <br/>
 
