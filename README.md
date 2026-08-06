@@ -145,22 +145,16 @@ currently:
 
 ## 📌 Pinned Repositories
 
-<p align="center">
-  <a href="https://github.com/Aditya-dxt/society-maintenance-tracker">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Aditya-dxt&repo=society-maintenance-tracker&theme=tokyonight&icon_color=2DD4BF&text_color=E2E8F0&bg_color=0D1117&title_color=2DD4BF"/>
-  </a>
-  <a href="https://github.com/Aditya-dxt/sprout-task-tracker">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Aditya-dxt&repo=sprout-task-tracker&theme=tokyonight&icon_color=2DD4BF&text_color=E2E8F0&bg_color=0D1117&title_color=2DD4BF"/>
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/Aditya-dxt/brew-and-co-coffee-roasters">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Aditya-dxt&repo=brew-and-co-coffee-roasters&theme=tokyonight&icon_color=2DD4BF&text_color=E2E8F0&bg_color=0D1117&title_color=2DD4BF"/>
-  </a>
-  <a href="https://github.com/Aditya-dxt/Aditya-dxt">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Aditya-dxt&repo=Aditya-dxt&theme=tokyonight&icon_color=2DD4BF&text_color=E2E8F0&bg_color=0D1117&title_color=2DD4BF"/>
-  </a>
-</p>
+<div align="center">
+
+| Repository | Description |
+|---|---|
+| 🏘️ **[society-maintenance-tracker](https://github.com/Aditya-dxt/society-maintenance-tracker)** | Multi-tenant complaint & notice-board platform for apartment societies |
+| 🌱 **[sprout-task-tracker](https://github.com/Aditya-dxt/sprout-task-tracker)** | MERN Kanban task tracker where tasks visually grow as they progress |
+| ☕ **[brew-and-co-coffee-roasters](https://github.com/Aditya-dxt/brew-and-co-coffee-roasters)** | Interactive coffee shop site with a custom 3D glassmorphism card engine |
+| 📄 **[Aditya-dxt](https://github.com/Aditya-dxt/Aditya-dxt)** | This profile README |
+
+</div>
 
 <br/>
 
