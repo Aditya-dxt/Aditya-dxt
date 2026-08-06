@@ -234,6 +234,7 @@ Technology Job Simulation
 | Recognition | Details |
 |---|---|
 | 🥇 National Finalist | India Innovates 2026 — National-level innovation competition |
+| 🏆 Rank 1 — IEEE Summer of Code 2026 | Final Selection round, IEEE Student Branch, Graphic Era Hill University |
 | 🏀 State-Level Athlete | Basketball, representing Kanpur Nagar |
 | ☁️ AWS Summit Champion | AWS Summit India Online 2026 |
 | 🎓 MERN Full-Stack Certified | Tryst, IIT Delhi |
