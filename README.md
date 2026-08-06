@@ -168,47 +168,39 @@ currently:
 
 <br/>
 
-### 🛒 SneakerVault — Full-Stack E-Commerce Platform
+### 1. SneakerVault — Full-Stack E-Commerce Platform
 
-Enterprise-style e-commerce platform with secure role-based authentication and end-to-end payment infrastructure, built for production deployment.
+🔗 **Live:** [sneakervault-india.vercel.app](https://sneakervault-india.vercel.app) · **Repo:** [View Source](https://github.com/Aditya-dxt)
 
-| Category | Details |
-|---|---|
-| **Stack** | React · Node.js · Express · MongoDB · Next.js · Stripe · JWT |
-| **Scale** | Full order lifecycle — cart, checkout, payment, fulfillment, admin management |
-| **Performance** | Optimized MongoDB queries reducing API latency by ~35% |
-| **Security** | JWT-based authentication with Role-Based Access Control (RBAC) for users & admins |
-| **Impact** | Diagnosed and resolved a production CORS incident post-deployment on Vercel/Render |
-| **Live Demo** | [sneakervault-india.vercel.app](https://sneakervault-india.vercel.app) |
-| **Repository** | [View Source](https://github.com/Aditya-dxt) |
+- Architected an enterprise-style e-commerce platform covering the **full order lifecycle** — cart, checkout, payment, fulfillment, and admin management — built with **React, Node.js, Express, MongoDB, and Next.js**, deployed end-to-end on **Vercel (frontend)** and **Render (backend)**.
+- Implemented a secure authentication layer using **JWT** with **Role-Based Access Control (RBAC)**, cleanly separating user and admin permissions across every protected route.
+- Integrated **Stripe** for end-to-end payment processing, handling checkout, order confirmation, and payment-state syncing across the order pipeline.
+- Optimized MongoDB query patterns and indexing strategy, **reducing API latency by ~35%** under real usage load.
+- Diagnosed and resolved a **production CORS incident** post-deployment across the Vercel/Render split-origin setup, restoring full frontend–backend connectivity with zero downtime.
 
 <br/>
 
-### 🏛️ CivicSentinel — AI Civic Intelligence Portal
+### 2. CivicSentinel — AI Civic Intelligence Portal
 
-An AI-powered civic-tech platform enabling real-time complaint ingestion, semantic classification, and actionable insight generation for civic authorities — recognized nationally for innovation impact.
+🔗 **Repo:** [View Source](https://github.com/Aditya-dxt) · 🏆 **National Finalist — India Innovates 2026**
 
-| Category | Details |
-|---|---|
-| **Stack** | React · Node.js · Python · OpenAI API · RAG · LangChain |
-| **Scale** | Real-time ingestion pipeline with geolocation-tagged civic complaint processing |
-| **Impact** | 🏆 National Finalist — India Innovates 2026 |
-| **Live Demo** | Citizen Dashboard · Admin Dashboard |
-| **Repository** | [View Source](https://github.com/Aditya-dxt) |
+- Built an AI-powered civic-tech platform that ingests citizen complaints in **real time**, tagging each with **geolocation data** for downstream routing and analysis.
+- Designed a **semantic classification pipeline** using the **OpenAI API** and **LangChain**, automatically categorizing incoming complaints by type, urgency, and department relevance.
+- Implemented a **RAG-based retrieval layer** to surface contextually similar past complaints and precedent resolutions, helping civic authorities act on actionable insights faster.
+- Shipped separate **Citizen** and **Admin** dashboards — citizens track complaint status end-to-end, while admins get an aggregated, filterable operations view.
+- Recognized as a **National Finalist at India Innovates 2026** for real-world civic innovation impact.
 
 <br/>
 
-### 🚂 RailSage AI — Autonomous Railway Operations Assistant *(Team Project)*
+### 3. RailSage AI — Autonomous Railway Operations Assistant *(Team Project)*
 
-An AI-powered railway operations command center built for the FAR AWAY Hackathon 2026, built collaboratively with @indeedvaibhav.
+🔗 **Live:** [railsage-ai.vercel.app](https://railsage-ai.vercel.app) · **Repo:** [View Source](https://github.com/Aditya-dxt)
 
-| Category | Details |
-|---|---|
-| **Stack** | React 19 · Vite · Node.js · Express · Anthropic Claude API · Leaflet · GSAP |
-| **AI Layer** | Multi-step Claude-powered reasoning feed with full operator transparency |
-| **Localization** | Multilingual announcements in English, Hindi, and Japanese |
-| **Live Demo** | [railsage-ai.vercel.app](https://railsage-ai.vercel.app) |
-| **Repository** | [View Source](https://github.com/Aditya-dxt) |
+- Built an AI-powered railway operations command center for the **FAR AWAY Hackathon 2026**, collaboratively with **@indeedvaibhav**, using **React 19, Vite, Node.js, Express, Leaflet, and GSAP**.
+- Integrated the **Anthropic Claude API** to power a **multi-step reasoning feed**, giving operators full transparency into each AI-driven decision as it happens rather than a black-box output.
+- Implemented **live map-based tracking** with **Leaflet**, visualizing train positions and route data in real time for operational decision-making.
+- Added **multilingual announcement support** across **English, Hindi, and Japanese**, making the system usable across diverse operator and passenger bases.
+- Designed smooth, motion-driven UI transitions with **GSAP** to keep a data-dense operations dashboard feeling responsive rather than cluttered.
 
 <br/>
 
