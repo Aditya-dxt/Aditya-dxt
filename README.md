@@ -151,7 +151,7 @@ currently:
 |---|---|
 | 🏘️ **[society-maintenance-tracker](https://github.com/Aditya-dxt/society-maintenance-tracker)** | Multi-tenant complaint & notice-board platform for apartment societies |
 | 🌱 **[sprout-task-tracker](https://github.com/Aditya-dxt/sprout-task-tracker)** | MERN Kanban task tracker where tasks visually grow as they progress |
-| ☕ **[brew-and-co-coffee-roasters](https://github.com/Aditya-dxt/brew-and-co-coffee-roasters)** | Interactive coffee shop site with a custom 3D glassmorphism card engine |
+| 💼 **[Portfolio](https://aditya-dixit.vercel.app/)** | Personal portfolio site showcasing projects, skills, and experience |
 | 📄 **[Aditya-dxt](https://github.com/Aditya-dxt/Aditya-dxt)** | This profile README |
 
 </div>
