@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<defs>
+  <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#22d3ee"/>
+    <stop offset="50%" stop-color="#a78bfa"/>
+    <stop offset="100%" stop-color="#f472b6"/>
+  </linearGradient>
+  <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#22d3ee"/>
+    <stop offset="50%" stop-color="#a78bfa"/>
+    <stop offset="100%" stop-color="#f472b6"/>
+  </linearGradient>
+  <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#12131f"/>
+    <stop offset="100%" stop-color="#0d0e16"/>
+  </linearGradient>
+  <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.3"/>
+    <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.2"/>
+    <stop offset="100%" stop-color="#f472b6" stop-opacity="0.3"/>
+  </linearGradient>
+  <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.15"/>
+    <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowViolet" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.15"/>
+    <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="softGlow">
+    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.03"/>
+  </pattern>
+  <mask id="nameMask">
+    <rect x="0" y="0" width="600" height="80" fill="white">
+      <animate attributeName="y" values="80;0;0" keyTimes="0;0.3;1" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+    </rect>
+  </mask>
+  <clipPath id="viewfinderClip">
+    <rect x="620" y="80" width="520" height="380" rx="16"/>
+  </clipPath>
+  <linearGradient id="scrubGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#22d3ee"/>
+    <stop offset="100%" stop-color="#a78bfa"/>
+  </linearGradient>
+</defs>
+<style><![CDATA[
+  .font-display { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+  .font-mono { font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace; }
+  .card { fill: url(#cardBg); stroke: url(#borderGrad); stroke-width: 1; }
+  .dot-texture { fill: url(#dots); }
+  .glow-text { filter: url(#glow); }
+  .soft-glow { filter: url(#softGlow); }
+  .pulse-dot { animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+  .blink { animation: blink 1.2s step-end infinite; }
+  @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
+  .nudge { animation: nudge 2s ease-in-out infinite; }
+  @keyframes nudge { 0%,100% { transform:translateX(0); } 50% { transform:translateX(6px); } }
+  .float { animation: float 3s ease-in-out infinite; }
+  @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-8px); } }
+  .spin-slow { animation: spin 20s linear infinite; transform-origin: center; }
+  @keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+  .swing { animation: swing 3s ease-in-out infinite; transform-origin: top center; }
+  @keyframes swing { 0%,100% { transform:rotate(3deg); } 50% { transform:rotate(-3deg); } }
+  .count-up { animation: countUp 2s ease-out forwards; }
+  @keyframes countUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+  .fade-in { animation: fadeIn 1s ease-out forwards; opacity:0; }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  .slide-in { animation: slideIn 0.8s ease-out forwards; opacity:0; }
+  @keyframes slideIn { from { opacity:0; transform:translateX(-20px); } to { opacity:1; transform:translateX(0); } }
+  .chip-glow { animation: chipGlow 3s ease-in-out infinite; }
+  @keyframes chipGlow { 0%,100% { stroke-opacity:0.3; } 50% { stroke-opacity:1; } }
+  .bar-fill { animation: barFill 1.5s ease-out forwards; }
+  @keyframes barFill { from { width:0; } }
+  .ring-fill { animation: ringFill 2s ease-out forwards; }
+  @keyframes ringFill { from { stroke-dashoffset:200; } }
+  .typewriter { animation: typewriter 2s steps(14) forwards; width:0; }
+  @keyframes typewriter { from { width:0; } to { width:100%; } }
+  .carousel-slide { animation: carousel 12s ease-in-out infinite; }
+  @keyframes carousel { 0%,25% { opacity:1; } 33%,100% { opacity:0; } }
+  .carousel-slide2 { animation: carousel2 12s ease-in-out infinite; }
+  @keyframes carousel2 { 0%,25% { opacity:0; } 33%,58% { opacity:1; } 66%,100% { opacity:0; } }
+  .carousel-slide3 { animation: carousel3 12s ease-in-out infinite; }
+  @keyframes carousel3 { 0%,58% { opacity:0; } 66%,91% { opacity:1; } 100% { opacity:0; } }
+  .progress-fill { animation: progressFill 4s ease-in-out infinite; }
+  @keyframes progressFill { 0% { width:0%; } 100% { width:100%; } }
+  .foil-sweep { animation: foilSweep 3s ease-in-out infinite; }
+  @keyframes foilSweep { 0% { transform:translateX(-100%); } 100% { transform:translateX(200%); } }
+  .rec-blink { animation: recBlink 1s step-end infinite; }
+  @keyframes recBlink { 0%,100% { opacity:1; } 50% { opacity:0; } }
+  .scrubber { animation: scrubber 4s ease-in-out infinite; }
+  @keyframes scrubber { 0% { width:0%; } 70% { width:100%; } 100% { width:100%; } }
+  .corner-draw { animation: cornerDraw 1s ease-out forwards; stroke-dashoffset:100; }
+  @keyframes cornerDraw { to { stroke-dashoffset:0; } }
+  .role-cycle { animation: roleCycle 10s ease-in-out infinite; }
+  @keyframes roleCycle { 0%,20% { opacity:1; } 25%,100% { opacity:0; } }
+  .role-cycle2 { animation: roleCycle2 10s ease-in-out infinite; }
+  @keyframes roleCycle2 { 0%,20% { opacity:0; } 25%,45% { opacity:1; } 50%,100% { opacity:0; } }
+  .role-cycle3 { animation: roleCycle3 10s ease-in-out infinite; }
+  @keyframes roleCycle3 { 0%,45% { opacity:0; } 50%,70% { opacity:1; } 75%,100% { opacity:0; } }
+  .role-cycle4 { animation: roleCycle4 10s ease-in-out infinite; }
+  @keyframes roleCycle4 { 0%,70% { opacity:0; } 75%,95% { opacity:1; } 100% { opacity:0; } }
+  .video-frame { animation: videoFrame 4s ease-in-out infinite; }
+  @keyframes videoFrame { 0% { opacity:0.8; } 70% { opacity:0.8; } 80% { opacity:0; } 90% { opacity:0.8; } 100% { opacity:0.8; } }
+]]></style>
+
+<!-- Background -->
+<rect width="1200" height="630" fill="#0d0e16"/>
+<rect width="1200" height="630" fill="url(#dots)"/>
+<ellipse cx="200" cy="150" rx="300" ry="200" fill="url(#glowCyan)"/>
+<ellipse cx="1000" cy="500" rx="350" ry="250" fill="url(#glowViolet)"/>
+<ellipse cx="600" cy="300" rx="200" ry="150" fill="url(#glowCyan)" opacity="0.3"/>
+
+<!-- LEFT COLUMN: Text Content -->
+<g class="slide-in" style="animation-delay:0.2s">
+  <rect x="60" y="60" width="180" height="32" rx="16" fill="#22d3ee" fill-opacity="0.1" stroke="#22d3ee" stroke-opacity="0.3" stroke-width="1"/>
+  <circle cx="80" cy="76" r="5" fill="#22d3ee" class="pulse-dot"/>
+  <text x="95" y="82" class="font-mono" font-size="12" fill="#22d3ee" font-weight="600">OPEN TO COLLABS</text>
+</g>
+
+<g class="slide-in" style="animation-delay:0.5s">
+  <text x="60" y="140" class="font-mono" font-size="18" fill="#a78bfa" opacity="0.9">Hi there, I&apos;m</text>
+  <rect x="60" y="148" width="2" height="20" fill="#a78bfa" class="blink"/>
+</g>
+
+<g class="fade-in" style="animation-delay:0.8s">
+  <text x="60" y="210" class="font-display" font-size="52" font-weight="800" fill="url(#nameGrad)" mask="url(#nameMask)">Aditya Dixit</text>
+</g>
+
+<g class="fade-in" style="animation-delay:1.2s">
+  <text x="60" y="250" class="font-mono" font-size="16" fill="#22d3ee" font-weight="600">
+    <tspan class="role-cycle">&#x25B8; Full-Stack Developer</tspan>
+  </text>
+  <text x="60" y="250" class="font-mono" font-size="16" fill="#a78bfa" font-weight="600">
+    <tspan class="role-cycle2">&#x25B8; AI Engineer</tspan>
+  </text>
+  <text x="60" y="250" class="font-mono" font-size="16" fill="#f472b6" font-weight="600">
+    <tspan class="role-cycle3">&#x25B8; React &amp; Node Specialist</tspan>
+  </text>
+  <text x="60" y="250" class="font-mono" font-size="16" fill="#22d3ee" font-weight="600">
+    <tspan class="role-cycle4">&#x25B8; RAG &amp; LLM Builder</tspan>
+  </text>
+</g>
+
+<g class="fade-in" style="animation-delay:1.5s">
+  <text x="60" y="290" class="font-display" font-size="14" fill="#94a3b8" opacity="0.8">I craft production-grade apps with AI at the core &#x2014;</text>
+  <text x="60" y="310" class="font-display" font-size="14" fill="#94a3b8" opacity="0.8">shipping fast, reliable, AI-native software.</text>
+</g>
+
+<g class="fade-in" style="animation-delay:1.8s">
+  <g transform="translate(60, 340)">
+    <rect x="0" y="0" width="14" height="14" rx="3" fill="#22d3ee" fill-opacity="0.15"/>
+    <path d="M7 3 C4.5 3 3 4.8 3 7 C3 10 7 13 7 13 C7 13 11 10 11 7 C11 4.8 9.5 3 7 3 Z" fill="none" stroke="#22d3ee" stroke-width="1.2"/>
+    <circle cx="7" cy="7" r="2" fill="#22d3ee"/>
+    <text x="22" y="11" class="font-mono" font-size="12" fill="#94a3b8">Kanpur, India</text>
+  </g>
+  <g transform="translate(200, 340)">
+    <rect x="0" y="0" width="14" height="14" rx="3" fill="#a78bfa" fill-opacity="0.15"/>
+    <rect x="3" y="4" width="8" height="7" rx="1" fill="none" stroke="#a78bfa" stroke-width="1.2"/>
+    <line x1="5" y1="7" x2="9" y2="7" stroke="#a78bfa" stroke-width="1"/>
+    <text x="22" y="11" class="font-mono" font-size="12" fill="#94a3b8">PSIT Kanpur</text>
+  </g>
+  <g transform="translate(340, 340)">
+    <rect x="0" y="0" width="14" height="14" rx="3" fill="#f472b6" fill-opacity="0.15"/>
+    <path d="M7 2 L8.5 5.5 L12 6 L9.5 8.5 L10 12 L7 10.5 L4 12 L4.5 8.5 L2 6 L5.5 5.5 Z" fill="#f472b6"/>
+    <text x="22" y="11" class="font-mono" font-size="12" fill="#94a3b8">48 stars</text>
+  </g>
+  <g transform="translate(430, 340)">
+    <rect x="0" y="0" width="14" height="14" rx="3" fill="#22d3ee" fill-opacity="0.15"/>
+    <rect x="2" y="2" width="4" height="4" rx="1" fill="#22d3ee"/>
+    <rect x="8" y="2" width="4" height="4" rx="1" fill="#22d3ee" opacity="0.5"/>
+    <rect x="2" y="8" width="4" height="4" rx="1" fill="#22d3ee" opacity="0.5"/>
+    <rect x="8" y="8" width="4" height="4" rx="1" fill="#22d3ee"/>
+    <text x="22" y="11" class="font-mono" font-size="12" fill="#94a3b8">19 repos</text>
+  </g>
+</g>
+
+<!-- RIGHT COLUMN: Camera Viewfinder -->
+<g class="fade-in" style="animation-delay:0.5s">
+  <rect x="620" y="80" width="520" height="380" rx="16" fill="#0a0b12" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <g clip-path="url(#viewfinderClip)">
+    <rect x="620" y="80" width="520" height="380" fill="#0f1020"/>
+    <g class="float" transform="translate(880, 200)">
+      <circle cx="0" cy="-40" r="35" fill="#1a1b2e" stroke="#22d3ee" stroke-width="1.5" opacity="0.9"/>
+      <path d="M-30 20 Q-35 60 -30 100 L30 100 Q35 60 30 20 Q0 10 -30 20 Z" fill="#1a1b2e" stroke="#a78bfa" stroke-width="1.5" opacity="0.9"/>
+      <rect x="-20" y="40" width="40" height="28" rx="3" fill="#0d0e16" stroke="#f472b6" stroke-width="1.5"/>
+      <rect x="-16" y="44" width="32" height="20" rx="2" fill="#22d3ee" fill-opacity="0.15"/>
+      <circle cx="0" cy="-40" r="50" fill="url(#glowCyan)" opacity="0.3"/>
+    </g>
+    <g opacity="0.08" stroke="#22d3ee" stroke-width="0.5">
+      <line x1="620" y1="175" x2="1140" y2="175"/>
+      <line x1="620" y1="270" x2="1140" y2="270"/>
+      <line x1="793" y1="80" x2="793" y2="460"/>
+      <line x1="966" y1="80" x2="966" y2="460"/>
+    </g>
+    <rect x="620" y="80" width="520" height="2" fill="#22d3ee" opacity="0.4">
+      <animate attributeName="y" values="80;460;80" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g stroke="#22d3ee" stroke-width="2" fill="none" filter="url(#glow)">
+    <path d="M620 100 L620 80 L640 80" class="corner-draw" stroke-dasharray="40"/>
+    <path d="M1120 80 L1140 80 L1140 100" class="corner-draw" stroke-dasharray="40" style="animation-delay:0.1s"/>
+    <path d="M1140 440 L1140 460 L1120 460" class="corner-draw" stroke-dasharray="40" style="animation-delay:0.2s"/>
+    <path d="M640 460 L620 460 L620 440" class="corner-draw" stroke-dasharray="40" style="animation-delay:0.3s"/>
+  </g>
+  <g transform="translate(640, 100)">
+    <circle cx="0" cy="0" r="5" fill="#ef4444" class="rec-blink"/>
+    <text x="12" y="5" class="font-mono" font-size="11" fill="#ef4444" font-weight="600">REC</text>
+  </g>
+  <text x="640" y="445" class="font-mono" font-size="10" fill="#64748b">aditya_dixit_portrait.svg</text>
+  <g transform="translate(640, 450)">
+    <rect x="0" y="0" width="480" height="3" rx="1.5" fill="#1e293b"/>
+    <rect x="0" y="0" width="0" height="3" rx="1.5" fill="url(#scrubGrad)" class="scrubber"/>
+  </g>
+</g>
+
+<!-- BOTTOM: Stats Bar -->
+<g class="fade-in" style="animation-delay:2s">
+  <rect x="60" y="420" width="1080" height="180" rx="16" class="card"/>
+  <rect x="60" y="420" width="1080" height="180" rx="16" fill="url(#dots)"/>
+  <g transform="translate(100, 460)">
+    <text x="0" y="0" class="font-display" font-size="36" font-weight="800" fill="#22d3ee">300+</text>
+    <text x="0" y="25" class="font-mono" font-size="12" fill="#94a3b8">DSA Problems</text>
+    <rect x="0" y="40" width="60" height="3" rx="1.5" fill="#22d3ee" fill-opacity="0.3"/>
+  </g>
+  <g transform="translate(340, 460)">
+    <text x="0" y="0" class="font-display" font-size="36" font-weight="800" fill="#a78bfa">7+</text>
+    <text x="0" y="25" class="font-mono" font-size="12" fill="#94a3b8">Projects Shipped</text>
+    <rect x="0" y="40" width="60" height="3" rx="1.5" fill="#a78bfa" fill-opacity="0.3"/>
+  </g>
+  <g transform="translate(580, 460)">
+    <text x="0" y="0" class="font-display" font-size="36" font-weight="800" fill="#f472b6">6x</text>
+    <text x="0" y="25" class="font-mono" font-size="12" fill="#94a3b8">Hackathons Led</text>
+    <rect x="0" y="40" width="60" height="3" rx="1.5" fill="#f472b6" fill-opacity="0.3"/>
+  </g>
+  <g transform="translate(820, 460)">
+    <text x="0" y="0" class="font-display" font-size="36" font-weight="800" fill="#22d3ee">1014</text>
+    <text x="0" y="25" class="font-mono" font-size="12" fill="#94a3b8">Commits</text>
+    <rect x="0" y="40" width="60" height="3" rx="1.5" fill="#22d3ee" fill-opacity="0.3"/>
+  </g>
+  <g transform="translate(1020, 460)">
+    <text x="0" y="0" class="font-display" font-size="36" font-weight="800" fill="#a78bfa">48</text>
+    <text x="0" y="25" class="font-mono" font-size="12" fill="#94a3b8">Stars Earned</text>
+    <rect x="0" y="40" width="60" height="3" rx="1.5" fill="#a78bfa" fill-opacity="0.3"/>
+  </g>
+</g>
+
+<g class="float" opacity="0.6">
+  <circle cx="1100" cy="50" r="3" fill="#22d3ee"/>
+  <circle cx="50" cy="580" r="2" fill="#a78bfa"/>
+  <circle cx="1150" cy="600" r="4" fill="#f472b6"/>
+</g>
+</svg>

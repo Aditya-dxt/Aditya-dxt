@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+<defs>
+  <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#12131f"/>
+    <stop offset="100%" stop-color="#0d0e16"/>
+  </linearGradient>
+  <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.3"/>
+    <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.2"/>
+    <stop offset="100%" stop-color="#f472b6" stop-opacity="0.3"/>
+  </linearGradient>
+  <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.15"/>
+    <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowViolet" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.15"/>
+    <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.03"/>
+  </pattern>
+</defs>
+<style><![CDATA[
+  .font-display { font-family: 'Inter', system-ui, sans-serif; }
+  .font-mono { font-family: 'JetBrains Mono', 'SF Mono', monospace; }
+  .card { fill: url(#cardBg); stroke: url(#borderGrad); stroke-width: 1; }
+  .dot-texture { fill: url(#dots); }
+  .glow-text { filter: url(#glow); }
+  .fade-in { animation: fadeIn 1s ease-out forwards; opacity:0; }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  .slide-in { animation: slideIn 0.8s ease-out forwards; opacity:0; }
+  @keyframes slideIn { from { opacity:0; transform:translateX(-20px); } to { opacity:1; transform:translateX(0); } }
+  .nudge { animation: nudge 2s ease-in-out infinite; }
+  @keyframes nudge { 0%,100% { transform:translateX(0); } 50% { transform:translateX(6px); } }
+  .float { animation: float 3s ease-in-out infinite; }
+  @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-6px); } }
+  .pulse-dot { animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+]]></style>
+
+<rect width="1200" height="300" fill="#0d0e16"/>
+<rect width="1200" height="300" fill="url(#dots)"/>
+<ellipse cx="300" cy="150" rx="300" ry="150" fill="url(#glowCyan)"/>
+<ellipse cx="900" cy="150" rx="300" ry="150" fill="url(#glowViolet)"/>
+
+<!-- LEFT: Pointing Character -->
+<g class="slide-in" style="animation-delay:0.2s">
+  <rect x="20" y="20" width="360" height="260" rx="16" class="card"/>
+  <rect x="20" y="20" width="360" height="260" rx="16" fill="url(#dots)"/>
+  <g class="float" transform="translate(180, 150)">
+    <circle cx="0" cy="-40" r="30" fill="#1a1b2e" stroke="#22d3ee" stroke-width="1.5"/>
+    <path d="M-25 0 Q-30 40 -25 80 L25 80 Q30 40 25 0 Q0 -5 -25 0 Z" fill="#1a1b2e" stroke="#a78bfa" stroke-width="1.5"/>
+    <path d="M20 10 L60 20 L60 25 L20 20 Z" fill="#1a1b2e" stroke="#f472b6" stroke-width="1.5"/>
+    <circle cx="62" cy="22" r="6" fill="#1a1b2e" stroke="#f472b6" stroke-width="1.5"/>
+    <circle cx="-8" cy="-45" r="3" fill="#22d3ee"/>
+    <path d="M5 -48 L12 -48" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-8 -35 Q0 -30 8 -35" stroke="#f472b6" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <g class="pulse-dot">
+      <text x="-40" y="-60" class="font-display" font-size="12" fill="#22d3ee">&#x2726;</text>
+      <text x="50" y="-50" class="font-display" font-size="10" fill="#a78bfa">&#x2726;</text>
+      <text x="70" y="-20" class="font-display" font-size="8" fill="#f472b6">&#x2726;</text>
+    </g>
+  </g>
+  <g transform="translate(180, 240)">
+    <rect x="-60" y="-15" width="120" height="30" rx="15" fill="#22d3ee" fill-opacity="0.1" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <text x="0" y="5" text-anchor="middle" class="font-mono" font-size="12" fill="#22d3ee" font-weight="600" filter="url(#glow)">@Aditya-dxt</text>
+  </g>
+</g>
+
+<!-- RIGHT: Link Cards -->
+<g class="slide-in" style="animation-delay:0.5s">
+  <rect x="400" y="20" width="780" height="260" rx="16" class="card"/>
+  <rect x="400" y="20" width="780" height="260" rx="16" fill="url(#dots)"/>
+  <text x="790" y="55" text-anchor="middle" class="font-display" font-size="16" fill="#e2e8f0" font-weight="700">Let&apos;s Connect</text>
+  <g transform="translate(430, 80)">
+    <rect x="0" y="0" width="220" height="50" rx="12" fill="#22d3ee" fill-opacity="0.05" stroke="#22d3ee" stroke-opacity="0.3"/>
+    <circle cx="30" cy="25" r="12" fill="#22d3ee" fill-opacity="0.15"/>
+    <text x="30" y="30" text-anchor="middle" class="font-display" font-size="14" fill="#22d3ee">GH</text>
+    <text x="50" y="22" class="font-display" font-size="13" fill="#e2e8f0" font-weight="600">GitHub</text>
+    <text x="50" y="38" class="font-mono" font-size="9" fill="#64748b">@Aditya-dxt</text>
+    <g class="nudge" transform="translate(200, 18)">
+      <path d="M0 7 L10 7 M5 2 L10 7 L5 12" stroke="#22d3ee" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+  <g transform="translate(670, 80)">
+    <rect x="0" y="0" width="220" height="50" rx="12" fill="#a78bfa" fill-opacity="0.05" stroke="#a78bfa" stroke-opacity="0.3"/>
+    <circle cx="30" cy="25" r="12" fill="#a78bfa" fill-opacity="0.15"/>
+    <text x="30" y="30" text-anchor="middle" class="font-display" font-size="14" fill="#a78bfa">in</text>
+    <text x="50" y="22" class="font-display" font-size="13" fill="#e2e8f0" font-weight="600">LinkedIn</text>
+    <text x="50" y="38" class="font-mono" font-size="9" fill="#64748b">/in/aditya-dixit</text>
+    <g class="nudge" style="animation-delay:0.3s" transform="translate(200, 18)">
+      <path d="M0 7 L10 7 M5 2 L10 7 L5 12" stroke="#a78bfa" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+  <g transform="translate(910, 80)">
+    <rect x="0" y="0" width="220" height="50" rx="12" fill="#f472b6" fill-opacity="0.05" stroke="#f472b6" stroke-opacity="0.3"/>
+    <circle cx="30" cy="25" r="12" fill="#f472b6" fill-opacity="0.15"/>
+    <text x="30" y="30" text-anchor="middle" class="font-display" font-size="14" fill="#f472b6">LC</text>
+    <text x="50" y="22" class="font-display" font-size="13" fill="#e2e8f0" font-weight="600">LeetCode</text>
+    <text x="50" y="38" class="font-mono" font-size="9" fill="#64748b">300+ problems</text>
+    <g class="nudge" style="animation-delay:0.6s" transform="translate(200, 18)">
+      <path d="M0 7 L10 7 M5 2 L10 7 L5 12" stroke="#f472b6" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+  <g transform="translate(430, 150)">
+    <rect x="0" y="0" width="220" height="50" rx="12" fill="#22c55e" fill-opacity="0.05" stroke="#22c55e" stroke-opacity="0.3"/>
+    <circle cx="30" cy="25" r="12" fill="#22c55e" fill-opacity="0.15"/>
+    <text x="30" y="30" text-anchor="middle" class="font-display" font-size="14" fill="#22c55e">HR</text>
+    <text x="50" y="22" class="font-display" font-size="13" fill="#e2e8f0" font-weight="600">HackerRank</text>
+    <text x="50" y="38" class="font-mono" font-size="9" fill="#64748b">4&#x2605; Java</text>
+    <g class="nudge" style="animation-delay:0.9s" transform="translate(200, 18)">
+      <path d="M0 7 L10 7 M5 2 L10 7 L5 12" stroke="#22c55e" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+  <g transform="translate(670, 150)">
+    <rect x="0" y="0" width="220" height="50" rx="12" fill="#f59e0b" fill-opacity="0.05" stroke="#f59e0b" stroke-opacity="0.3"/>
+    <circle cx="30" cy="25" r="12" fill="#f59e0b" fill-opacity="0.15"/>
+    <text x="30" y="30" text-anchor="middle" class="font-display" font-size="14" fill="#f59e0b">IG</text>
+    <text x="50" y="22" class="font-display" font-size="13" fill="#e2e8f0" font-weight="600">Instagram</text>
+    <text x="50" y="38" class="font-mono" font-size="9" fill="#64748b">@indeedaditya</text>
+    <g class="nudge" style="animation-delay:1.2s" transform="translate(200, 18)">
+      <path d="M0 7 L10 7 M5 2 L10 7 L5 12" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+  <g transform="translate(910, 150)">
+    <rect x="0" y="0" width="220" height="50" rx="12" fill="#22d3ee" fill-opacity="0.05" stroke="#22d3ee" stroke-opacity="0.3"/>
+    <circle cx="30" cy="25" r="12" fill="#22d3ee" fill-opacity="0.15"/>
+    <text x="30" y="30" text-anchor="middle" class="font-display" font-size="14" fill="#22d3ee">@</text>
+    <text x="50" y="22" class="font-display" font-size="13" fill="#e2e8f0" font-weight="600">Email</text>
+    <text x="50" y="38" class="font-mono" font-size="9" fill="#64748b">adityadxt1910@gmail</text>
+    <g class="nudge" style="animation-delay:1.5s" transform="translate(200, 18)">
+      <path d="M0 7 L10 7 M5 2 L10 7 L5 12" stroke="#22d3ee" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+  <g transform="translate(430, 220)">
+    <text x="0" y="0" class="font-mono" font-size="10" fill="#64748b">Open to collaborations, internships &amp; open source</text>
+    <circle cx="0" y="20" r="4" fill="#22d3ee" class="pulse-dot"/>
+    <text x="12" y="24" class="font-mono" font-size="10" fill="#22d3ee">Let&apos;s build something together</text>
+  </g>
+</g>
+</svg>
