@@ -25,7 +25,7 @@
 
 <table>
 <tr>
-<td width="30%" valign="top"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/avatar.jpg" width="100%" alt="Aditya Dixit"/><br/><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/portrait.svg" width="100%" alt="Aditya Dixit nameplate"/></td>
+<td width="30%" valign="top"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/id-card.gif" width="100%" alt="Aditya Dixit — identity badge"/></td>
 <td width="70%" valign="top">
 
 I am a software engineer focused on **production systems** — the kind that carry real users, real payments and real data. My work sits at the intersection of **full-stack engineering** and **applied machine intelligence**: rigorous backends, careful data models and interfaces, with AI treated as an engineering discipline rather than a novelty.

@@ -1,0 +1,14 @@
+{
+  "name": "aditya-dxt-profile-tools",
+  "private": true,
+  "type": "module",
+  "description": "Asset generation for the Aditya-dxt profile README",
+  "scripts": {
+    "assets": "node generate-space-assets.mjs",
+    "media": "node prepare-media.mjs",
+    "badge": "node build-id-card.mjs"
+  },
+  "dependencies": {
+    "gifenc": "^1.0.3"
+  }
+}

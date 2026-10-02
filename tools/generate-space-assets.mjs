@@ -394,36 +394,6 @@ ${defs()}
 }
 
 // ============================================================================
-// PORTRAIT NAMEPLATE (shown under the avatar image; no embedded raster, since
-// GitHub's SVG CSP `default-src 'none'` blocks data: images)
-// ============================================================================
-function portrait() {
-  const w = 520, h = 172;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="Aditya Dixit">
-${defs()}
-  <rect width="${w}" height="${h}" fill="${C.bg}"/>
-  ${gridLayer(w, h)}
-  <rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="12" fill="${C.panel}" stroke="#1d2b3d"/>
-  <g fill="none" stroke="${C.accent}" stroke-width="2">
-    <path d="M14,34 L14,16 L32,16"/>
-    <path d="${w - 32},16 L${w - 14},16 L${w - 14},34"/>
-    <path d="M14,${h - 34} L14,${h - 16} L32,${h - 16}"/>
-    <path d="${w - 32},${h - 16} L${w - 14},${h - 16} L${w - 14},${h - 34}"/>
-  </g>
-  <g transform="translate(30,40)">
-    <rect x="-8" y="-11" width="104" height="21" rx="5" fill="#05070c" stroke="#1d2b3d"/>
-    <circle cx="2" cy="0" r="2.8" fill="${C.ok}" class="pf-pulse"/>
-    <text x="13" y="3.5" font-family="${MONO}" font-size="8.5" letter-spacing="1.4" fill="#c9d9ee">ONLINE · 2026</text>
-  </g>
-  <text x="30" y="102" font-family="${SANS}" font-size="22" font-weight="700" fill="${C.text}">Aditya Dixit</text>
-  <text x="30" y="124" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.muted}">FULL-STACK &amp; MACHINE-INTELLIGENCE ENGINEERING</text>
-  <text x="30" y="146" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.faint}">26.44°N / 80.33°E · KANPUR, IN</text>
-  <text x="${w - 30}" y="124" text-anchor="end" font-family="${MONO}" font-size="9" letter-spacing="1.4" fill="${C.faint}">REF 2026</text>
-  <line x1="30" y1="158" x2="130" y2="158" stroke="${C.accent}" stroke-width="2"/>
-</svg>`;
-}
-
-// ============================================================================
 // VARSHA-DRISHTI ARCHITECTURE SCHEMATIC
 // ============================================================================
 function varshadrishti() {
@@ -490,7 +460,6 @@ ${defs()}
 // ---- write ------------------------------------------------------------------
 const files = {
   'masthead.svg': masthead(),
-  'portrait.svg': portrait(),
   'band.svg': band(31415),
   'rule.svg': rule(),
   'proj-varshadrishti.svg': varshadrishti(),
