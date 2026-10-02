@@ -28,9 +28,13 @@
 <td width="30%" valign="top"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/id-card.gif" width="100%" alt="Aditya Dixit — identity badge"/></td>
 <td width="70%" valign="top">
 
-I am a software engineer focused on **production systems** — the kind that carry real users, real payments and real data. My work sits at the intersection of **full-stack engineering** and **applied machine intelligence**: rigorous backends, careful data models and interfaces, with AI treated as an engineering discipline rather than a novelty.
+I’m a **Full-Stack & AI Engineer** focused on building production-ready software that solves real problems. I work across the stack — from scalable backends and data-driven systems to polished interfaces and intelligent AI workflows.
 
-> *Great software is invisible. It feels inevitable — as though it was always meant to exist.*
+**My approach is simple: understand the problem, engineer the system, ship it, and keep improving it.** I enjoy turning ideas into products that are reliable, useful, and built to scale.
+
+**Currently exploring:** AI engineering, intelligent automation, system design, and high-impact full-stack products..
+
+> *“Build with purpose. Ship with discipline. Improve relentlessly.”*
 
 </td>
 </tr>
