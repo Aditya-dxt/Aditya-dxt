@@ -143,6 +143,30 @@ const FIELD = (n, dur, seed) => ({ count: n, rMin: 0.4, rMax: 0.9, opMin: 0.08, 
 const MID = (n, dur) => ({ count: n, rMin: 0.6, rMax: 1.2, opMin: 0.14, opMax: 0.42, colors: ['#ffffff', '#bcd7f5', '#ffe0a8'], dur, twinkle: true });
 const NEAR = (n, dur) => ({ count: n, rMin: 0.9, rMax: 1.5, opMin: 0.28, opMax: 0.7, colors: ['#ffffff', '#cfe6ff'], dur, twinkle: true });
 
+// ---- DNA double-helix "monitor" trace --------------------------------------
+// Two counter-phase sine strands with connecting rungs. The whole group scrolls
+// one full wavelength, which loops seamlessly because the pattern is periodic.
+function dna({ width, amp = 8, lam = 46, dur = 2.8, c1 = C.accent, c2 = '#a78bfa', rung = '#3f6d99' }) {
+  const X1 = width + lam;
+  let top = '', bot = '';
+  for (let x = 0; x <= X1; x += 4) {
+    const ph = (2 * Math.PI * x) / lam;
+    top += `${x === 0 ? 'M' : 'L'}${x} ${(-amp * Math.sin(ph)).toFixed(1)} `;
+    bot += `${x === 0 ? 'M' : 'L'}${x} ${(amp * Math.sin(ph)).toFixed(1)} `;
+  }
+  let rungs = '';
+  for (let x = 0; x <= X1; x += lam / 12) {
+    const y = amp * Math.sin((2 * Math.PI * x) / lam);
+    if (Math.abs(y) < 1.3) continue;
+    const o = Math.min(0.8, 0.18 + (Math.abs(y) / amp) * 0.62);
+    rungs += `<line x1="${x.toFixed(1)}" y1="${(-y).toFixed(1)}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="${rung}" stroke-width="1" opacity="${o.toFixed(2)}"/>`;
+  }
+  return `<g><animateTransform attributeName="transform" type="translate" from="0 0" to="-${lam} 0" dur="${dur}s" repeatCount="indefinite"/>
+    <path d="${top}" fill="none" stroke="${c1}" stroke-width="1.5" stroke-linecap="round" opacity="0.95"/>
+    <path d="${bot}" fill="none" stroke="${c2}" stroke-width="1.5" stroke-linecap="round" opacity="0.9"/>
+    ${rungs}</g>`;
+}
+
 // ============================================================================
 // MASTHEAD
 // ============================================================================
@@ -169,7 +193,7 @@ function masthead() {
 
   // ---- radar / system-map geometry ----
   const DEG = Math.PI / 180;
-  const ocx = 925, ocy = 290, RR = 104;
+  const ocx = 925, ocy = 286, RR = 98;
   const wedge = (a1, a2, op) => {
     const x1 = (ocx + RR * Math.cos(a1)).toFixed(1), y1 = (ocy + RR * Math.sin(a1)).toFixed(1);
     const x2 = (ocx + RR * Math.cos(a2)).toFixed(1), y2 = (ocy + RR * Math.sin(a2)).toFixed(1);
@@ -188,8 +212,6 @@ function masthead() {
       const bx = (ocx + u * RR).toFixed(1), by = (ocy + v * RR).toFixed(1), dur = (3 + i * 0.8).toFixed(1), beg = (i * 0.7).toFixed(1);
       return `<g><circle cx="${bx}" cy="${by}" r="2.4" fill="${col}"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.55;1" dur="${dur}s" begin="${beg}s" repeatCount="indefinite"/></circle><circle cx="${bx}" cy="${by}" r="2.4" fill="none" stroke="${col}"><animate attributeName="r" values="2;12;2" dur="${dur}s" begin="${beg}s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values="0.7;0;0.7" dur="${dur}s" begin="${beg}s" repeatCount="indefinite"/></circle></g>`;
     }).join('');
-  let wpath = '';
-  for (let x = 0; x <= 420; x += 6) wpath += `${x === 0 ? 'M' : 'L'}${x} ${(16 + Math.sin(x / 22) * 6 + Math.sin(x / 7) * 2.4).toFixed(1)} `;
 
   const stats = [
     ['300+', 'DSA PROBLEMS'],
@@ -302,12 +324,12 @@ ${defs()}
     </g>
     <circle cx="1126" cy="353" r="2.2" fill="${C.ok}"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
 
-    <!-- footer waveform -->
-    <line x1="690" y1="378" x2="1160" y2="378" stroke="${C.gridHi}"/>
-    <g transform="translate(714,390)">
-      <path d="${wpath}" fill="none" stroke="${C.accent}" stroke-width="1" opacity="0.6" stroke-dasharray="7 5">
-        <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.1s" repeatCount="indefinite"/>
-      </path>
+    <!-- footer: DNA-style gene trace -->
+    <line x1="690" y1="380" x2="1160" y2="380" stroke="${C.gridHi}"/>
+    <text x="714" y="394" font-family="${MONO}" font-size="8" letter-spacing="2" fill="${C.faint}">GENE TRACE · HELIX</text>
+    <text x="1136" y="394" text-anchor="end" font-family="${MONO}" font-size="8" letter-spacing="1.4" fill="${C.faint}">SEQ 4.2 KB/S</text>
+    <g transform="translate(714,405)">
+      ${dna({ width: 420, amp: 7.5, lam: 44, dur: 2.8 })}
     </g>
   </g>
 
@@ -412,13 +434,6 @@ ${defs()}
 // ============================================================================
 function footer() {
   const w = 1200, h = 280;
-  // telemetry carrier waveform
-  let d = '';
-  for (let x = 0; x <= w; x += 4) {
-    const env = 0.35 + 0.65 * Math.abs(Math.sin(x / 190));
-    const y = 108 + (Math.sin(x / 26) * 9 + Math.sin(x / 11) * 3.2) * env;
-    d += `${x === 0 ? 'M' : 'L'}${x} ${y.toFixed(1)} `;
-  }
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="footer">
 ${defs()}
   <rect width="${w}" height="${h}" fill="url(#vign)"/>
@@ -429,16 +444,13 @@ ${defs()}
 
   <g class="pf-fade">
     <line x1="40" y1="30" x2="1160" y2="30" stroke="${C.hair}" stroke-width="1"/>
-    <text x="40" y="20" font-family="${MONO}" font-size="9" letter-spacing="2" fill="${C.faint}">CARRIER SIGNAL</text>
+    <text x="40" y="20" font-family="${MONO}" font-size="9" letter-spacing="2" fill="${C.faint}">GENE TRACE · DNA MONITOR</text>
     <text x="1160" y="20" text-anchor="end" font-family="${MONO}" font-size="9" letter-spacing="1.4" fill="${C.faint}">LIVE</text>
   </g>
-  <path d="${d}" fill="none" stroke="${C.accent}" stroke-width="1.4" opacity="0.75"/>
-  <circle r="3" fill="${C.accent}">
-    <animateMotion dur="9s" repeatCount="indefinite" path="${d}"/>
-  </circle>
-  <circle r="7" fill="none" stroke="${C.accent}" stroke-opacity="0.3">
-    <animateMotion dur="9s" repeatCount="indefinite" path="${d}"/>
-  </circle>
+  <line x1="40" y1="112" x2="1160" y2="112" stroke="${C.gridHi}"/>
+  <g transform="translate(40,112)">
+    ${dna({ width: 1120, amp: 17, lam: 96, dur: 6, c1: C.accent, c2: '#a78bfa' })}
+  </g>
 
   <g class="pf-fade" style="animation-delay:.2s">
     <text x="64" y="188" font-family="${SANS}" font-size="17" font-weight="700" letter-spacing="0.4" fill="${C.text}">Aditya Dixit</text>

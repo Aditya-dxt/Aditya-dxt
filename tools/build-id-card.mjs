@@ -69,11 +69,11 @@ function page(t) {
   .idb .nm{font-size:24px;font-weight:800;color:#f2f6fb;letter-spacing:-.4px;line-height:1.05}
   .idb .rl{font-size:10.5px;letter-spacing:1.1px;color:#9fb0c4;margin-top:7px;line-height:1.5}
   .idb .tag{display:inline-block;margin-top:11px;font-size:9.5px;letter-spacing:1.3px;color:#79c0ff;border:1px solid #24507d;border-radius:5px;padding:3px 8px;background:#0b1b2e}
-  .idb .mgrid{position:absolute;left:0;top:96px;width:158px;display:grid;grid-template-columns:1fr 1fr;gap:12px 10px}
-  .idb .mg .v{font-size:14px;font-weight:700;color:#79c0ff;line-height:1}
-  .idb .mg .l{font-size:7.5px;letter-spacing:1px;color:#8b98a9;margin-top:3px}
-  .div{position:absolute;left:28px;right:28px;top:262px;height:1px;background:#1a2739}
-  .bio{position:absolute;left:28px;right:28px;top:282px}
+  .idb .mgrid{position:absolute;left:0;top:96px;width:158px;display:grid;grid-template-columns:1fr 1fr;gap:9px 10px}
+  .idb .mg .v{font-size:13px;font-weight:700;color:#79c0ff;line-height:1}
+  .idb .mg .l{font-size:7px;letter-spacing:1px;color:#8b98a9;margin-top:2px}
+  .div{position:absolute;left:28px;right:28px;top:302px;height:1px;background:#1a2739}
+  .bio{position:absolute;left:28px;right:28px;top:322px}
   .bio .row{display:flex;align-items:center;gap:11px;margin-bottom:19px}
   .bio .tk{width:4px;height:17px;border-radius:2px;background:#4aa8ff;opacity:.9}
   .bio .tx{font-size:12.5px;letter-spacing:1px;color:#dbe6f3}
@@ -110,6 +110,8 @@ function page(t) {
           <div class="mg"><div class="v mono">12×</div><div class="l mono">HACKATHONS</div></div>
           <div class="mg"><div class="v mono">300+</div><div class="l mono">DSA</div></div>
           <div class="mg"><div class="v mono">4★</div><div class="l mono">JAVA</div></div>
+          <div class="mg"><div class="v mono">1.0K</div><div class="l mono">COMMITS</div></div>
+          <div class="mg"><div class="v mono">48</div><div class="l mono">STARS</div></div>
         </div>
       </div>
       <div class="div"></div>
