@@ -39,8 +39,9 @@ function render({ src, out, w, h, bg = '#05070c', pos = 'center', fit = 'cover' 
   return true;
 }
 
+const AVATAR_SRC = 'C:/Users/adity/Downloads/WhatsApp Image 2026-10-02 at 11.32.04 AM.jpeg';
 console.log('avatar:');
-render({ src: `${SRC}/aditya-hero-3d.png`, out: path.join(MEDIA, 'avatar.jpg'), w: 520, h: 600, bg: '#0a0f18', pos: 'center 16%' });
+render({ src: AVATAR_SRC, out: path.join(MEDIA, 'avatar.jpg'), w: 400, h: 400, bg: '#0a0f18', pos: 'center', fit: 'cover' });
 
 console.log('certificates:');
 const certs = [

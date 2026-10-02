@@ -67,9 +67,9 @@ function page(t) {
   .dot{width:6px;height:6px;border-radius:50%;background:#4ade80;animation:dot ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
   .chip span{font-size:9px;letter-spacing:1.4px;color:#b7c6da}
   .rule{position:absolute;left:28px;right:28px;top:60px;height:1px;background:linear-gradient(90deg,rgba(74,168,255,.55),rgba(74,168,255,0))}
-  .photo{position:absolute;left:28px;top:80px;width:150px;height:182px;border-radius:14px;overflow:hidden;border:1px solid #2a4665;background:#0a1018;
-         box-shadow:0 6px 14px rgba(0,0,0,.5)}
-  .photo img{width:100%;height:100%;object-fit:cover;object-position:center 12%;display:block}
+  .photo{position:absolute;left:28px;top:78px;width:156px;height:156px;border-radius:14px;overflow:hidden;border:1px solid #2a4665;background:#0a1018;
+         box-shadow:0 6px 14px rgba(0,0,0,.5), 0 0 0 4px rgba(74,168,255,.08)}
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
   .photo .sheen{position:absolute;top:-20%;bottom:-20%;left:-70px;width:60px;transform:skewX(-16deg);
         background:linear-gradient(90deg,transparent,rgba(255,255,255,.20),transparent);
         animation:sheen ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
@@ -77,12 +77,12 @@ function page(t) {
   .idb .nm{font-size:24px;font-weight:800;color:#f2f6fb;letter-spacing:-.4px;line-height:1.05}
   .idb .rl{font-size:10.5px;letter-spacing:1.1px;color:#9fb0c4;margin-top:7px;line-height:1.5}
   .idb .tag{display:inline-block;margin-top:11px;font-size:9.5px;letter-spacing:1.3px;color:#79c0ff;border:1px solid #24507d;border-radius:5px;padding:3px 8px;background:#0b1b2e}
-  .div{position:absolute;left:28px;right:28px;top:288px;height:1px;background:#1a2739}
-  .bio{position:absolute;left:28px;right:28px;top:306px}
+  .div{position:absolute;left:28px;right:28px;top:262px;height:1px;background:#1a2739}
+  .bio{position:absolute;left:28px;right:28px;top:282px}
   .bio .row{display:flex;align-items:center;gap:11px;margin-bottom:19px}
   .bio .tk{width:4px;height:17px;border-radius:2px;background:#4aa8ff;opacity:.9}
   .bio .tx{font-size:12.5px;letter-spacing:1px;color:#dbe6f3}
-  .holo{position:absolute;right:30px;top:344px;width:52px;height:52px;border-radius:13px;
+  .holo{position:absolute;right:30px;top:346px;width:52px;height:52px;border-radius:13px;
         background:conic-gradient(from 0deg,#4aa8ff,#a78bfa,#f0abfc,#e8a33d,#4aa8ff);opacity:.55;
         animation:holo ${T}s linear infinite;animation-delay:${t}s;animation-play-state:paused}
   .fdiv{position:absolute;left:28px;right:28px;bottom:72px;height:1px;background:#1a2739}
@@ -118,6 +118,7 @@ function page(t) {
         <div class="row"><div class="tk"></div><div class="tx mono">B.TECH CSE · PSIT KANPUR</div></div>
         <div class="row"><div class="tk"></div><div class="tx mono">7+ PRODUCTS SHIPPED</div></div>
         <div class="row"><div class="tk"></div><div class="tx mono">NATIONAL FINALIST 2026</div></div>
+        <div class="row"><div class="tk"></div><div class="tx mono">OPEN TO SDE · AI-ML ROLES</div></div>
       </div>
       <div class="holo"></div>
       <div class="fdiv"></div>
