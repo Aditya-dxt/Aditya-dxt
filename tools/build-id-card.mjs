@@ -53,13 +53,8 @@ function page(t) {
          background:linear-gradient(160deg,#03050b,#070f18)}
   .card{position:absolute;left:40px;top:172px;width:380px;height:540px;border-radius:22px;overflow:hidden;
         background:linear-gradient(155deg,#111b2c,#0a0f1a 55%,#0b1220);border:1px solid rgba(150,178,210,.3);
-        box-shadow:inset 0 1px 0 rgba(255,255,255,.16), inset 0 -26px 44px rgba(0,0,0,.38);
+        box-shadow:inset 0 1px 0 rgba(255,255,255,.10), inset 0 -20px 40px rgba(0,0,0,.24);
         transform-origin:190px 6px;animation:cs ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
-  .gloss{position:absolute;inset:0;pointer-events:none;
-         background:linear-gradient(115deg,rgba(255,255,255,.10) 0 20%,rgba(255,255,255,0) 33%,rgba(255,255,255,0) 62%,rgba(255,255,255,.05) 79%,rgba(255,255,255,0) 88%)}
-  .sweep{position:absolute;top:-30%;bottom:-30%;left:-170px;width:150px;transform:skewX(-18deg);pointer-events:none;
-         background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);
-         animation:sweep ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
   .topline{position:absolute;left:0;top:0;width:380px;height:5px;background:linear-gradient(90deg,#4aa8ff,#a78bfa,#e8a33d)}
   .hdr{position:absolute;left:28px;right:28px;top:26px;display:flex;justify-content:space-between;align-items:center}
   .hdr .l{font-size:10px;letter-spacing:2.6px;color:#a9b8cc}
@@ -70,9 +65,6 @@ function page(t) {
   .photo{position:absolute;left:28px;top:78px;width:156px;height:156px;border-radius:14px;overflow:hidden;border:1px solid #2a4665;background:#0a1018;
          box-shadow:0 6px 14px rgba(0,0,0,.5), 0 0 0 4px rgba(74,168,255,.08)}
   .photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
-  .photo .sheen{position:absolute;top:-20%;bottom:-20%;left:-70px;width:60px;transform:skewX(-16deg);
-        background:linear-gradient(90deg,transparent,rgba(255,255,255,.20),transparent);
-        animation:sheen ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
   .idb{position:absolute;left:196px;top:98px;width:158px}
   .idb .nm{font-size:24px;font-weight:800;color:#f2f6fb;letter-spacing:-.4px;line-height:1.05}
   .idb .rl{font-size:10.5px;letter-spacing:1.1px;color:#9fb0c4;margin-top:7px;line-height:1.5}
@@ -95,8 +87,6 @@ function page(t) {
   @keyframes swing{0%,100%{transform:rotate(-3.1deg)}50%{transform:rotate(3.1deg)}}
   @keyframes cs{0%,100%{transform:rotate(1deg)}50%{transform:rotate(-1deg)}}
   @keyframes dot{0%,100%{opacity:1}50%{opacity:.3}}
-  @keyframes sheen{0%{left:-70px}60%{left:170px}100%{left:170px}}
-  @keyframes sweep{0%{left:-170px}55%{left:400px}100%{left:400px}}
   @keyframes holo{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
   </style></head><body>
   <div class="swing">
@@ -107,7 +97,7 @@ function page(t) {
       <div class="topline"></div>
       <div class="hdr"><div class="l mono">IDENTITY CARD</div><div class="chip"><div class="dot"></div><span class="mono">ACTIVE</span></div></div>
       <div class="rule"></div>
-      <div class="photo"><img src="file:///${AVATAR.replace(/\\/g, '/')}"><div class="sheen"></div></div>
+      <div class="photo"><img src="file:///${AVATAR.replace(/\\/g, '/')}"></div>
       <div class="idb">
         <div class="nm sans">Aditya Dixit</div>
         <div class="rl mono">FULL-STACK &amp; AI ENGINEER</div>
@@ -126,8 +116,6 @@ function page(t) {
         <div class="bar"></div>
         <div class="fid"><div class="a mono">ADX-2026</div><div class="b mono">26.44°N · 80.33°E</div></div>
       </div>
-      <div class="gloss"></div>
-      <div class="sweep"></div>
     </div>
   </div>
   </body></html>`;
