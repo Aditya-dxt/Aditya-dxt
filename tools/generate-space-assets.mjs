@@ -146,7 +146,7 @@ const NEAR = (n, dur) => ({ count: n, rMin: 0.9, rMax: 1.5, opMin: 0.28, opMax: 
 // ---- DNA double-helix "monitor" trace --------------------------------------
 // Two counter-phase sine strands with connecting rungs. The whole group scrolls
 // one full wavelength, which loops seamlessly because the pattern is periodic.
-function dna({ width, amp = 8, lam = 46, dur = 2.8, c1 = C.accent, c2 = '#a78bfa', rung = '#3f6d99' }) {
+function dna({ width, amp = 8, lam = 46, dur = 2.8, sw = 1.6, c1 = C.accent, c2 = '#a78bfa', rung = '#3f6d99' }) {
   const X1 = width + lam;
   let top = '', bot = '';
   for (let x = 0; x <= X1; x += 4) {
@@ -155,15 +155,15 @@ function dna({ width, amp = 8, lam = 46, dur = 2.8, c1 = C.accent, c2 = '#a78bfa
     bot += `${x === 0 ? 'M' : 'L'}${x} ${(amp * Math.sin(ph)).toFixed(1)} `;
   }
   let rungs = '';
-  for (let x = 0; x <= X1; x += lam / 12) {
+  for (let x = 0; x <= X1; x += lam / 10) {
     const y = amp * Math.sin((2 * Math.PI * x) / lam);
     if (Math.abs(y) < 1.3) continue;
-    const o = Math.min(0.8, 0.18 + (Math.abs(y) / amp) * 0.62);
+    const o = Math.min(0.55, 0.1 + (Math.abs(y) / amp) * 0.42);
     rungs += `<line x1="${x.toFixed(1)}" y1="${(-y).toFixed(1)}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="${rung}" stroke-width="1" opacity="${o.toFixed(2)}"/>`;
   }
   return `<g><animateTransform attributeName="transform" type="translate" from="0 0" to="-${lam} 0" dur="${dur}s" repeatCount="indefinite"/>
-    <path d="${top}" fill="none" stroke="${c1}" stroke-width="1.5" stroke-linecap="round" opacity="0.95"/>
-    <path d="${bot}" fill="none" stroke="${c2}" stroke-width="1.5" stroke-linecap="round" opacity="0.9"/>
+    <path d="${top}" fill="none" stroke="${c1}" stroke-width="${sw}" stroke-linecap="round" opacity="0.95"/>
+    <path d="${bot}" fill="none" stroke="${c2}" stroke-width="${sw}" stroke-linecap="round" opacity="0.9"/>
     ${rungs}</g>`;
 }
 
@@ -328,8 +328,8 @@ ${defs()}
     <line x1="690" y1="380" x2="1160" y2="380" stroke="${C.gridHi}"/>
     <text x="714" y="394" font-family="${MONO}" font-size="8" letter-spacing="2" fill="${C.faint}">GENE TRACE · HELIX</text>
     <text x="1136" y="394" text-anchor="end" font-family="${MONO}" font-size="8" letter-spacing="1.4" fill="${C.faint}">SEQ 4.2 KB/S</text>
-    <g transform="translate(714,405)">
-      ${dna({ width: 420, amp: 7.5, lam: 44, dur: 2.8 })}
+    <g transform="translate(714,406)">
+      ${dna({ width: 420, amp: 11, lam: 64, dur: 3.2, sw: 1.8 })}
     </g>
   </g>
 
@@ -447,9 +447,9 @@ ${defs()}
     <text x="40" y="20" font-family="${MONO}" font-size="9" letter-spacing="2" fill="${C.faint}">GENE TRACE · DNA MONITOR</text>
     <text x="1160" y="20" text-anchor="end" font-family="${MONO}" font-size="9" letter-spacing="1.4" fill="${C.faint}">LIVE</text>
   </g>
-  <line x1="40" y1="112" x2="1160" y2="112" stroke="${C.gridHi}"/>
-  <g transform="translate(40,112)">
-    ${dna({ width: 1120, amp: 17, lam: 96, dur: 6, c1: C.accent, c2: '#a78bfa' })}
+  <line x1="40" y1="106" x2="1160" y2="106" stroke="${C.gridHi}"/>
+  <g transform="translate(40,106)">
+    ${dna({ width: 1120, amp: 56, lam: 190, dur: 9, sw: 2.4, c1: C.accent, c2: '#a78bfa' })}
   </g>
 
   <g class="pf-fade" style="animation-delay:.2s">
