@@ -25,7 +25,7 @@ fs.mkdirSync(FRAMES, { recursive: true });
 const CHROME = ['C:/Program Files/Google/Chrome/Application/chrome.exe', 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'].find(fs.existsSync);
 if (!CHROME) { console.error('No Chrome/Edge found'); process.exit(1); }
 
-const W = 360, H = 580, N = 32, T = 3.2; // 32 frames over a 3.2s loop (100ms/frame)
+const W = 460, H = 740, N = 28, T = 3.2; // 28 frames over a 3.2s loop
 const sleep = (ms) => Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
 
 function page(t) {
@@ -34,61 +34,79 @@ function page(t) {
   *{box-sizing:border-box}
   .mono{font-family:'SFMono-Regular','JetBrains Mono',Consolas,'Courier New',monospace}
   .sans{font-family:Inter,'Segoe UI',Arial,sans-serif}
-  .swing{position:absolute;left:0;top:0;width:${W}px;height:${H}px;transform-origin:180px 0px;
+  .swing{position:absolute;left:0;top:0;width:${W}px;height:${H}px;transform-origin:230px 0px;
          animation:swing ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
-  .strap{position:absolute;left:167px;top:0;width:26px;height:96px;border-radius:0 0 4px 4px;
-         background:linear-gradient(180deg,#1b2b3f,#0d1622);border-left:1px solid #2b3f57;border-right:1px solid #2b3f57;
-         box-shadow:inset 3px 0 0 rgba(74,168,255,.25), inset -3px 0 0 rgba(74,168,255,.12)}
-  .strap:after{content:'';position:absolute;left:11px;top:6px;bottom:6px;width:4px;background:rgba(74,168,255,.35);border-radius:2px}
-  .clip{position:absolute;left:150px;top:88px;width:60px;height:34px;border-radius:9px;
-        background:linear-gradient(180deg,#33506d,#16283e);border:1px solid #3a607f}
-  .clip:after{content:'';position:absolute;left:22px;top:-7px;width:14px;height:12px;border:2px solid #3a607f;border-bottom:none;border-radius:7px 7px 0 0}
-  .card{position:absolute;left:40px;top:120px;width:280px;height:430px;border-radius:18px;overflow:hidden;
-        background:linear-gradient(160deg,#0a0f1a,#070b13);border:1px solid #1d2b3d;
-        transform-origin:140px 4px;animation:cs ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
-  .topline{position:absolute;left:0;top:0;width:280px;height:3px;background:linear-gradient(90deg,#4aa8ff,#a78bfa,#e8a33d)}
-  .grid{position:absolute;inset:0;background-image:linear-gradient(#0e1826 1px,transparent 1px),linear-gradient(90deg,#0e1826 1px,transparent 1px);background-size:28px 28px;opacity:.5}
-  .hdr{position:absolute;left:18px;right:18px;top:16px;display:flex;justify-content:space-between;align-items:center}
-  .hdr .l{font-size:8.5px;letter-spacing:2px;color:#8b98a9}
-  .chip{display:flex;align-items:center;gap:5px;border:1px solid #1d2b3d;border-radius:5px;padding:2px 6px;background:#0a1018}
-  .dot{width:5px;height:5px;border-radius:50%;background:#4ade80;animation:dot ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
-  .chip span{font-size:7.5px;letter-spacing:1.3px;color:#9fb0c4}
-  .photo{position:absolute;left:18px;top:44px;width:104px;height:124px;border-radius:12px;overflow:hidden;border:1px solid #24405c;background:#0a1018}
+  .strap{position:absolute;left:216px;top:0;width:28px;height:132px;border-radius:0 0 6px 6px;
+         background:
+           repeating-linear-gradient(62deg,rgba(255,255,255,.06) 0 3px,transparent 3px 6px),
+           repeating-linear-gradient(-62deg,rgba(0,0,0,.30) 0 3px,transparent 3px 6px),
+           linear-gradient(180deg,#22374f,#0d1622);
+         border-left:1px solid #33506f;border-right:1px solid #16283e;
+         box-shadow:inset 4px 0 0 rgba(74,168,255,.18), inset -4px 0 0 rgba(0,0,0,.4)}
+  .strap:after{content:'';position:absolute;left:12px;top:0;bottom:10px;width:4px;border-radius:2px;background:linear-gradient(180deg,rgba(74,168,255,.6),rgba(74,168,255,.12))}
+  .clip{position:absolute;left:188px;top:122px;width:84px;height:48px;border-radius:12px;
+        background:linear-gradient(180deg,#93a9c1,#41546b 44%,#22303f 62%,#6f8499);border:1px solid #9db2c8;
+        box-shadow:0 4px 8px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.65), inset 0 -4px 8px rgba(0,0,0,.55)}
+  .clip:before{content:'';position:absolute;left:31px;top:-12px;width:20px;height:15px;border:3px solid #a6bad0;border-bottom:none;border-radius:10px 10px 0 0}
+  .clip:after{content:'';position:absolute;left:11px;right:11px;top:12px;height:6px;border-radius:3px;background:linear-gradient(180deg,rgba(255,255,255,.4),rgba(255,255,255,0))}
+  .thick{position:absolute;left:47px;top:181px;width:380px;height:540px;border-radius:22px;
+         background:linear-gradient(160deg,#03050b,#070f18)}
+  .card{position:absolute;left:40px;top:172px;width:380px;height:540px;border-radius:22px;overflow:hidden;
+        background:linear-gradient(155deg,#111b2c,#0a0f1a 55%,#0b1220);border:1px solid rgba(150,178,210,.3);
+        box-shadow:inset 0 1px 0 rgba(255,255,255,.16), inset 0 -26px 44px rgba(0,0,0,.38);
+        transform-origin:190px 6px;animation:cs ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
+  .gloss{position:absolute;inset:0;pointer-events:none;
+         background:linear-gradient(115deg,rgba(255,255,255,.10) 0 20%,rgba(255,255,255,0) 33%,rgba(255,255,255,0) 62%,rgba(255,255,255,.05) 79%,rgba(255,255,255,0) 88%)}
+  .sweep{position:absolute;top:-30%;bottom:-30%;left:-170px;width:150px;transform:skewX(-18deg);pointer-events:none;
+         background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);
+         animation:sweep ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
+  .topline{position:absolute;left:0;top:0;width:380px;height:5px;background:linear-gradient(90deg,#4aa8ff,#a78bfa,#e8a33d)}
+  .hdr{position:absolute;left:28px;right:28px;top:26px;display:flex;justify-content:space-between;align-items:center}
+  .hdr .l{font-size:10px;letter-spacing:2.6px;color:#a9b8cc}
+  .chip{display:flex;align-items:center;gap:6px;border:1px solid #23364d;border-radius:6px;padding:3px 8px;background:#0b1420}
+  .dot{width:6px;height:6px;border-radius:50%;background:#4ade80;animation:dot ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
+  .chip span{font-size:9px;letter-spacing:1.4px;color:#b7c6da}
+  .rule{position:absolute;left:28px;right:28px;top:60px;height:1px;background:linear-gradient(90deg,rgba(74,168,255,.55),rgba(74,168,255,0))}
+  .photo{position:absolute;left:28px;top:80px;width:150px;height:182px;border-radius:14px;overflow:hidden;border:1px solid #2a4665;background:#0a1018;
+         box-shadow:0 6px 14px rgba(0,0,0,.5)}
   .photo img{width:100%;height:100%;object-fit:cover;object-position:center 12%;display:block}
-  .photo .sheen{position:absolute;top:-20%;bottom:-20%;width:44px;transform:skewX(-16deg);
-        background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent);
+  .photo .sheen{position:absolute;top:-20%;bottom:-20%;left:-70px;width:60px;transform:skewX(-16deg);
+        background:linear-gradient(90deg,transparent,rgba(255,255,255,.20),transparent);
         animation:sheen ${T}s ease-in-out infinite;animation-delay:${t}s;animation-play-state:paused}
-  .idb{position:absolute;left:134px;top:46px;width:128px}
-  .idb .nm{font-size:17px;font-weight:700;color:#e6edf3;letter-spacing:-.2px}
-  .idb .rl{font-size:8.5px;letter-spacing:1.1px;color:#8b98a9;margin-top:3px;line-height:1.5}
-  .idb .tag{display:inline-block;margin-top:7px;font-size:7.5px;letter-spacing:1.2px;color:#4aa8ff;border:1px solid #1d3b5c;border-radius:4px;padding:2px 6px;background:#0a1626}
-  .div{position:absolute;left:18px;right:18px;top:186px;height:1px;background:#16202e}
-  .bio{position:absolute;left:18px;right:18px;top:200px}
-  .bio .row{display:flex;align-items:center;gap:8px;margin-bottom:11px}
-  .bio .tk{width:3px;height:14px;border-radius:2px;background:#4aa8ff;opacity:.85}
-  .bio .tx{font-size:9px;letter-spacing:1.1px;color:#c9d9ee}
-  .holo{position:absolute;right:20px;top:236px;width:34px;height:34px;border-radius:50%;
-        background:conic-gradient(from 0deg,#4aa8ff,#a78bfa,#f0abfc,#e8a33d,#4aa8ff);opacity:.5;
+  .idb{position:absolute;left:196px;top:98px;width:158px}
+  .idb .nm{font-size:24px;font-weight:800;color:#f2f6fb;letter-spacing:-.4px;line-height:1.05}
+  .idb .rl{font-size:10.5px;letter-spacing:1.1px;color:#9fb0c4;margin-top:7px;line-height:1.5}
+  .idb .tag{display:inline-block;margin-top:11px;font-size:9.5px;letter-spacing:1.3px;color:#79c0ff;border:1px solid #24507d;border-radius:5px;padding:3px 8px;background:#0b1b2e}
+  .div{position:absolute;left:28px;right:28px;top:288px;height:1px;background:#1a2739}
+  .bio{position:absolute;left:28px;right:28px;top:306px}
+  .bio .row{display:flex;align-items:center;gap:11px;margin-bottom:19px}
+  .bio .tk{width:4px;height:17px;border-radius:2px;background:#4aa8ff;opacity:.9}
+  .bio .tx{font-size:12.5px;letter-spacing:1px;color:#dbe6f3}
+  .holo{position:absolute;right:30px;top:344px;width:52px;height:52px;border-radius:13px;
+        background:conic-gradient(from 0deg,#4aa8ff,#a78bfa,#f0abfc,#e8a33d,#4aa8ff);opacity:.55;
         animation:holo ${T}s linear infinite;animation-delay:${t}s;animation-play-state:paused}
-  .foot{position:absolute;left:18px;right:18px;bottom:16px;display:flex;justify-content:space-between;align-items:flex-end}
-  .bar{width:120px;height:30px;opacity:.75;
-       background-image:repeating-linear-gradient(90deg,#8b98a9 0 2px,transparent 2px 3px,#8b98a9 3px 4px,transparent 4px 7px,#8b98a9 7px 8px,transparent 8px 10px,#8b98a9 10px 13px,transparent 13px 14px)}
+  .fdiv{position:absolute;left:28px;right:28px;bottom:72px;height:1px;background:#1a2739}
+  .foot{position:absolute;left:28px;right:28px;bottom:24px;display:flex;justify-content:space-between;align-items:flex-end}
+  .bar{width:168px;height:38px;opacity:.82;
+       background-image:repeating-linear-gradient(90deg,#aab8c9 0 2px,transparent 2px 3px,#aab8c9 3px 4px,transparent 4px 8px,#aab8c9 8px 9px,transparent 9px 12px,#aab8c9 12px 15px,transparent 15px 16px)}
   .fid{text-align:right}
-  .fid .a{font-size:9px;letter-spacing:1.6px;color:#c9d9ee}
-  .fid .b{font-size:7.5px;letter-spacing:1.4px;color:#55637a;margin-top:3px}
-  @keyframes swing{0%,100%{transform:rotate(-3.4deg)}50%{transform:rotate(3.4deg)}}
-  @keyframes cs{0%,100%{transform:rotate(1.1deg)}50%{transform:rotate(-1.1deg)}}
+  .fid .a{font-size:12px;letter-spacing:2px;color:#dbe6f3}
+  .fid .b{font-size:9.5px;letter-spacing:1.5px;color:#6b7c93;margin-top:4px}
+  @keyframes swing{0%,100%{transform:rotate(-3.1deg)}50%{transform:rotate(3.1deg)}}
+  @keyframes cs{0%,100%{transform:rotate(1deg)}50%{transform:rotate(-1deg)}}
   @keyframes dot{0%,100%{opacity:1}50%{opacity:.3}}
-  @keyframes sheen{0%{left:-70px}60%{left:120px}100%{left:120px}}
+  @keyframes sheen{0%{left:-70px}60%{left:170px}100%{left:170px}}
+  @keyframes sweep{0%{left:-170px}55%{left:400px}100%{left:400px}}
   @keyframes holo{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
   </style></head><body>
   <div class="swing">
     <div class="strap"></div>
     <div class="clip"></div>
+    <div class="thick"></div>
     <div class="card">
       <div class="topline"></div>
-      <div class="grid"></div>
       <div class="hdr"><div class="l mono">IDENTITY CARD</div><div class="chip"><div class="dot"></div><span class="mono">ACTIVE</span></div></div>
+      <div class="rule"></div>
       <div class="photo"><img src="file:///${AVATAR.replace(/\\/g, '/')}"><div class="sheen"></div></div>
       <div class="idb">
         <div class="nm sans">Aditya Dixit</div>
@@ -102,10 +120,13 @@ function page(t) {
         <div class="row"><div class="tk"></div><div class="tx mono">NATIONAL FINALIST 2026</div></div>
       </div>
       <div class="holo"></div>
+      <div class="fdiv"></div>
       <div class="foot">
         <div class="bar"></div>
         <div class="fid"><div class="a mono">ADX-2026</div><div class="b mono">26.44°N · 80.33°E</div></div>
       </div>
+      <div class="gloss"></div>
+      <div class="sweep"></div>
     </div>
   </div>
   </body></html>`;
@@ -167,7 +188,7 @@ for (const fr of frames) {
     if (fr.rgba[i * 4 + 3] >= 128) sample.push(fr.rgba[i * 4], fr.rgba[i * 4 + 1], fr.rgba[i * 4 + 2], 255);
   }
 }
-const palette = quantize(Uint8Array.from(sample), 255, { format: 'rgb444' });
+const palette = quantize(Uint8Array.from(sample), 160, { format: 'rgb444' });
 palette.push([0, 0, 0]);            // transparent slot
 const tIndex = palette.length - 1;
 
