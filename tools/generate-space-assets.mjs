@@ -289,26 +289,24 @@ const SECTIONS = [
 ];
 
 function sectionHeader({ n, title, desc, total = '10' }) {
-  const w = 1200, h = 78;
-  const titleWidth = title.length * 16.6;
-  const descX = Math.round(92 + titleWidth + 20);
+  const w = 1200, h = 60;
+  const ocx = 1120, ocy = 30;
+  const arcs = [30, 22, 14].map((r) => `<circle cx="${ocx}" cy="${ocy}" r="${r}" fill="none" stroke="#16283e" stroke-width="1"/>`).join('');
+  const dotX = 58 + desc.length * 9 + 16;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="${esc(title)}">
 ${defs()}
   <rect width="${w}" height="${h}" fill="${C.bg}"/>
-  <line x1="0" y1="0.5" x2="${w}" y2="0.5" stroke="${C.hair}" stroke-width="1"/>
-  <rect x="40" y="20" width="34" height="34" rx="8" fill="${C.panel}" stroke="#1d2b3d">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="3.6s" repeatCount="indefinite"/>
-  </rect>
-  <text x="57" y="43" text-anchor="middle" font-family="${MONO}" font-size="12.5" font-weight="700" fill="${C.accent}">${n}</text>
-  <text x="92" y="46" font-family="${SANS}" font-size="19" font-weight="700" letter-spacing="3.4" fill="${C.text}">${esc(title)}</text>
-  <text x="${descX}" y="45" font-family="${MONO}" font-size="10.5" letter-spacing="1.2" fill="${C.muted}">— ${esc(desc)}</text>
-  <circle cx="126" cy="40" r="2" fill="${C.ok}" class="pf-pulse"/>
-  <text x="1160" y="45" text-anchor="end" font-family="${MONO}" font-size="10" letter-spacing="1.4" fill="${C.faint}">${n} / ${total}</text>
-  <line x1="40" y1="72" x2="1160" y2="72" stroke="${C.hair}" stroke-width="1"/>
-  <rect x="40" y="70" width="58" height="2" fill="${C.accent}"/>
-  <rect x="98" y="70" width="22" height="2" fill="${C.accent}" opacity="0.4"/>
-  <rect x="0" y="69" width="130" height="4" fill="url(#ruleFade)" opacity="0.9">
-    <animateTransform attributeName="transform" type="translate" values="40 0;1030 0;40 0" dur="11s" repeatCount="indefinite"/>
+  <rect x="40" y="21" width="3" height="18" rx="1.5" fill="${C.accent}"/>
+  <text x="58" y="39" font-family="${MONO}" font-size="11" letter-spacing="2.4" fill="${C.muted}">${esc(desc)}</text>
+  <circle cx="${dotX}" cy="30" r="2.4" fill="${C.ok}" class="pf-pulse"/>
+  ${arcs}
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 ${ocx} ${ocy}" to="360 ${ocx} ${ocy}" dur="16s" repeatCount="indefinite"/>
+    <circle cx="${ocx + 30}" cy="${ocy}" r="2.2" fill="${C.accent}"/>
+  </g>
+  <line x1="40" y1="56" x2="1160" y2="56" stroke="${C.hair}" stroke-width="1"/>
+  <rect x="0" y="55" width="150" height="2.5" fill="url(#ruleFade)" opacity="0.9">
+    <animateTransform attributeName="transform" type="translate" values="40 0;1010 0;40 0" dur="11s" repeatCount="indefinite"/>
   </rect>
 </svg>`;
 }

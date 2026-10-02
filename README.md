@@ -19,7 +19,9 @@
 
 </div>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-profile.svg" alt="01 — Profile"/>
+## 01 · Profile
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-profile.svg" alt="Profile section"/>
 
 <table>
 <tr>
@@ -38,7 +40,7 @@ I am a software engineer focused on **production systems** — the kind that car
 <tr>
 <td width="60%" valign="top">
 
-**Operating principles**
+### Operating principles
 
 - **Ship, then refine.** Seven products in production, not a folder of prototypes.
 - **Design the contract first.** Data models, API boundaries and failure modes before implementation.
@@ -69,7 +71,9 @@ practice:
 </tr>
 </table>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-education.svg" alt="02 — Education"/>
+## 02 · Education
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-education.svg" alt="Education section"/>
 
 | Programme | Institution | Result | Period |
 |:---|:---|:---:|:---:|
@@ -77,7 +81,9 @@ practice:
 | **ISC — Class XII (PCM)** | St. Thomas School, Kanpur | **83.4%** · Sports Captain | 2023 — 2024 |
 | **ICSE — Class X** | St. Thomas School, Kanpur | **91.2%** · House Captain | 2021 — 2022 |
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-systems.svg" alt="03 — Technical Systems"/>
+## 03 · Technical Systems
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-systems.svg" alt="Technical systems section"/>
 
 <div align="center">
 
@@ -92,7 +98,9 @@ practice:
 
 </div>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-intelligence.svg" alt="04 — Machine Intelligence"/>
+## 04 · Machine Intelligence
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-intelligence.svg" alt="Machine intelligence section"/>
 
 | Domain | Proficiency | Applied in practice |
 |:---|:---:|:---|
@@ -103,10 +111,12 @@ practice:
 | Semantic / Vector Search | Proficient | Embedding-based retrieval over custom corpora |
 | Explainable ML | Working | Temporal 3D-CNN with Grad-CAM for satellite rainfall prediction |
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-work.svg" alt="05 — Selected Work"/>
+## 05 · Selected Work
 
-### 01 — VarshaDrishti
-**Explainable AI for satellite rainfall prediction** · Team project
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-work.svg" alt="Selected work section"/>
+
+### 01 · VarshaDrishti
+*Explainable AI for satellite rainfall prediction · Team project*
 
 <img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/proj-varshadrishti.svg" alt="VarshaDrishti system architecture"/>
 
@@ -116,13 +126,14 @@ Heavy-rainfall risk forecasting from **INSAT-3DR (MOSDAC)** satellite imagery us
 
 <br/>
 
+### 02 · CivicSentinel AI
+*AI civic-intelligence portal · National Finalist, India Innovates 2026*
+
 <table>
 <tr>
 <td width="52%"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/projects/civicsentinel.jpg" width="100%" alt="CivicSentinel command dashboard"/></td>
 <td width="48%" valign="top">
 
-**02 — CivicSentinel AI**<br/>
-<sub>AI civic-intelligence portal · National Finalist, India Innovates 2026</sub><br/><br/>
 An end-to-end **RAG + LLM** pipeline ingesting citizen complaints in real time — semantic classification, urgency routing and insight generation, with an AI CivicCopilot and a **NetworkX knowledge graph** linking complaints, departments and locations.<br/><br/>
 `OpenAI API` `RAG` `LangChain` `NetworkX` `React`<br/><br/>
 🔗 [Live](https://civicsentinel-admin.onrender.com) · [Source](https://github.com/Aditya-dxt/civicsentinel-ai)
@@ -133,13 +144,14 @@ An end-to-end **RAG + LLM** pipeline ingesting citizen complaints in real time �
 
 <br/>
 
+### 03 · SneakerVault
+*Full-stack e-commerce platform · In production*
+
 <table>
 <tr>
 <td width="52%"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/projects/sneakervault.jpg" width="100%" alt="SneakerVault storefront"/></td>
 <td width="48%" valign="top">
 
-**03 — SneakerVault**<br/>
-<sub>Full-stack e-commerce platform · In production</sub><br/><br/>
 Enterprise-style platform covering the complete order lifecycle — cart, checkout, **Stripe** payments, fulfilment and administration — on Next.js, Node, Express and MongoDB. Secure **JWT authentication with RBAC** on every protected route; MongoDB query and index optimisation cut API latency by **~35%**.<br/><br/>
 `Next.js` `Stripe` `MongoDB` `JWT / RBAC`<br/><br/>
 🔗 [Live](https://sneakervault-india.vercel.app) · [Source](https://github.com/Aditya-dxt/mern-ecommerce-india)
@@ -150,34 +162,32 @@ Enterprise-style platform covering the complete order lifecycle — cart, checko
 
 <br/>
 
-### 04 — RailSage AI
-**Autonomous railway-operations assistant** · FAR AWAY 2026 (team)
-
-🔗 [railsage-ai.vercel.app](https://railsage-ai.vercel.app)
-
-Operations command centre on React 19, Vite, Node and Express. The **Anthropic Claude API** drives a multi-step reasoning feed so operators can audit every AI decision, with **Leaflet** live tracking and multilingual announcements in English, Hindi and Japanese.
-
-`React 19` `Claude API` `Leaflet` `GSAP`
-
-<br/>
+### 04 · CampusIQ
+*Campus management platform · PSIT Kanpur, team lead*
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="52%"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/projects/campusiq.jpg" width="100%" alt="CampusIQ dashboard"/></td>
+<td width="48%" valign="top">
 
-<img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/projects/campusiq.jpg" width="100%" alt="CampusIQ dashboard"/><br/>
-**05 — CampusIQ**<br/>
-<sub>Campus management platform · PSIT Kanpur, team lead</sub><br/><br/>
 React front end, FastAPI back end and a Supabase data layer with an **offline Phi-3-mini** model served through a local tunnel.<br/><br/>
 `React` `FastAPI` `Supabase` `Phi-3-mini`<br/><br/>
 🔗 [Live](https://campus-iq-2-o.vercel.app) · [Source](https://github.com/Aditya-dxt/Campus-IQ-2.O)
 
 </td>
-<td width="50%" valign="top">
+</tr>
+</table>
 
-<img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/projects/brewco.jpg" width="100%" alt="Brew & Co. storefront"/><br/>
-**06 — Brew & Co.**<br/>
-<sub>Editorial storefront · In production</sub><br/><br/>
+<br/>
+
+### 05 · Brew & Co.
+*Editorial storefront · In production*
+
+<table>
+<tr>
+<td width="52%"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/projects/brewco.jpg" width="100%" alt="Brew & Co. storefront"/></td>
+<td width="48%" valign="top">
+
 Premium editorial commerce front end with 3D glassmorphism and scroll-driven motion.<br/><br/>
 `React 18` `Framer Motion` `Tailwind`<br/><br/>
 🔗 [Live](https://brew-and-co-opal.vercel.app) · [Source](https://github.com/Aditya-dxt/brew-and-co-coffee-roasters)
@@ -202,7 +212,11 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
 
 <img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/rule.svg" alt=""/>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-experience.svg" alt="06 — Experience"/>
+## 06 · Experience
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-experience.svg" alt="Experience section"/>
+
+### Professional experience
 
 | Organisation | Role | Period | Focus |
 |:---|:---|:---:|:---|
@@ -211,7 +225,7 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
 | **JP Morgan** | Software Engineering Job Simulation | 2026 | Backend engineering workflows and production-grade delivery practices |
 | **Deloitte** | Technology Job Simulation | 2026 | Structured problem solving and consulting-grade technical documentation |
 
-**Hackathons**
+### Hackathons
 
 | Event | Role | Venue |
 |:---|:---|:---|
@@ -223,7 +237,9 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
 | Hack for Green Bharat | Team lead | Microsoft Office, Gurugram |
 | iQOO Hackathon 2026 | Participant | Bengaluru · Pune · Chennai · Hyderabad |
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-recognition.svg" alt="07 — Recognition"/>
+## 07 · Recognition
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-recognition.svg" alt="Recognition section"/>
 
 | Recognition | Detail | Year |
 |:---|:---|:---:|
@@ -236,11 +252,15 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
 | MERN Full-Stack Certification | Tryst, IIT Delhi | 2025 |
 | Simulations | JP Morgan (Software Engineering) and Deloitte (Technology) | 2026 |
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-credentials.svg" alt="08 — Credentials"/>
+## 08 · Credentials
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-credentials.svg" alt="Credentials section"/>
+
+### Featured certifications
 
 <img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/credentials.svg" alt="Featured certifications"/>
 
-**Supporting certifications**
+### Supporting certifications
 
 | Area | Credentials |
 |:---|:---|
@@ -251,7 +271,11 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
 | 🐍 Fundamentals | UniAthena — Basics of Python · GeeksforGeeks — course completion |
 | 💼 Professional | TCS iON Career Edge — IT Primer, Interview & Job Readiness, Young Professional · Coursera — Project Management with ClickUp · Skill India 5-Day Bootcamp · Google Analytics Certification |
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-telemetry.svg" alt="09 — Telemetry"/>
+## 09 · Telemetry
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-telemetry.svg" alt="Telemetry section"/>
+
+### Coding profiles
 
 <div align="center">
 
@@ -266,7 +290,7 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
 
 </div>
 
-<br/>
+### GitHub activity
 
 <p align="center">
   <img width="49%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/generated/stats.svg" alt="GitHub statistics"/>
@@ -285,7 +309,9 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
   <img width="95%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/output/github-contribution-grid-snake-dark.svg" alt="Contribution graph"/>
 </p>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-contact.svg" alt="10 — Contact"/>
+## 10 · Contact
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-contact.svg" alt="Contact section"/>
 
 <div align="center">
 
