@@ -32,7 +32,20 @@ I’m a **Full-Stack & AI Engineer** focused on building production-ready softwa
 
 **My approach is simple: understand the problem, engineer the system, ship it, and keep improving it.** I enjoy turning ideas into products that are reliable, useful, and built to scale.
 
-**Currently exploring:** AI engineering, intelligent automation, system design, and high-impact full-stack products..
+I’m particularly interested in **AI-powered products, full-stack architecture, developer tools, automation, and systems that turn complex data into actionable insights.** I like working at the intersection of software engineering and applied AI — where models are integrated into useful products rather than treated as isolated experiments.
+
+**Currently exploring:** AI engineering, intelligent automation, system design, scalable APIs, RAG systems, and high-impact full-stack products.
+
+**What I enjoy building:**  
+→ Full-stack web applications with clean and scalable architectures  
+→ AI-powered applications with practical real-world use cases  
+→ Data-driven systems, APIs, dashboards, and automation workflows  
+→ Developer-focused tools that simplify complex processes  
+→ Products that move from **idea → prototype → production**
+
+**Engineering philosophy:**  
+**Build → Test → Ship → Measure → Improve.**  
+I value clean architecture, reliable systems, thoughtful UX, and code that remains maintainable as a product grows.
 
 > *“Build with purpose. Ship with discipline. Improve relentlessly.”*
 
