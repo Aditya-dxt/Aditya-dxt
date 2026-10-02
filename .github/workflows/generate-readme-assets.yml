@@ -15,14 +15,14 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&bg_color=0D1117&title_color=2DD4BF&icon_color=22D3EE&text_color=C9D1D9&count_private=true&hide_rank=true
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&bg_color=05070C&title_color=4AA8FF&icon_color=4AA8FF&text_color=8B98A9&count_private=true&hide_rank=true
           path: assets/generated/stats.svg
           token: ${{ secrets.STATS_TOKEN }}
       - name: Generate top languages card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=0D1117&title_color=2DD4BF&text_color=C9D1D9
+          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=05070C&title_color=4AA8FF&text_color=8B98A9
           path: assets/generated/top-langs.svg
           token: ${{ secrets.STATS_TOKEN }}
       - name: Generate streak stats card

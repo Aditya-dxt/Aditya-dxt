@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 78" width="1200" height="78" role="img" aria-label="TECHNICAL SYSTEMS">
+<defs>
+  <linearGradient id="vign" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#05070c"/>
+    <stop offset="0.6" stop-color="#060910"/>
+    <stop offset="1" stop-color="#04060b"/>
+  </linearGradient>
+  <radialGradient id="gCool" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#4aa8ff" stop-opacity="0.10"/>
+    <stop offset="1" stop-color="#4aa8ff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="gWarm" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#e8a33d" stop-opacity="0.07"/>
+    <stop offset="1" stop-color="#e8a33d" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="body" cx="0.38" cy="0.34" r="0.8">
+    <stop offset="0" stop-color="#9ec5ff"/>
+    <stop offset="0.5" stop-color="#2f6fd0"/>
+    <stop offset="1" stop-color="#0d1c33"/>
+  </radialGradient>
+  <linearGradient id="ruleFade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#4aa8ff" stop-opacity="0"/>
+    <stop offset="0.5" stop-color="#4aa8ff" stop-opacity="0.55"/>
+    <stop offset="1" stop-color="#4aa8ff" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#0e1826" stroke-width="1"/>
+  </pattern>
+  <pattern id="gridHi" width="200" height="200" patternUnits="userSpaceOnUse">
+    <path d="M200 0H0V200" fill="none" stroke="#131f2e" stroke-width="1"/>
+  </pattern>
+  <style><![CDATA[
+    .pf-blink { animation: pf-blink 1.1s steps(1,end) infinite; }
+    @keyframes pf-blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+    .pf-pulse { animation: pf-pulse 2.6s ease-in-out infinite; }
+    @keyframes pf-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+    .pf-rise { animation: pf-rise 1.05s cubic-bezier(.22,.61,.36,1) both; }
+    @keyframes pf-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    .pf-fade { animation: pf-fade 1.2s ease-out both; }
+    @keyframes pf-fade { from { opacity: 0; } to { opacity: 1; } }
+    .pf-role { animation: pf-role 13s linear infinite; }
+    .pf-role-1 { animation-delay: -9.75s; }
+    .pf-role-2 { animation-delay: -6.5s; }
+    .pf-role-3 { animation-delay: -3.25s; }
+    @keyframes pf-role { 0% { opacity: 1; } 23% { opacity: 1; } 25%,100% { opacity: 0; } }
+  ]]></style>
+</defs>
+  <rect width="1200" height="78" fill="#05070c"/>
+  <line x1="0" y1="0.5" x2="1200" y2="0.5" stroke="#16202e" stroke-width="1"/>
+  <rect x="40" y="20" width="34" height="34" rx="8" fill="#090e17" stroke="#1d2b3d"/>
+  <text x="57" y="43" text-anchor="middle" font-family="'SFMono-Regular','JetBrains Mono','Roboto Mono',Consolas,'Liberation Mono',monospace" font-size="12.5" font-weight="700" fill="#4aa8ff">03</text>
+  <text x="92" y="46" font-family="Inter,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="3.4" fill="#e6edf3">TECHNICAL SYSTEMS</text>
+  <text x="394" y="45" font-family="'SFMono-Regular','JetBrains Mono','Roboto Mono',Consolas,'Liberation Mono',monospace" font-size="10.5" letter-spacing="1.2" fill="#8b98a9">— LANGUAGES, FRAMEWORKS, INFRASTRUCTURE</text>
+  <text x="1160" y="45" text-anchor="end" font-family="'SFMono-Regular','JetBrains Mono','Roboto Mono',Consolas,'Liberation Mono',monospace" font-size="10" letter-spacing="1.4" fill="#55637a">03 / 09</text>
+  <line x1="40" y1="72" x2="1160" y2="72" stroke="#16202e" stroke-width="1"/>
+  <rect x="40" y="70" width="58" height="2" fill="#4aa8ff"/>
+  <rect x="98" y="70" width="22" height="2" fill="#4aa8ff" opacity="0.4"/>
+</svg>

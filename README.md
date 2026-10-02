@@ -1,332 +1,273 @@
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/hero.svg" alt="Aditya Dixit — Mission Control"/>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/masthead.svg" alt="Aditya Dixit — profile masthead"/>
 
-</div>
+<br/>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/starfield.svg" alt=""/>
-
-<div align="center">
-
-<a href="https://aditya-dixit.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/MISSION_PORTFOLIO-0A0F1E?style=for-the-badge&logo=vercel&logoColor=5EEAD4"/></a>
-<a href="https://www.linkedin.com/in/aditya-dixit-085862333/" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0A0F1E?style=for-the-badge&logo=linkedin&logoColor=5EEAD4"/></a>
-<a href="https://github.com/Aditya-dxt" target="_blank"><img src="https://img.shields.io/badge/GITHUB-0A0F1E?style=for-the-badge&logo=github&logoColor=C4B5FD"/></a>
-<a href="https://leetcode.com/u/DEVELOPER-404/" target="_blank"><img src="https://img.shields.io/badge/LEETCODE-0A0F1E?style=for-the-badge&logo=leetcode&logoColor=F0ABFC"/></a>
-<a href="https://www.hackerrank.com/profile/aditya_dxt" target="_blank"><img src="https://img.shields.io/badge/HACKERRANK-0A0F1E?style=for-the-badge&logo=hackerrank&logoColor=5EEAD4"/></a>
-<a href="mailto:adityadxt1910@gmail.com" target="_blank"><img src="https://img.shields.io/badge/EMAIL-0A0F1E?style=for-the-badge&logo=gmail&logoColor=F0ABFC"/></a>
-<a href="https://docs.google.com/document/d/1bM6zAa_Rfs-UfpFfdDMZEvY1iYNph6Kbm1TspEHTXcw/edit?usp=sharing" target="_blank"><img src="https://img.shields.io/badge/RESUME-0A0F1E?style=for-the-badge&logo=readdotcv&logoColor=C4B5FD"/></a>
+<a href="https://aditya-dixit.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/PORTFOLIO-111a27?style=for-the-badge&logo=vercel&logoColor=4aa8ff"/></a>
+<a href="https://www.linkedin.com/in/aditya-dixit-085862333/" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-111a27?style=for-the-badge&logo=linkedin&logoColor=4aa8ff"/></a>
+<a href="https://github.com/Aditya-dxt" target="_blank"><img src="https://img.shields.io/badge/GITHUB-111a27?style=for-the-badge&logo=github&logoColor=9fb0c4"/></a>
+<a href="https://leetcode.com/u/DEVELOPER-404/" target="_blank"><img src="https://img.shields.io/badge/LEETCODE-111a27?style=for-the-badge&logo=leetcode&logoColor=9fb0c4"/></a>
+<a href="mailto:adityadxt1910@gmail.com" target="_blank"><img src="https://img.shields.io/badge/EMAIL-111a27?style=for-the-badge&logo=gmail&logoColor=e8a33d"/></a>
+<a href="https://calendly.com/adityadxt1910/30min" target="_blank"><img src="https://img.shields.io/badge/SCHEDULE-111a27?style=for-the-badge&logo=googlecalendar&logoColor=e8a33d"/></a>
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=Aditya-dxt&style=flat-square&color=5EEAD4&label=PROFILE+VIEWS"/>
-<img src="https://img.shields.io/github/followers/Aditya-dxt?style=flat-square&color=22D3EE&label=FOLLOWERS&logo=github&logoColor=white"/>
-<img src="https://img.shields.io/github/stars/Aditya-dxt?style=flat-square&color=A78BFA&label=STARS&logo=github&logoColor=white"/>
+<img src="https://komarev.com/ghpvc/?username=Aditya-dxt&style=flat-square&color=4aa8ff&label=PROFILE+VIEWS"/>
+<img src="https://img.shields.io/github/followers/Aditya-dxt?style=flat-square&color=111a27&labelColor=0a0f18&label=FOLLOWERS&logo=github&logoColor=9fb0c4"/>
+<img src="https://img.shields.io/github/stars/Aditya-dxt?style=flat-square&color=111a27&labelColor=0a0f18&label=STARS&logo=github&logoColor=9fb0c4"/>
 
 </div>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/sec-brief.svg" alt="Mission Brief"/>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-profile.svg" alt="01 — Profile"/>
+
+I am a software engineer focused on **production systems** — the kind that carry real users, real payments and real data. My work sits at the intersection of **full-stack engineering** and **applied machine intelligence**: rigorous backends, careful data models and interfaces, with AI treated as an engineering discipline rather than a novelty.
+
+> *Great software is invisible. It feels inevitable — as though it was always meant to exist.*
 
 <table>
 <tr>
-<td width="62%" valign="top">
+<td width="60%" valign="top">
 
-### 🛰️ Flight Status
+**Operating principles**
 
-I'm **Aditya Dixit** — a **Full-Stack Developer & AI Engineer** who builds production-grade, human-centered products. From high-performance **MERN systems** with secure auth, RBAC, Stripe and real-time engines, to intelligent experiences powered by **OpenAI, Gemini, RAG and LangChain**.
-
-> *"Great software is invisible — it feels inevitable, like it was always meant to exist."*
-
-- 🚀 **Shipping, not prototyping** — 7+ products live on Vercel / Render
-- 🧠 **AI at the core** — RAG pipelines, semantic search, LLM orchestrations, explainable ML
-- 🔐 **Full-stack depth** — JWT + RBAC, Stripe payments, multi-tenant design, optimized MongoDB
-- 🏆 **National Finalist** — India Innovates 2026 (CivicSentinel AI) at Bharat Mandapam
-- 🎯 **300+ DSA problems** solved · HackerRank **4★ Java**
-- 🌍 **Open to** SDE / AI-ML internships & open-source collaboration
+- **Ship, then refine.** Seven products in production, not a folder of prototypes.
+- **Design the contract first.** Data models, API boundaries and failure modes before implementation.
+- **Security is structural.** JWT + RBAC, validated inputs and least-privilege access by default.
+- **Measure the outcome.** Query and payload optimisation with numbers attached — e.g. a ~35% latency reduction on SneakerVault.
+- **Keep intelligence explainable.** RAG with citations, Grad-CAM for model decisions.
 
 </td>
-<td width="38%" valign="top">
+<td width="40%" valign="top">
 
 ```yaml
-# ── FLIGHT PLAN ──────────────
-callsign: Aditya Dixit
-origin:   Kanpur, India
-role:     Full-Stack + AI Engineer
-status:   OPEN TO INTERNSHIPS
-motto:    >
-  Shipping production code —
-  not just prototypes.
+profile:
+  role:      Full-Stack & AI Engineer
+  location:  Kanpur, Uttar Pradesh, India
+  education: B.Tech CSE, PSIT Kanpur
 
-currently:
-  building:   AI-native SaaS
-  learning:   System Design & DL
-  exploring:  Vector DBs, Agentic AI,
-              Multi-Agent Workflows
+status:
+  availability: open to SDE / AI-ML roles
+  focus:        production AI-native software
+
+practice:
+  building:  scalable full-stack systems
+  learning:  system design & deep learning
+  exploring: vector search, agentic workflows
 ```
 
 </td>
 </tr>
 </table>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/divider.svg" alt=""/>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-education.svg" alt="02 — Education"/>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/sec-education.svg" alt="Crew Training"/>
-
-<div align="center">
-
-| 🎓 Mission | 🛰️ Station | 📊 Telemetry | 📅 Window |
+| Programme | Institution | Result | Period |
 |:---|:---|:---:|:---:|
-| **B.Tech, Computer Science & Engineering** | Pranveer Singh Institute of Technology (PSIT), Kanpur | **GPA 7.27** · 3rd Year / Sem 5 | **2024 — 2028** |
-| **ISC Class XII (PCM)** | St. Thomas School, Kanpur | **83.4%** · Sports Captain | 2023 — 2024 |
-| **ICSE Class X** | St. Thomas School, Kanpur | **91.2%** · House Captain | 2021 — 2022 |
+| **B.Tech, Computer Science & Engineering** | Pranveer Singh Institute of Technology, Kanpur | GPA **7.27** · 3rd year | 2024 — 2028 |
+| **ISC — Class XII (PCM)** | St. Thomas School, Kanpur | **83.4%** · Sports Captain | 2023 — 2024 |
+| **ICSE — Class X** | St. Thomas School, Kanpur | **91.2%** · House Captain | 2021 — 2022 |
 
-</div>
-
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/sec-systems.svg" alt="Onboard Systems"/>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-systems.svg" alt="03 — Technical Systems"/>
 
 <div align="center">
 
-| 🧪 Languages | ⚛️ Frontend | 🛠️ Backend | 🗄️ Data | 🧠 AI / ML | ☁️ Cloud & Tools |
+| Languages | Frontend | Backend | Data | AI / ML | Infrastructure |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | <img src="https://skillicons.dev/icons?i=java" width="34"/><br/>Java | <img src="https://skillicons.dev/icons?i=react" width="34"/><br/>React | <img src="https://skillicons.dev/icons?i=nodejs" width="34"/><br/>Node.js | <img src="https://skillicons.dev/icons?i=mongodb" width="34"/><br/>MongoDB | <img src="https://img.shields.io/badge/-412991?style=flat-square&logo=openai&logoColor=white" height="20"/><br/>OpenAI | <img src="https://skillicons.dev/icons?i=git" width="34"/><br/>Git |
 | <img src="https://skillicons.dev/icons?i=python" width="34"/><br/>Python | <img src="https://skillicons.dev/icons?i=nextjs" width="34"/><br/>Next.js | <img src="https://skillicons.dev/icons?i=express" width="34"/><br/>Express | <img src="https://skillicons.dev/icons?i=postgres" width="34"/><br/>PostgreSQL | <img src="https://img.shields.io/badge/-1C3C3C?style=flat-square&logo=langchain&logoColor=white" height="20"/><br/>LangChain | <img src="https://skillicons.dev/icons?i=github" width="34"/><br/>GitHub |
 | <img src="https://skillicons.dev/icons?i=ts" width="34"/><br/>TypeScript | <img src="https://skillicons.dev/icons?i=tailwind" width="34"/><br/>Tailwind | <img src="https://skillicons.dev/icons?i=fastapi" width="34"/><br/>FastAPI | <img src="https://skillicons.dev/icons?i=redis" width="34"/><br/>Redis | <img src="https://img.shields.io/badge/-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" height="20"/><br/>Gemini | <img src="https://skillicons.dev/icons?i=vercel" width="34"/><br/>Vercel |
-| <img src="https://skillicons.dev/icons?i=cpp" width="34"/><br/>C++ | <img src="https://skillicons.dev/icons?i=threejs" width="34"/><br/>Three.js | <img src="https://skillicons.dev/icons?i=prisma" width="34"/><br/>Prisma | <img src="https://skillicons.dev/icons?i=mysql" width="34"/><br/>MySQL | <img src="https://img.shields.io/badge/RAG_/_Vector_DB-0A0F1E?style=flat-square&logo=databricks&logoColor=5EEAD4" height="20"/><br/>RAG / Vector DB | <img src="https://skillicons.dev/icons?i=render" width="34"/><br/>Render |
-| <img src="https://skillicons.dev/icons?i=c" width="34"/><br/>C | <img src="https://skillicons.dev/icons?i=framer" width="34"/><br/>Framer Motion | <img src="https://skillicons.dev/icons?i=django" width="34"/><br/>Django | <img src="https://skillicons.dev/icons?i=firebase" width="34"/><br/>Firebase | <img src="https://img.shields.io/badge/Prompt_Engineering-6D28D9?style=flat-square&logo=openai&logoColor=white" height="20"/><br/>Prompt Eng. | <img src="https://skillicons.dev/icons?i=postman" width="34"/><br/>Postman |
-| <img src="https://skillicons.dev/icons?i=html,css" width="34"/><br/>HTML / CSS | <img src="https://skillicons.dev/icons?i=vite" width="34"/><br/>Vite | <img src="https://skillicons.dev/icons?i=supabase" width="34"/><br/>Supabase | <img src="https://skillicons.dev/icons?i=prisma" width="34"/><br/>Drizzle | <img src="https://img.shields.io/badge/Agentic_AI-1E293B?style=flat-square&logo=probot&logoColor=C4B5FD" height="20"/><br/>Agentic AI | <img src="https://img.shields.io/badge/Antigravity-1E293B?style=flat-square&logo=starship&logoColor=5EEAD4" height="20"/><br/>Antigravity |
+| <img src="https://skillicons.dev/icons?i=cpp" width="34"/><br/>C++ | <img src="https://skillicons.dev/icons?i=threejs" width="34"/><br/>Three.js | <img src="https://skillicons.dev/icons?i=prisma" width="34"/><br/>Prisma | <img src="https://skillicons.dev/icons?i=mysql" width="34"/><br/>MySQL | <img src="https://img.shields.io/badge/RAG_/_Vector_DB-111a27?style=flat-square&logo=databricks&logoColor=4aa8ff" height="20"/><br/>RAG · Vector DB | <img src="https://skillicons.dev/icons?i=render" width="34"/><br/>Render |
+| <img src="https://skillicons.dev/icons?i=c" width="34"/><br/>C | <img src="https://skillicons.dev/icons?i=framer" width="34"/><br/>Framer Motion | <img src="https://skillicons.dev/icons?i=django" width="34"/><br/>Django | <img src="https://skillicons.dev/icons?i=firebase" width="34"/><br/>Firebase | <img src="https://img.shields.io/badge/Prompt_Engineering-111a27?style=flat-square&logo=openai&logoColor=9fb0c4" height="20"/><br/>Prompt Eng. | <img src="https://skillicons.dev/icons?i=postman" width="34"/><br/>Postman |
+| <img src="https://skillicons.dev/icons?i=html,css" width="34"/><br/>HTML / CSS | <img src="https://skillicons.dev/icons?i=vite" width="34"/><br/>Vite | <img src="https://skillicons.dev/icons?i=supabase" width="34"/><br/>Supabase | <img src="https://skillicons.dev/icons?i=prisma" width="34"/><br/>Drizzle / Prisma | <img src="https://img.shields.io/badge/Agentic_AI-111a27?style=flat-square&logo=probot&logoColor=4aa8ff" height="20"/><br/>Agentic AI | <img src="https://img.shields.io/badge/Antigravity-111a27?style=flat-square&logo=starship&logoColor=9fb0c4" height="20"/><br/>Antigravity |
 
 </div>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/sec-ai.svg" alt="Neural Core"/>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-intelligence.svg" alt="04 — Machine Intelligence"/>
 
-<div align="center">
-
-| 🧠 Domain | 📡 Level | 🛰️ Deployed In |
+| Domain | Proficiency | Applied in practice |
 |:---|:---:|:---|
-| Prompt Engineering | ▰▰▰▰▰ | Structured prompting across every AI product shipped |
-| LLM Integration | ▰▰▰▰▱ | OpenAI **&** Gemini APIs — production orchestration (CivicSentinel) |
-| RAG Pipelines | ▰▰▰▰▱ | Real-time contextual retrieval over custom knowledge bases |
-| LangChain | ▰▰▰▰▱ | Chained workflows for semantic classification & retrieval |
-| Semantic Search | ▰▰▰▰▱ | Vector search over domain-specific embeddings |
-| Explainable ML | ▰▰▰▱▱ | Temporal 3D-CNN + Grad-CAM for satellite rainfall prediction (VarshaDrishti) |
+| Prompt Engineering | Advanced | Structured prompting and evaluation across every AI product shipped |
+| LLM Integration | Proficient | OpenAI **&** Gemini APIs, production orchestration and guardrails |
+| Retrieval-Augmented Generation | Proficient | Contextual retrieval with citations over domain knowledge bases |
+| LangChain | Proficient | Chained workflows for classification, retrieval and synthesis |
+| Semantic / Vector Search | Proficient | Embedding-based retrieval over custom corpora |
+| Explainable ML | Working | Temporal 3D-CNN with Grad-CAM for satellite rainfall prediction |
 
-</div>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-work.svg" alt="05 — Selected Work"/>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/starfield.svg" alt=""/>
+### 01 — VarshaDrishti
+**Explainable AI for satellite rainfall prediction** · SIH 2026, ISRO problem statement
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/sec-missions.svg" alt="Deployed Missions"/>
+Heavy-rainfall risk forecasting from **INSAT-3DR (MOSDAC)** satellite data using a temporal 3D-CNN, four-class risk classification, **Grad-CAM explainability** and a FastAPI + React live-inference dashboard.
 
-### ◇ MISSION 01 · VarshaDrishti
-**Explainable AI for Satellite Rainfall Prediction** &nbsp;·&nbsp; `SIH 2026 · ISRO Theme` &nbsp;·&nbsp; ![status](https://img.shields.io/badge/STATUS-IN_ORBIT-0A0F1E?style=flat-square&logoColor=5EEAD4&color=5EEAD4)
-
-> Heavy-rainfall risk forecasting from **INSAT-3DR (MOSDAC)** satellite data using a **temporal 3D-CNN**, four-class risk classification, **Grad-CAM explainability**, and a **FastAPI + React** live-inference dashboard.
-
-`Python` · `PyTorch` · `FastAPI` · `Grad-CAM` · `RAG`
+`Python` `PyTorch` `FastAPI` `Grad-CAM`
 
 <br/>
 
-### ◇ MISSION 02 · CivicSentinel AI
-**AI Civic Intelligence Portal** &nbsp;·&nbsp; `🏆 NATIONAL FINALIST — India Innovates 2026` &nbsp;·&nbsp; ![status](https://img.shields.io/badge/STATUS-DEPLOYED-0A0F1E?style=flat-square&color=A78BFA)
+### 02 — CivicSentinel AI
+**AI civic-intelligence portal** · National Finalist, India Innovates 2026
 
-🔗 **Live:** [civicsentinel-admin.onrender.com](https://civicsentinel-admin.onrender.com) &nbsp;·&nbsp; **Repo:** [Aditya-dxt/civicsentinel-ai](https://github.com/Aditya-dxt/civicsentinel-ai)
+🔗 [civicsentinel-admin.onrender.com](https://civicsentinel-admin.onrender.com) · [source](https://github.com/Aditya-dxt/civicsentinel-ai)
 
-- End-to-end **RAG + LLM** pipeline for real-time complaint ingestion, **semantic classification**, urgency routing and insight generation.
-- **AI CivicCopilot** chat plus a **NetworkX knowledge graph** linking complaints, departments and locations.
-- Separate **Citizen** and **Admin** dashboards — citizens track complaints end-to-end while admins get an aggregated operations view.
-- Geo-tagged complaint routing built for real municipal workflows.
+An end-to-end **RAG + LLM** pipeline ingesting citizen complaints in real time — semantic classification, urgency routing and insight generation. Includes an AI CivicCopilot and a **NetworkX knowledge graph** linking complaints, departments and locations across separate citizen and administrator surfaces.
 
-`OpenAI API` · `RAG` · `LangChain` · `NetworkX` · `React`
+`OpenAI API` `RAG` `LangChain` `NetworkX` `React`
 
 <br/>
 
-### ◇ MISSION 03 · SneakerVault
-**Full-Stack E-Commerce Platform** &nbsp;·&nbsp; `Full order lifecycle` &nbsp;·&nbsp; ![status](https://img.shields.io/badge/STATUS-LIVE-0A0F1E?style=flat-square&color=5EEAD4)
+### 03 — SneakerVault
+**Full-stack e-commerce platform** · In production
 
-🔗 **Live:** [sneakervault-india.vercel.app](https://sneakervault-india.vercel.app) &nbsp;·&nbsp; **Repo:** [Aditya-dxt/mern-ecommerce-india](https://github.com/Aditya-dxt/mern-ecommerce-india)
+🔗 [sneakervault-india.vercel.app](https://sneakervault-india.vercel.app) · [source](https://github.com/Aditya-dxt/mern-ecommerce-india)
 
-- Architected an enterprise-style platform — **cart, checkout, Stripe payments, fulfillment and admin management** on **Next.js / Node / Express / MongoDB**.
-- Secure **JWT authentication with Role-Based Access Control**, cleanly separating user and admin permissions on every protected route.
-- Optimized MongoDB query patterns and indexing — **~35% API latency reduction** under real load.
-- Diagnosed and resolved a **production CORS incident** across the Vercel/Render split-origin setup with zero downtime.
+Enterprise-style platform covering the complete order lifecycle — cart, checkout, **Stripe** payments, fulfilment and administration — on Next.js, Node, Express and MongoDB. Secure **JWT authentication with RBAC** on every protected route; MongoDB query and index optimisation reduced API latency by **~35%**; a production CORS fault across the split-origin deployment was diagnosed and resolved with zero downtime.
 
-`Next.js` · `Stripe` · `MongoDB` · `JWT / RBAC`
+`Next.js` `Stripe` `MongoDB` `JWT / RBAC`
 
 <br/>
 
-### ◇ MISSION 04 · RailSage AI
-**Autonomous Railway Operations Assistant** *(Team Project)* &nbsp;·&nbsp; `FAR AWAY 2026`
+### 04 — RailSage AI
+**Autonomous railway-operations assistant** · FAR AWAY 2026 (team)
 
-🔗 **Live:** [railsage-ai.vercel.app](https://railsage-ai.vercel.app)
+🔗 [railsage-ai.vercel.app](https://railsage-ai.vercel.app)
 
-- AI railway operations command center built with **React 19, Vite, Node, Express, Leaflet and GSAP**.
-- **Anthropic Claude API** powering a **multi-step reasoning feed** — operators see every AI decision as it happens.
-- **Live map-based tracking** with Leaflet for real-time train positions and route data.
-- **Multilingual announcements** across English, Hindi and Japanese.
+Operations command centre on React 19, Vite, Node and Express. The **Anthropic Claude API** drives a multi-step reasoning feed so operators can audit every AI decision, with **Leaflet** live tracking and multilingual announcements in English, Hindi and Japanese.
 
-`React 19` · `Claude API` · `Leaflet` · `GSAP`
+`React 19` `Claude API` `Leaflet` `GSAP`
 
 <br/>
 
-### ◇ MISSION 05 · CampusIQ
-**Campus Management Platform** &nbsp;·&nbsp; `PSIT Kanpur team lead`
+### 05 — CampusIQ
+**Campus management platform** · PSIT Kanpur, team lead
 
-🔗 **Live:** [campus-iq-2-o.vercel.app](https://campus-iq-2-o.vercel.app) &nbsp;·&nbsp; **Repo:** [Aditya-dxt/Campus-IQ-2.O](https://github.com/Aditya-dxt/Campus-IQ-2.O)
+🔗 [campus-iq-2-o.vercel.app](https://campus-iq-2-o.vercel.app) · [source](https://github.com/Aditya-dxt/Campus-IQ-2.O)
 
-> Full-stack campus platform — React frontend, FastAPI backend, Supabase DB and an **offline Phi-3-mini LLM** served through a local tunnel.
+React front end, FastAPI back end and Supabase data layer with an **offline Phi-3-mini** model served through a local tunnel.
 
-`React` · `FastAPI` · `Supabase` · `Phi-3-mini`
+`React` `FastAPI` `Supabase` `Phi-3-mini`
 
 <br/>
 
-### ◇ MISSION 06 · Brew & Co.
-**Artisan Coffee Roasters**
+### 06 — Brew & Co.
+**Editorial storefront** · In production
 
-🔗 **Live:** [brew-and-co-opal.vercel.app](https://brew-and-co-opal.vercel.app) &nbsp;·&nbsp; **Repo:** [Aditya-dxt/brew-and-co-coffee-roasters](https://github.com/Aditya-dxt/brew-and-co-coffee-roasters)
+🔗 [brew-and-co-opal.vercel.app](https://brew-and-co-opal.vercel.app) · [source](https://github.com/Aditya-dxt/brew-and-co-coffee-roasters)
 
-> Premium editorial storefront with 3D glassmorphism and scroll-driven motion.
+Premium editorial commerce front end with 3D glassmorphism and scroll-driven motion.
 
-`React 18` · `Framer Motion` · `Tailwind`
+`React 18` `Framer Motion` `Tailwind`
 
 <br/>
 
 <details>
-<summary><b>🛰️ Docked Modules — more repositories</b></summary>
+<summary><b>Additional repositories</b></summary>
 
 <br/>
 
-| Module | Description |
+| Repository | Description |
 |:---|:---|
-| 🏘️ **[society-maintenance-tracker](https://github.com/Aditya-dxt/society-maintenance-tracker)** | Multi-tenant complaint & notice-board platform for apartment societies |
-| 🌱 **[sprout-task-tracker](https://github.com/Aditya-dxt/sprout-task-tracker)** | MERN Kanban tracker where tasks visually grow as they progress |
+| [society-maintenance-tracker](https://github.com/Aditya-dxt/society-maintenance-tracker) | Multi-tenant complaint and notice-board platform for residential societies |
+| [sprout-task-tracker](https://github.com/Aditya-dxt/sprout-task-tracker) | MERN Kanban tracker where tasks grow visually as they progress |
 
 </details>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/starfield.svg" alt=""/>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/rule.svg" alt=""/>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/sec-flightlog.svg" alt="Flight Log"/>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-experience.svg" alt="06 — Experience"/>
 
-<table align="center">
-<tr>
-<th align="left">💼 Station</th>
-<th align="left">🛰️ Role</th>
-<th align="left">🔧 Payload</th>
-</tr>
-<tr>
-<td valign="top"><b>FlyRank AI</b><br/><sub>Jul 2026 — Aug 2026</sub></td>
-<td valign="top"><b>Front-End AI Engineering Intern</b></td>
-<td valign="top">Built React-based AI-powered frontend features for products serving <b>130+ countries</b>; structured AI-assisted workflows with Claude Code &amp; Cursor.</td>
-</tr>
-<tr>
-<td valign="top"><b>Prodigy InfoTech</b><br/><sub>Jul 2026</sub></td>
-<td valign="top"><b>Full-Stack Web Development Intern</b></td>
-<td valign="top">JWT-authenticated MERN app with RBAC, CRUD employee dashboard, e-commerce bookstore with cart/order tracking and Socket.IO real-time chat. Completed with outstanding remarks.</td>
-</tr>
-<tr>
-<td valign="top"><b>JP Morgan</b><br/><sub>2026</sub></td>
-<td valign="top"><b>Software Engineering Job Simulation</b></td>
-<td valign="top">Backend engineering workflows in a simulated enterprise environment; production-grade delivery practices.</td>
-</tr>
-<tr>
-<td valign="top"><b>Deloitte</b><br/><sub>2026</sub></td>
-<td valign="top"><b>Technology Job Simulation</b></td>
-<td valign="top">Structured problem-solving on business technology challenges; consulting-grade technical documentation.</td>
-</tr>
-</table>
+| Organisation | Role | Period | Focus |
+|:---|:---|:---:|:---|
+| **FlyRank AI** | Front-End AI Engineering Intern | Jul — Aug 2026 | React-based AI product surfaces serving **130+ countries**; AI-assisted workflows with Claude Code and Cursor |
+| **Prodigy InfoTech** | Full-Stack Web Development Intern | Jul 2026 | JWT + RBAC MERN application, employee dashboard, e-commerce bookstore and Socket.IO chat; completed with outstanding remarks |
+| **JP Morgan** | Software Engineering Job Simulation | 2026 | Backend engineering workflows and production-grade delivery practices |
+| **Deloitte** | Technology Job Simulation | 2026 | Structured problem solving and consulting-grade technical documentation |
 
-<br/>
+**Hackathons**
 
-### 🏁 Hackathon Orbit
-
-<div align="center">
-
-| Event | Role | Orbit / Venue |
+| Event | Role | Venue |
 |:---|:---|:---|
-| 🏆 **India Innovates 2026** | Team Leader — **Finalist** | Bharat Mandapam, New Delhi |
-| 🚀 **FAR AWAY 2026** (Zuup) | Team Leader — **Semi-Finalist** | Delhi → Japan Grand Finale |
-| 🛰️ **iQOO Hackathon 2026** | Participant | Bengaluru · Pune · Chennai · Hyderabad |
-| 🌱 **Hack for Green Bharat** | Team Leader | Microsoft Office, Gurugram |
-| 🤖 **National AI/ML Hackathon (AVEVA)** | Team Leader | IIT Hyderabad · YUVAAN 2026 |
-| ⚡ **Hack It Out — Technex '26** | Team Leader | IIT BHU, Varanasi |
-| 🧭 **Smart India Hackathon 2026** | Team Leader | ISRO track — VarshaDrishti |
+| India Innovates 2026 | Team lead — **Finalist** | Bharat Mandapam, New Delhi |
+| FAR AWAY 2026 (Zuup) | Team lead — **Semi-finalist** | Delhi → Japan finale |
+| Smart India Hackathon 2026 | Team lead | ISRO track — VarshaDrishti |
+| National AI/ML Hackathon (AVEVA) | Team lead | IIT Hyderabad, YUVAAN 2026 |
+| Hack It Out — Technex '26 | Team lead | IIT BHU, Varanasi |
+| Hack for Green Bharat | Team lead | Microsoft Office, Gurugram |
+| iQOO Hackathon 2026 | Participant | Bengaluru · Pune · Chennai · Hyderabad |
 
-</div>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-recognition.svg" alt="07 — Recognition"/>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/sec-patches.svg" alt="Mission Patches"/>
+| Recognition | Detail | Year |
+|:---|:---|:---:|
+| National Finalist | India Innovates 2026 — AI civic-tech platform, Bharat Mandapam | 2026 |
+| Semi-finalist | FAR AWAY 2026 — international youth hackathon | 2026 |
+| AWS Summit Champion | AWS Summit India Online | 2026 |
+| Problem Solving | 300+ LeetCode problems · HackerRank 4★ Java, 3★ Problem Solving | — |
+| State-level athlete | Basketball, representing Kanpur Nagar | 2023 — 24 |
+| Leadership | House Captain '22–23 and Sports Captain '23–24 — 400+ student cohorts | 2022 — 24 |
+| MERN Full-Stack Certification | Tryst, IIT Delhi | 2025 |
+| Simulations | JP Morgan (Software Engineering) and Deloitte (Technology) | 2026 |
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-telemetry.svg" alt="08 — Telemetry"/>
 
 <div align="center">
 
-| 🎖️ Patch | 📡 Details |
+<a href="https://leetcode.com/u/DEVELOPER-404/"><img src="https://img.shields.io/badge/LEETCODE-300%2B_SOLVED-111a27?style=for-the-badge&logo=leetcode&logoColor=4aa8ff"/></a>
+<a href="https://www.hackerrank.com/profile/aditya_dxt"><img src="https://img.shields.io/badge/HACKERRANK-4%E2%98%85_JAVA-111a27?style=for-the-badge&logo=hackerrank&logoColor=9fb0c4"/></a>
+<a href="https://www.geeksforgeeks.org/user/adityadxt1910"><img src="https://img.shields.io/badge/GEEKSFORGEEKS-PROFILE-111a27?style=for-the-badge&logo=geeksforgeeks&logoColor=9fb0c4"/></a>
+<a href="https://www.codechef.com/users/adityadxt1910"><img src="https://img.shields.io/badge/CODECHEF-PROFILE-111a27?style=for-the-badge&logo=codechef&logoColor=e8a33d"/></a>
+
+<br/><br/>
+
+<a href="https://leetcode.com/u/DEVELOPER-404/"><img src="https://leetcode-badge-showcase.vercel.app/api?username=DEVELOPER-404&theme=github-dark&animated=true" alt="LeetCode badges"/></a>
+
+</div>
+
+<br/>
+
+<p align="center">
+  <img width="49%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/generated/stats.svg" alt="GitHub statistics"/>
+  <img width="49%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/generated/top-langs.svg" alt="Most-used languages"/>
+</p>
+
+<p align="center">
+  <img width="58%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/generated/streak-stats.svg" alt="Contribution streak"/>
+</p>
+
+<p align="center">
+  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Aditya-dxt&theme=react-dark&hide_border=true&bg_color=05070C&color=4AA8FF&line=2F5478&point=E8A33D" alt="Contribution activity"/>
+</p>
+
+<p align="center">
+  <img width="95%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/output/github-contribution-grid-snake-dark.svg" alt="Contribution graph"/>
+</p>
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-contact.svg" alt="09 — Contact"/>
+
+<div align="center">
+
+| Channel | Address |
 |:---|:---|
-| 🏆 National Finalist | **India Innovates 2026** — AI civic-tech platform, Bharat Mandapam |
-| 🥈 Semi-Finalist | **FAR AWAY 2026** — India's biggest international youth hackathon |
-| ☁️ AWS Summit Champion | AWS Summit India Online 2026 |
-| 🧩 DSA | **300+ LeetCode** problems · HackerRank **4★ Java**, 3★ Problem Solving |
-| 🏀 State-Level Athlete | Basketball, representing Kanpur Nagar |
-| 👑 Leadership | House Captain '22–23 & Sports Captain '23–24 — led 400+ cohorts |
-| 🎓 MERN Full-Stack Certified | Tryst, IIT Delhi |
-| 🤖 AI Bootcamp Graduate | 3-Day AI/ML workshop |
-| 🎤 E-Summit IIT Kanpur | 2K24 & 2K25 · Bitathon & TATA Crucible 2025 |
-| 💼 Simulations | JP Morgan (Software Engineering) & Deloitte (Technology) |
-
-</div>
-
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/sec-telemetry.svg" alt="Telemetry"/>
-
-<div align="center">
-
-<a href="https://leetcode.com/u/DEVELOPER-404/"><img src="https://img.shields.io/badge/LeetCode-300%2B%20Problems-0A0F1E?style=for-the-badge&logo=leetcode&logoColor=F0ABFC"/></a>
-<a href="https://www.hackerrank.com/profile/aditya_dxt"><img src="https://img.shields.io/badge/HackerRank-4%E2%98%85%20Java-0A0F1E?style=for-the-badge&logo=hackerrank&logoColor=5EEAD4"/></a>
-<a href="https://www.geeksforgeeks.org/user/adityadxt1910"><img src="https://img.shields.io/badge/GeeksforGeeks-Profile-0A0F1E?style=for-the-badge&logo=geeksforgeeks&logoColor=5EEAD4"/></a>
-<a href="https://www.codechef.com/users/adityadxt1910"><img src="https://img.shields.io/badge/CodeChef-Profile-0A0F1E?style=for-the-badge&logo=codechef&logoColor=C4B5FD"/></a>
-
-<br/><br/>
-
-<a href="https://leetcode.com/u/DEVELOPER-404/"><img src="https://leetcode-badge-showcase.vercel.app/api?username=DEVELOPER-404&theme=github-dark&animated=true" alt="LeetCode Badges"/></a>
-
-</div>
+| Email | [adityadxt1910@gmail.com](mailto:adityadxt1910@gmail.com) |
+| LinkedIn | [in/aditya-dixit-085862333](https://www.linkedin.com/in/aditya-dixit-085862333/) |
+| GitHub | [github.com/Aditya-dxt](https://github.com/Aditya-dxt) |
+| LeetCode | [u/DEVELOPER-404](https://leetcode.com/u/DEVELOPER-404/) |
+| Portfolio | [aditya-dixit.vercel.app](https://aditya-dixit.vercel.app/) |
+| Booking | [calendly.com/adityadxt1910](https://calendly.com/adityadxt1910/30min) |
 
 <br/>
 
-<p align="center">
-  <img width="49%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/generated/stats.svg" alt="GitHub Stats"/>
-  <img width="49%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/generated/top-langs.svg" alt="Top Languages"/>
-</p>
-
-<p align="center">
-  <img width="60%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/generated/streak-stats.svg" alt="Streak Stats"/>
-</p>
-
-<p align="center">
-  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Aditya-dxt&theme=react-dark&hide_border=true&bg_color=040611&color=5EEAD4&line=22D3EE&point=C4B5FD" alt="Contribution Activity"/>
-</p>
-
-<p align="center">
-  <img width="95%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake"/>
-</p>
-
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/divider.svg" alt=""/>
-
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/sec-uplink.svg" alt="Establish Uplink"/>
-
-<div align="center">
-
-| 📚 Learning | 🏗️ Building | 🔍 Exploring | 🎯 Open To |
-|:---:|:---:|:---:|:---:|
-| Advanced System Design · Distributed Architectures · Deep Learning | AI-native SaaS · Scalable full-stack systems | Vector DBs · Advanced RAG · Agentic AI · Multi-Agent Workflows | SDE Internships · AI/ML Roles · Open Source |
+**Open to software engineering internships, AI/ML roles and open-source collaboration.**
 
 <br/>
 
-<a href="https://www.linkedin.com/in/aditya-dixit-085862333/" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0A0F1E?style=for-the-badge&logo=linkedin&logoColor=5EEAD4"/></a>
-<a href="https://github.com/Aditya-dxt" target="_blank"><img src="https://img.shields.io/badge/GITHUB-0A0F1E?style=for-the-badge&logo=github&logoColor=C4B5FD"/></a>
-<a href="mailto:adityadxt1910@gmail.com" target="_blank"><img src="https://img.shields.io/badge/EMAIL-0A0F1E?style=for-the-badge&logo=gmail&logoColor=F0ABFC"/></a>
-<a href="https://aditya-dixit.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/PORTFOLIO-0A0F1E?style=for-the-badge&logo=vercel&logoColor=5EEAD4"/></a>
-<a href="https://calendly.com/adityadxt1910/30min" target="_blank"><img src="https://img.shields.io/badge/BOOK_A_CALL-0A0F1E?style=for-the-badge&logo=googlecalendar&logoColor=C4B5FD"/></a>
+<a href="https://www.linkedin.com/in/aditya-dixit-085862333/" target="_blank"><img src="https://img.shields.io/badge/CONNECT_ON_LINKEDIN-111a27?style=for-the-badge&logo=linkedin&logoColor=4aa8ff"/></a>
+<a href="mailto:adityadxt1910@gmail.com" target="_blank"><img src="https://img.shields.io/badge/SEND_AN_EMAIL-111a27?style=for-the-badge&logo=gmail&logoColor=e8a33d"/></a>
 
 </div>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/space/footer.svg" alt="Transmission Complete"/>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/footer.svg" alt="Footer"/>
 
 <div align="center">
-<sub>📍 Kanpur, Uttar Pradesh, India &nbsp;·&nbsp; ✉️ adityadxt1910@gmail.com &nbsp;·&nbsp; ☎️ +91 7525952244</sub>
-<br/><br/>
-<i>"Code is the closest thing we have to magic — engineer it with intent."</i>
+<sub>Kanpur, Uttar Pradesh, India · adityadxt1910@gmail.com · +91 7525952244</sub>
 </div>
