@@ -66,6 +66,11 @@ function defs() {
     <stop offset="0" stop-color="${C.warm}" stop-opacity="0.07"/>
     <stop offset="1" stop-color="${C.warm}" stop-opacity="0"/>
   </radialGradient>
+  <radialGradient id="radarGlow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="${C.accent}" stop-opacity="0.22"/>
+    <stop offset="0.7" stop-color="${C.accent}" stop-opacity="0.05"/>
+    <stop offset="1" stop-color="${C.accent}" stop-opacity="0"/>
+  </radialGradient>
   <radialGradient id="body" cx="0.38" cy="0.34" r="0.8">
     <stop offset="0" stop-color="#9ec5ff"/>
     <stop offset="0.5" stop-color="#2f6fd0"/>
@@ -162,18 +167,34 @@ function masthead() {
     .map(([t, x], i) => `${i ? `<line x1="${x - 22}" y1="330" x2="${x - 22}" y2="342" stroke="${C.hair}" stroke-width="1"/>` : ''}<text x="${x}" y="340" font-family="${MONO}" font-size="10.5" letter-spacing="1.4" fill="${C.muted}">${esc(t)}</text>`)
     .join('');
 
-  // orbital schematic
-  const ocx = 925, ocy = 292;
-  const ticks = Array.from({ length: 36 }, (_, i) => {
-    const a = (i * Math.PI * 2) / 36;
-    const r1 = 105, r2 = i % 3 === 0 ? 114 : 110;
-    return `<line x1="${(ocx + Math.cos(a) * r1).toFixed(1)}" y1="${(ocy + Math.sin(a) * r1).toFixed(1)}" x2="${(ocx + Math.cos(a) * r2).toFixed(1)}" y2="${(ocy + Math.sin(a) * r2).toFixed(1)}" stroke="#1b2f45" stroke-width="1" opacity="0.8"/>`;
+  // ---- radar / system-map geometry ----
+  const DEG = Math.PI / 180;
+  const ocx = 925, ocy = 290, RR = 104;
+  const wedge = (a1, a2, op) => {
+    const x1 = (ocx + RR * Math.cos(a1)).toFixed(1), y1 = (ocy + RR * Math.sin(a1)).toFixed(1);
+    const x2 = (ocx + RR * Math.cos(a2)).toFixed(1), y2 = (ocy + RR * Math.sin(a2)).toFixed(1);
+    return `<path d="M${ocx},${ocy} L${x1},${y1} A${RR},${RR} 0 0 1 ${x2},${y2} Z" fill="${C.accent}" opacity="${op}"/>`;
+  };
+  const sweepSlices = [0, 9, 18, 27, 36, 45]
+    .map((d, i) => wedge(d * DEG, (d + 9) * DEG, [0.34, 0.25, 0.17, 0.11, 0.06, 0.03][i]))
+    .join('');
+  const radarTicks = Array.from({ length: 72 }, (_, i) => {
+    const a = i * 5 * DEG, major = i % 6 === 0;
+    const r1 = RR + 3, r2 = RR + (major ? 12 : 6);
+    return `<line x1="${(ocx + Math.cos(a) * r1).toFixed(1)}" y1="${(ocy + Math.sin(a) * r1).toFixed(1)}" x2="${(ocx + Math.cos(a) * r2).toFixed(1)}" y2="${(ocy + Math.sin(a) * r2).toFixed(1)}" stroke="${major ? '#41709b' : '#22374f'}" stroke-width="${major ? 1.2 : 1}"/>`;
   }).join('');
+  const blips = [[0.5, -0.34, C.ok], [-0.45, 0.42, C.ok], [0.18, 0.6, C.warm], [-0.62, -0.2, C.ok]]
+    .map(([u, v, col], i) => {
+      const bx = (ocx + u * RR).toFixed(1), by = (ocy + v * RR).toFixed(1), dur = (3 + i * 0.8).toFixed(1), beg = (i * 0.7).toFixed(1);
+      return `<g><circle cx="${bx}" cy="${by}" r="2.4" fill="${col}"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.55;1" dur="${dur}s" begin="${beg}s" repeatCount="indefinite"/></circle><circle cx="${bx}" cy="${by}" r="2.4" fill="none" stroke="${col}"><animate attributeName="r" values="2;12;2" dur="${dur}s" begin="${beg}s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values="0.7;0;0.7" dur="${dur}s" begin="${beg}s" repeatCount="indefinite"/></circle></g>`;
+    }).join('');
+  let wpath = '';
+  for (let x = 0; x <= 420; x += 6) wpath += `${x === 0 ? 'M' : 'L'}${x} ${(16 + Math.sin(x / 22) * 6 + Math.sin(x / 7) * 2.4).toFixed(1)} `;
 
   const stats = [
     ['300+', 'DSA PROBLEMS'],
     ['7+', 'PROJECTS SHIPPED'],
-    ['6×', 'HACKATHONS LED'],
+    ['12×', 'HACKATHONS LED'],
     ['1.0K', 'CONTRIBUTIONS'],
     ['48', 'STARS EARNED'],
   ];
@@ -219,36 +240,75 @@ ${defs()}
     ${metaMarkup}
   </g>
 
-  <!-- systems panel -->
+  <!-- systems panel: live radar scope -->
   <g class="pf-fade" style="animation-delay:.35s">
     <rect x="690" y="118" width="470" height="300" rx="10" fill="${C.panel}" stroke="#1d2b3d"/>
     <text x="714" y="146" font-family="${MONO}" font-size="10" letter-spacing="2" fill="${C.muted}">SYSTEM MAP</text>
-    <text x="1136" y="146" text-anchor="end" font-family="${MONO}" font-size="10" letter-spacing="1.4" fill="${C.faint}">FIG. 01</text>
+    <text x="1136" y="146" text-anchor="end" font-family="${MONO}" font-size="10" letter-spacing="1.4" fill="${C.faint}">FIG. 01 · LIVE</text>
     <line x1="690" y1="158" x2="1160" y2="158" stroke="${C.gridHi}"/>
 
-    <g stroke="#2f5478" stroke-width="1">
-      <circle cx="${ocx}" cy="${ocy}" r="105" fill="none"/>
-      <circle cx="${ocx}" cy="${ocy}" r="78" fill="none" stroke-dasharray="3 5"/>
-      <circle cx="${ocx}" cy="${ocy}" r="52" fill="none"/>
+    <circle cx="${ocx}" cy="${ocy}" r="${RR + 16}" fill="url(#radarGlow)"/>
+    <g fill="none" stroke="#22374f" stroke-width="1">
+      <circle cx="${ocx}" cy="${ocy}" r="${RR}" stroke="#325a80"/>
+      <circle cx="${ocx}" cy="${ocy}" r="78" stroke-dasharray="2 6"/>
+      <circle cx="${ocx}" cy="${ocy}" r="52"/>
+      <circle cx="${ocx}" cy="${ocy}" r="26" stroke-dasharray="2 6"/>
     </g>
-    <line x1="${ocx - 105}" y1="${ocy}" x2="${ocx + 105}" y2="${ocy}" stroke="#1c3450" stroke-width="1"/>
-    <line x1="${ocx}" y1="${ocy - 105}" x2="${ocx}" y2="${ocy + 105}" stroke="#1c3450" stroke-width="1"/>
-    ${ticks}
-    <circle cx="${ocx}" cy="${ocy}" r="15" fill="none" stroke="#3a607f"/>
-    <circle cx="${ocx}" cy="${ocy}" r="7" fill="url(#body)"/>
-    <circle cx="${ocx - 22}" cy="${ocy - 22}" r="1.4" fill="${C.faint}"/>
+    <line x1="${ocx - RR}" y1="${ocy}" x2="${ocx + RR}" y2="${ocy}" stroke="#1c3450"/>
+    <line x1="${ocx}" y1="${ocy - RR}" x2="${ocx}" y2="${ocy + RR}" stroke="#1c3450"/>
+    <line x1="${(ocx - RR * 0.71).toFixed(1)}" y1="${(ocy - RR * 0.71).toFixed(1)}" x2="${(ocx + RR * 0.71).toFixed(1)}" y2="${(ocy + RR * 0.71).toFixed(1)}" stroke="#16283e"/>
+    <line x1="${(ocx - RR * 0.71).toFixed(1)}" y1="${(ocy + RR * 0.71).toFixed(1)}" x2="${(ocx + RR * 0.71).toFixed(1)}" y2="${(ocy - RR * 0.71).toFixed(1)}" stroke="#16283e"/>
+    ${radarTicks}
 
+    <!-- rotating sweep with fading tail -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0 ${ocx} ${ocy}" to="360 ${ocx} ${ocy}" dur="30s" repeatCount="indefinite"/>
-      <circle cx="${ocx + 105}" cy="${ocy}" r="3.4" fill="${C.accent}"/>
-      <circle cx="${ocx + 105}" cy="${ocy}" r="8" fill="none" stroke="${C.accent}" stroke-opacity="0.35"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 ${ocx} ${ocy}" to="360 ${ocx} ${ocy}" dur="3.8s" repeatCount="indefinite"/>
+      ${sweepSlices}
+      <line x1="${ocx}" y1="${ocy}" x2="${ocx + RR}" y2="${ocy}" stroke="#9ed7ff" stroke-width="1.6"/>
+      <circle cx="${ocx + RR}" cy="${ocy}" r="3" fill="#dcefff"/>
     </g>
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="360 ${ocx} ${ocy}" to="0 ${ocx} ${ocy}" dur="19s" repeatCount="indefinite"/>
-      <circle cx="${ocx}" cy="${ocy - 52}" r="2.6" fill="${C.warm}"/>
+    <!-- sonar pulse -->
+    <circle cx="${ocx}" cy="${ocy}" r="6" fill="none" stroke="${C.accent}">
+      <animate attributeName="r" values="6;${RR}" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;0" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- contacts -->
+    ${blips}
+
+    <!-- core -->
+    <circle cx="${ocx}" cy="${ocy}" r="13" fill="none" stroke="#3a607f"/>
+    <circle cx="${ocx}" cy="${ocy}" r="9" fill="none" stroke="${C.accent}" stroke-opacity="0.4" class="pf-pulse"/>
+    <circle cx="${ocx}" cy="${ocy}" r="5.5" fill="url(#body)"/>
+
+    <!-- orbiting bodies -->
+    <g><animateTransform attributeName="transform" type="rotate" from="0 ${ocx} ${ocy}" to="360 ${ocx} ${ocy}" dur="6.5s" repeatCount="indefinite"/>
+      <circle cx="${ocx + RR}" cy="${ocy}" r="2.6" fill="${C.accent}"/></g>
+    <g><animateTransform attributeName="transform" type="rotate" from="360 ${ocx} ${ocy}" to="0 ${ocx} ${ocy}" dur="10s" repeatCount="indefinite"/>
+      <circle cx="${ocx}" cy="${ocy - 52}" r="2.2" fill="${C.warm}"/></g>
+    <g><animateTransform attributeName="transform" type="rotate" from="0 ${ocx} ${ocy}" to="360 ${ocx} ${ocy}" dur="4.2s" repeatCount="indefinite"/>
+      <circle cx="${ocx + 26}" cy="${ocy}" r="1.8" fill="#a5f3fc"/></g>
+
+    <!-- readouts -->
+    <g font-family="${MONO}" font-size="8.5" letter-spacing="1.2">
+      <text x="714" y="196" fill="${C.faint}">MODE</text><text x="714" y="212" fill="${C.text}">ACTIVE SCAN</text>
+      <text x="714" y="244" fill="${C.faint}">AZIMUTH</text><text x="714" y="260" fill="${C.text}">000°</text>
+      <text x="714" y="292" fill="${C.faint}">RANGE</text><text x="714" y="308" fill="${C.text}">104 NM</text>
+      <text x="714" y="340" fill="${C.faint}">SWEEP</text><text x="714" y="356" fill="${C.accent}">3.8 S</text>
+      <text x="1136" y="196" text-anchor="end" fill="${C.faint}">CONTACTS</text><text x="1136" y="212" text-anchor="end" fill="${C.text}">04</text>
+      <text x="1136" y="244" text-anchor="end" fill="${C.faint}">STATUS</text><text x="1136" y="260" text-anchor="end" fill="${C.ok}">NOMINAL</text>
+      <text x="1136" y="292" text-anchor="end" fill="${C.faint}">FRAME</text><text x="1136" y="308" text-anchor="end" fill="${C.text}">REF 01</text>
+      <text x="1136" y="340" text-anchor="end" fill="${C.faint}">FEED</text><text x="1136" y="356" text-anchor="end" fill="${C.accent}">LIVE</text>
     </g>
-    <text x="${ocx + 116}" y="${ocy - 96}" font-family="${MONO}" font-size="8" fill="${C.muted}">r=105</text>
-    <text x="${ocx - 128}" y="${ocy + 100}" font-family="${MONO}" font-size="8" fill="${C.muted}">REF FRAME 01</text>
+    <circle cx="1126" cy="353" r="2.2" fill="${C.ok}"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+
+    <!-- footer waveform -->
+    <line x1="690" y1="378" x2="1160" y2="378" stroke="${C.gridHi}"/>
+    <g transform="translate(714,390)">
+      <path d="${wpath}" fill="none" stroke="${C.accent}" stroke-width="1" opacity="0.6" stroke-dasharray="7 5">
+        <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.1s" repeatCount="indefinite"/>
+      </path>
+    </g>
   </g>
 
   <!-- telemetry band -->

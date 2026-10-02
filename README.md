@@ -227,6 +227,8 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
 
 ### Hackathons
 
+**12 hackathons led** — from national finals to international semi-finals. Selected events:
+
 | Event | Role | Venue |
 |:---|:---|:---|
 | India Innovates 2026 | Team lead — **Finalist** | Bharat Mandapam, New Delhi |
