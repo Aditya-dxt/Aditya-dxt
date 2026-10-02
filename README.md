@@ -43,10 +43,6 @@ I’m particularly interested in **AI-powered products, full-stack architecture,
 → Developer-focused tools that simplify complex processes  
 → Products that move from **idea → prototype → production**
 
-**Engineering philosophy:**  
-**Build → Test → Ship → Measure → Improve.**  
-I value clean architecture, reliable systems, thoughtful UX, and code that remains maintainable as a product grows.
-
 > *“Build with purpose. Ship with discipline. Improve relentlessly.”*
 
 </td>
