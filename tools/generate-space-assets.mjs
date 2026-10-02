@@ -71,6 +71,10 @@ function defs() {
     <stop offset="0.5" stop-color="#2f6fd0"/>
     <stop offset="1" stop-color="#0d1c33"/>
   </radialGradient>
+  <linearGradient id="imgFade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0.5" stop-color="#05070c" stop-opacity="0"/>
+    <stop offset="1" stop-color="#05070c" stop-opacity="0.94"/>
+  </linearGradient>
   <linearGradient id="ruleFade" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="${C.accent}" stop-opacity="0"/>
     <stop offset="0.5" stop-color="${C.accent}" stop-opacity="0.55"/>
@@ -278,12 +282,13 @@ const SECTIONS = [
   { id: 'intelligence', n: '04', title: 'MACHINE INTELLIGENCE', desc: 'APPLIED AI / ML CAPABILITY' },
   { id: 'work', n: '05', title: 'SELECTED WORK', desc: 'PRODUCTION SYSTEMS IN OPERATION' },
   { id: 'experience', n: '06', title: 'EXPERIENCE', desc: 'PROFESSIONAL ENGAGEMENTS & HACKATHONS' },
-  { id: 'recognition', n: '07', title: 'RECOGNITION', desc: 'AWARDS, CERTIFICATIONS & DISTINCTIONS' },
-  { id: 'telemetry', n: '08', title: 'TELEMETRY', desc: 'ENGINEERING SIGNALS & ACTIVITY' },
-  { id: 'contact', n: '09', title: 'CONTACT', desc: 'OPEN A CHANNEL' },
+  { id: 'recognition', n: '07', title: 'RECOGNITION', desc: 'AWARDS & DISTINCTIONS' },
+  { id: 'credentials', n: '08', title: 'CREDENTIALS', desc: 'CERTIFICATIONS & COURSEWORK' },
+  { id: 'telemetry', n: '09', title: 'TELEMETRY', desc: 'ENGINEERING SIGNALS & ACTIVITY' },
+  { id: 'contact', n: '10', title: 'CONTACT', desc: 'OPEN A CHANNEL' },
 ];
 
-function sectionHeader({ n, title, desc, total = '09' }) {
+function sectionHeader({ n, title, desc, total = '10' }) {
   const w = 1200, h = 78;
   const titleWidth = title.length * 16.6;
   const descX = Math.round(92 + titleWidth + 20);
@@ -291,14 +296,20 @@ function sectionHeader({ n, title, desc, total = '09' }) {
 ${defs()}
   <rect width="${w}" height="${h}" fill="${C.bg}"/>
   <line x1="0" y1="0.5" x2="${w}" y2="0.5" stroke="${C.hair}" stroke-width="1"/>
-  <rect x="40" y="20" width="34" height="34" rx="8" fill="${C.panel}" stroke="#1d2b3d"/>
+  <rect x="40" y="20" width="34" height="34" rx="8" fill="${C.panel}" stroke="#1d2b3d">
+    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="3.6s" repeatCount="indefinite"/>
+  </rect>
   <text x="57" y="43" text-anchor="middle" font-family="${MONO}" font-size="12.5" font-weight="700" fill="${C.accent}">${n}</text>
   <text x="92" y="46" font-family="${SANS}" font-size="19" font-weight="700" letter-spacing="3.4" fill="${C.text}">${esc(title)}</text>
   <text x="${descX}" y="45" font-family="${MONO}" font-size="10.5" letter-spacing="1.2" fill="${C.muted}">— ${esc(desc)}</text>
+  <circle cx="126" cy="40" r="2" fill="${C.ok}" class="pf-pulse"/>
   <text x="1160" y="45" text-anchor="end" font-family="${MONO}" font-size="10" letter-spacing="1.4" fill="${C.faint}">${n} / ${total}</text>
   <line x1="40" y1="72" x2="1160" y2="72" stroke="${C.hair}" stroke-width="1"/>
   <rect x="40" y="70" width="58" height="2" fill="${C.accent}"/>
   <rect x="98" y="70" width="22" height="2" fill="${C.accent}" opacity="0.4"/>
+  <rect x="0" y="69" width="130" height="4" fill="url(#ruleFade)" opacity="0.9">
+    <animateTransform attributeName="transform" type="translate" values="40 0;1030 0;40 0" dur="11s" repeatCount="indefinite"/>
+  </rect>
 </svg>`;
 }
 
@@ -384,11 +395,176 @@ ${defs()}
 </svg>`;
 }
 
+// ============================================================================
+// PORTRAIT MODULE (embedded avatar)
+// ============================================================================
+const MEDIA = path.join(__dirname, '.media');
+const b64 = (f) => 'data:image/jpeg;base64,' + fs.readFileSync(path.join(MEDIA, f)).toString('base64');
+
+function portrait() {
+  const w = 520, h = 620;
+  const ix = 24, iy = 24, iw = 472, ih = 452;
+  let avatar = '';
+  try { avatar = b64('avatar.jpg'); } catch { avatar = ''; }
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="Aditya Dixit">
+${defs()}
+  <defs><clipPath id="ph"><rect x="${ix}" y="${iy}" width="${iw}" height="${ih}" rx="8"/></clipPath></defs>
+  <rect width="${w}" height="${h}" fill="${C.bg}"/>
+  ${gridLayer(w, h)}
+  <rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="12" fill="${C.panel}" stroke="#1d2b3d"/>
+  <g clip-path="url(#ph)">
+    <image href="${avatar}" x="${ix}" y="${iy}" width="${iw}" height="${ih}" preserveAspectRatio="xMidYMin slice"/>
+    <rect x="${ix}" y="${iy}" width="${iw}" height="${ih}" fill="url(#imgFade)"/>
+    <rect x="${ix}" y="0" width="${iw}" height="2" fill="#7fc4ff" opacity="0.5">
+      <animate attributeName="y" values="${iy};${iy + ih};${iy}" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0.5;0" dur="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <rect x="${ix}" y="${iy}" width="${iw}" height="${ih}" rx="8" fill="none" stroke="#24405c"/>
+  <g fill="none" stroke="${C.accent}" stroke-width="2">
+    <path d="M${ix - 5},${iy + 22} L${ix - 5},${iy - 5} L${ix + 22},${iy - 5}"/>
+    <path d="M${ix + iw - 22},${iy - 5} L${ix + iw + 5},${iy - 5} L${ix + iw + 5},${iy + 22}"/>
+    <path d="M${ix - 5},${iy + ih - 22} L${ix - 5},${iy + ih + 5} L${ix + 22},${iy + ih + 5}"/>
+    <path d="M${ix + iw - 22},${iy + ih + 5} L${ix + iw + 5},${iy + ih + 5} L${ix + iw + 5},${iy + ih - 22}"/>
+  </g>
+  <g transform="translate(${ix + 14},${iy + 22})">
+    <rect x="-8" y="-11" width="96" height="21" rx="5" fill="#05070c" fill-opacity="0.65" stroke="#1d2b3d"/>
+    <circle cx="2" cy="0" r="2.6" fill="${C.ok}" class="pf-pulse"/>
+    <text x="12" y="3.5" font-family="${MONO}" font-size="8.5" letter-spacing="1.4" fill="#c9d9ee">ONLINE · 2026</text>
+  </g>
+  <text x="34" y="${iy + ih + 40}" font-family="${SANS}" font-size="21" font-weight="700" fill="${C.text}">Aditya Dixit</text>
+  <text x="34" y="${iy + ih + 62}" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.muted}">FULL-STACK &amp; MACHINE-INTELLIGENCE ENGINEERING</text>
+  <text x="34" y="${iy + ih + 82}" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.faint}">26.44°N / 80.33°E · KANPUR, IN</text>
+  <text x="${w - 30}" y="${iy + ih + 62}" text-anchor="end" font-family="${MONO}" font-size="9" letter-spacing="1.4" fill="${C.faint}">REF 2026</text>
+  <line x1="24" y1="${h - 26}" x2="126" y2="${h - 26}" stroke="${C.accent}" stroke-width="2"/>
+</svg>`;
+}
+
+// ============================================================================
+// CREDENTIALS BOARD (embedded certificate scans)
+// ============================================================================
+const CERTS = [
+  { idx: '01', issuer: 'JP MORGAN CHASE & CO.', title: 'Software Engineering Job Simulation', meta: 'Forage · 2025', img: 'cert-jpmorgan.jpg' },
+  { idx: '02', issuer: 'DELOITTE', title: 'Technology Job Simulation', meta: 'Forage · 2025', img: 'cert-deloitte.jpg' },
+  { idx: '03', issuer: 'ORACLE UNIVERSITY', title: 'Agentic AI Certified Foundations Associate', meta: 'Oracle · 2025', img: 'cert-oracle.jpg' },
+  { idx: '04', issuer: 'TRYST · IIT DELHI', title: 'MERN Full-Stack Web Development', meta: 'Course Central · 2025', img: 'cert-mern.jpg' },
+];
+
+function credentials() {
+  const w = 1200;
+  const pad = 40, gap = 24, cw = 548, ch = 432;
+  const x2 = pad + cw + gap, y2 = pad + ch + gap;
+  const totalH = y2 + ch + pad;
+  const card = (c, x, y, i) => {
+    const px = x + 16, py = y + 54, pw = cw - 32, ph = 296;
+    let img = '';
+    try { img = b64(c.img); } catch { img = ''; }
+    return `<g>
+      <rect x="${x}" y="${y}" width="${cw}" height="${ch}" rx="10" fill="${C.panel}" stroke="#1d2b3d"/>
+      <text x="${x + 20}" y="${y + 30}" font-family="${MONO}" font-size="12" font-weight="700" fill="${C.accent}">${c.idx}</text>
+      <text x="${x + cw - 20}" y="${y + 30}" text-anchor="end" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.muted}">${esc(c.issuer)}</text>
+      <line x1="${x + 16}" y1="${y + 44}" x2="${x + cw - 16}" y2="${y + 44}" stroke="${C.gridHi}"/>
+      <rect x="${px}" y="${py}" width="${pw}" height="${ph}" rx="6" fill="#eef2f7" stroke="#c7d2de"/>
+      <g clip-path="url(#cc${i})">
+        <image href="${img}" x="${px}" y="${py}" width="${pw}" height="${ph}" preserveAspectRatio="xMidYMid meet"/>
+      </g>
+      <rect x="${px}" y="${py}" width="${pw}" height="${ph}" rx="6" fill="none" stroke="#c7d2de"/>
+      <text x="${x + 20}" y="${y + ch - 52}" font-family="${SANS}" font-size="14.5" font-weight="700" fill="${C.text}">${esc(c.title)}</text>
+      <text x="${x + 20}" y="${y + ch - 32}" font-family="${MONO}" font-size="9.5" letter-spacing="1" fill="${C.muted}">${esc(c.meta)}</text>
+      <line x1="${x + 16}" y1="${y + ch - 20}" x2="${x + cw - 16}" y2="${y + ch - 20}" stroke="${C.gridHi}"/>
+      <rect x="0" y="${y + ch - 21}" width="120" height="2" fill="url(#ruleFade)">
+        <animateTransform attributeName="transform" type="translate" values="${x + 16} 0;${x + cw - 136} 0;${x + 16} 0" dur="${8 + i}s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="${x + cw - 24}" cy="${y + 26}" r="2.4" fill="${C.ok}">
+        <animate attributeName="opacity" values="1;0.25;1" dur="${2.6 + i * 0.4}s" repeatCount="indefinite"/>
+      </circle>
+    </g>`;
+  };
+  let clips = '';
+  CERTS.forEach((_, i) => { const x = i % 2 ? x2 : pad, y = i < 2 ? pad : y2; clips += `<clipPath id="cc${i}"><rect x="${x + 16}" y="${y + 54}" width="${cw - 32}" height="296" rx="6"/></clipPath>`; });
+  let cards = '';
+  CERTS.forEach((c, i) => { const x = i % 2 ? x2 : pad, y = i < 2 ? pad : y2; cards += card(c, x, y, i); });
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${totalH}" width="${w}" height="${totalH}" role="img" aria-label="Certifications">
+${defs()}
+  <defs>${clips}</defs>
+  <rect width="${w}" height="${totalH}" fill="${C.bg}"/>
+  ${gridLayer(w, totalH)}
+  ${cards}
+</svg>`;
+}
+
+// ============================================================================
+// VARSHA-DRISHTI ARCHITECTURE SCHEMATIC
+// ============================================================================
+function varshadrishti() {
+  const w = 1200, h = 430;
+  const nodes = [
+    ['INSAT-3DR · MOSDAC', 'satellite imager', '#4aa8ff'],
+    ['TEMPORAL 3D-CNN', 'spatio-temporal model', '#4aa8ff'],
+    ['RISK CLASSIFIER', '4-class output', '#4aa8ff'],
+    ['GRAD-CAM', 'explainability layer', '#e8a33d'],
+  ];
+  const color = '#4aa8ff';
+  const cardW = 240, cardH = 104, y = 96, xs = [60, 340, 620, 900];
+  const cards = nodes.map(([t, s, c], i) => {
+    const x = xs[i];
+    return `<g>
+      <rect x="${x}" y="${y}" width="${cardW}" height="${cardH}" rx="9" fill="${C.panel}" stroke="#1d2b3d"/>
+      <rect x="${x}" y="${y}" width="3" height="${cardH}" rx="1.5" fill="${c}"/>
+      <text x="${x + 18}" y="${y + 30}" font-family="${MONO}" font-size="8.5" letter-spacing="1.6" fill="${C.faint}">STAGE 0${i + 1}</text>
+      <text x="${x + 18}" y="${y + 58}" font-family="${SANS}" font-size="14.5" font-weight="700" fill="${C.text}">${esc(t)}</text>
+      <text x="${x + 18}" y="${y + 80}" font-family="${MONO}" font-size="9.5" fill="${C.muted}">${esc(s)}</text>
+    </g>`;
+  }).join('');
+  const arrows = [0, 1, 2].map((i) => {
+    const x1 = xs[i] + cardW, x2 = xs[i + 1], ay = y + cardH / 2;
+    return `<line x1="${x1 + 4}" y1="${ay}" x2="${x2 - 10}" y2="${ay}" stroke="${color}" stroke-width="1.4" stroke-dasharray="4 5" opacity="0.7">
+      <animate attributeName="stroke-dashoffset" values="0;-18" dur="1.2s" repeatCount="indefinite"/>
+    </line>
+    <path d="M${x2 - 12},${ay - 4} L${x2 - 4},${ay} L${x2 - 12},${ay + 4}" fill="none" stroke="${color}" stroke-width="1.4" opacity="0.8"/>`;
+  }).join('');
+  // class distribution bars
+  const classes = [['LOW', 46, '#4aa8ff'], ['MODERATE', 92, '#4aa8ff'], ['HIGH', 138, '#e8a33d'], ['CRITICAL', 74, '#e86a3d']];
+  const bars = classes.map(([label, val, c], i) => {
+    const bx = 150 + i * 250, by = 372;
+    return `<g>
+      <text x="${bx}" y="${by - 12}" font-family="${MONO}" font-size="9.5" letter-spacing="1" fill="${C.muted}">${label}</text>
+      <rect x="${bx}" y="${by}" width="180" height="7" rx="3.5" fill="#101c2c"/>
+      <rect x="${bx}" y="${by}" width="${val}" height="7" rx="3.5" fill="${c}">
+        <animate attributeName="width" values="0;${val};${val}" dur="${2 + i * 0.3}s" fill="freeze"/>
+      </rect>
+      <text x="${bx + val + 8}" y="${by + 7}" font-family="${MONO}" font-size="9" fill="${C.faint}">${val}</text>
+    </g>`;
+  }).join('');
+  const path = `M${xs[0] + cardW / 2},${y + cardH / 2} L${xs[3] + cardW / 2},${y + cardH / 2}`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="VarshaDrishti architecture">
+${defs()}
+  <rect width="${w}" height="${h}" fill="${C.panel}" stroke="#1d2b3d" rx="10"/>
+  <rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="10" fill="none" stroke="#1d2b3d"/>
+  <text x="34" y="42" font-family="${MONO}" font-size="10.5" letter-spacing="2" fill="${C.muted}">SYSTEM ARCHITECTURE</text>
+  <text x="34" y="64" font-family="${SANS}" font-size="15" font-weight="700" fill="${C.text}">VarshaDrishti — rainfall-risk inference pipeline</text>
+  <text x="${w - 34}" y="44" text-anchor="end" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.faint}">SCHEMATIC · NOT A SCREENSHOT</text>
+  <text x="${w - 34}" y="62" text-anchor="end" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.faint}">TEAM PROJECT</text>
+  <line x1="34" y1="76" x2="${w - 34}" y2="76" stroke="${C.gridHi}"/>
+  ${cards}
+  ${arrows}
+  <circle r="3.2" fill="#c9e2ff">
+    <animateMotion dur="3.4s" repeatCount="indefinite" path="${path}"/>
+  </circle>
+  <text x="60" y="252" font-family="${MONO}" font-size="9.5" letter-spacing="1.6" fill="${C.faint}">RISK DISTRIBUTION — MODEL OUTPUT</text>
+  <line x1="60" y1="262" x2="${w - 60}" y2="262" stroke="${C.gridHi}"/>
+  ${bars}
+</svg>`;
+}
+
 // ---- write ------------------------------------------------------------------
 const files = {
   'masthead.svg': masthead(),
+  'portrait.svg': portrait(),
   'band.svg': band(31415),
   'rule.svg': rule(),
+  'credentials.svg': credentials(),
+  'proj-varshadrishti.svg': varshadrishti(),
   'footer.svg': footer(),
 };
 for (const s of SECTIONS) files[`sec-${s.id}.svg`] = sectionHeader(s);

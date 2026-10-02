@@ -21,9 +21,18 @@
 
 <img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-profile.svg" alt="01 — Profile"/>
 
+<table>
+<tr>
+<td width="30%" valign="top"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/portrait.svg" width="100%" alt="Aditya Dixit"/></td>
+<td width="70%" valign="top">
+
 I am a software engineer focused on **production systems** — the kind that carry real users, real payments and real data. My work sits at the intersection of **full-stack engineering** and **applied machine intelligence**: rigorous backends, careful data models and interfaces, with AI treated as an engineering discipline rather than a novelty.
 
 > *Great software is invisible. It feels inevitable — as though it was always meant to exist.*
+
+</td>
+</tr>
+</table>
 
 <table>
 <tr>
@@ -97,33 +106,47 @@ practice:
 <img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-work.svg" alt="05 — Selected Work"/>
 
 ### 01 — VarshaDrishti
-**Explainable AI for satellite rainfall prediction** · SIH 2026, ISRO problem statement
+**Explainable AI for satellite rainfall prediction** · Team project
 
-Heavy-rainfall risk forecasting from **INSAT-3DR (MOSDAC)** satellite data using a temporal 3D-CNN, four-class risk classification, **Grad-CAM explainability** and a FastAPI + React live-inference dashboard.
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/proj-varshadrishti.svg" alt="VarshaDrishti system architecture"/>
+
+Heavy-rainfall risk forecasting from **INSAT-3DR (MOSDAC)** satellite imagery using a temporal 3D-CNN, four-class risk classification, **Grad-CAM explainability** and a FastAPI + React inference dashboard — built and delivered as a collaborative **team project**.
 
 `Python` `PyTorch` `FastAPI` `Grad-CAM`
 
 <br/>
 
-### 02 — CivicSentinel AI
-**AI civic-intelligence portal** · National Finalist, India Innovates 2026
+<table>
+<tr>
+<td width="52%"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/projects/civicsentinel.jpg" width="100%" alt="CivicSentinel command dashboard"/></td>
+<td width="48%" valign="top">
 
-🔗 [civicsentinel-admin.onrender.com](https://civicsentinel-admin.onrender.com) · [source](https://github.com/Aditya-dxt/civicsentinel-ai)
+**02 — CivicSentinel AI**<br/>
+<sub>AI civic-intelligence portal · National Finalist, India Innovates 2026</sub><br/><br/>
+An end-to-end **RAG + LLM** pipeline ingesting citizen complaints in real time — semantic classification, urgency routing and insight generation, with an AI CivicCopilot and a **NetworkX knowledge graph** linking complaints, departments and locations.<br/><br/>
+`OpenAI API` `RAG` `LangChain` `NetworkX` `React`<br/><br/>
+🔗 [Live](https://civicsentinel-admin.onrender.com) · [Source](https://github.com/Aditya-dxt/civicsentinel-ai)
 
-An end-to-end **RAG + LLM** pipeline ingesting citizen complaints in real time — semantic classification, urgency routing and insight generation. Includes an AI CivicCopilot and a **NetworkX knowledge graph** linking complaints, departments and locations across separate citizen and administrator surfaces.
-
-`OpenAI API` `RAG` `LangChain` `NetworkX` `React`
+</td>
+</tr>
+</table>
 
 <br/>
 
-### 03 — SneakerVault
-**Full-stack e-commerce platform** · In production
+<table>
+<tr>
+<td width="52%"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/projects/sneakervault.jpg" width="100%" alt="SneakerVault storefront"/></td>
+<td width="48%" valign="top">
 
-🔗 [sneakervault-india.vercel.app](https://sneakervault-india.vercel.app) · [source](https://github.com/Aditya-dxt/mern-ecommerce-india)
+**03 — SneakerVault**<br/>
+<sub>Full-stack e-commerce platform · In production</sub><br/><br/>
+Enterprise-style platform covering the complete order lifecycle — cart, checkout, **Stripe** payments, fulfilment and administration — on Next.js, Node, Express and MongoDB. Secure **JWT authentication with RBAC** on every protected route; MongoDB query and index optimisation cut API latency by **~35%**.<br/><br/>
+`Next.js` `Stripe` `MongoDB` `JWT / RBAC`<br/><br/>
+🔗 [Live](https://sneakervault-india.vercel.app) · [Source](https://github.com/Aditya-dxt/mern-ecommerce-india)
 
-Enterprise-style platform covering the complete order lifecycle — cart, checkout, **Stripe** payments, fulfilment and administration — on Next.js, Node, Express and MongoDB. Secure **JWT authentication with RBAC** on every protected route; MongoDB query and index optimisation reduced API latency by **~35%**; a production CORS fault across the split-origin deployment was diagnosed and resolved with zero downtime.
-
-`Next.js` `Stripe` `MongoDB` `JWT / RBAC`
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -138,25 +161,30 @@ Operations command centre on React 19, Vite, Node and Express. The **Anthropic C
 
 <br/>
 
-### 05 — CampusIQ
-**Campus management platform** · PSIT Kanpur, team lead
+<table>
+<tr>
+<td width="50%" valign="top">
 
-🔗 [campus-iq-2-o.vercel.app](https://campus-iq-2-o.vercel.app) · [source](https://github.com/Aditya-dxt/Campus-IQ-2.O)
+<img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/projects/campusiq.jpg" width="100%" alt="CampusIQ dashboard"/><br/>
+**05 — CampusIQ**<br/>
+<sub>Campus management platform · PSIT Kanpur, team lead</sub><br/><br/>
+React front end, FastAPI back end and a Supabase data layer with an **offline Phi-3-mini** model served through a local tunnel.<br/><br/>
+`React` `FastAPI` `Supabase` `Phi-3-mini`<br/><br/>
+🔗 [Live](https://campus-iq-2-o.vercel.app) · [Source](https://github.com/Aditya-dxt/Campus-IQ-2.O)
 
-React front end, FastAPI back end and Supabase data layer with an **offline Phi-3-mini** model served through a local tunnel.
+</td>
+<td width="50%" valign="top">
 
-`React` `FastAPI` `Supabase` `Phi-3-mini`
+<img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/projects/brewco.jpg" width="100%" alt="Brew & Co. storefront"/><br/>
+**06 — Brew & Co.**<br/>
+<sub>Editorial storefront · In production</sub><br/><br/>
+Premium editorial commerce front end with 3D glassmorphism and scroll-driven motion.<br/><br/>
+`React 18` `Framer Motion` `Tailwind`<br/><br/>
+🔗 [Live](https://brew-and-co-opal.vercel.app) · [Source](https://github.com/Aditya-dxt/brew-and-co-coffee-roasters)
 
-<br/>
-
-### 06 — Brew & Co.
-**Editorial storefront** · In production
-
-🔗 [brew-and-co-opal.vercel.app](https://brew-and-co-opal.vercel.app) · [source](https://github.com/Aditya-dxt/brew-and-co-coffee-roasters)
-
-Premium editorial commerce front end with 3D glassmorphism and scroll-driven motion.
-
-`React 18` `Framer Motion` `Tailwind`
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -189,7 +217,7 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
 |:---|:---|:---|
 | India Innovates 2026 | Team lead — **Finalist** | Bharat Mandapam, New Delhi |
 | FAR AWAY 2026 (Zuup) | Team lead — **Semi-finalist** | Delhi → Japan finale |
-| Smart India Hackathon 2026 | Team lead | ISRO track — VarshaDrishti |
+| Smart India Hackathon 2026 | Team lead | ISRO problem track |
 | National AI/ML Hackathon (AVEVA) | Team lead | IIT Hyderabad, YUVAAN 2026 |
 | Hack It Out — Technex '26 | Team lead | IIT BHU, Varanasi |
 | Hack for Green Bharat | Team lead | Microsoft Office, Gurugram |
@@ -208,7 +236,22 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
 | MERN Full-Stack Certification | Tryst, IIT Delhi | 2025 |
 | Simulations | JP Morgan (Software Engineering) and Deloitte (Technology) | 2026 |
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-telemetry.svg" alt="08 — Telemetry"/>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-credentials.svg" alt="08 — Credentials"/>
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/credentials.svg" alt="Featured certifications"/>
+
+**Supporting certifications**
+
+| Area | Credentials |
+|:---|:---|
+| ☁️ Cloud | AWS Cloud Practitioner Essentials · Getting Started with AWS Cloud Essentials · AWS Summit India Online 2026 |
+| 🧠 AI / ML | Microsoft — Generative AI in Azure ML · Introduction to Generative AI Concepts · AI Skills Passport & AI Skills Fest · TCS iON Generative AI Essentials · AI for All (Guinness World Records) |
+| ⚛️ Frontend | HackerRank Frontend Developer (React) · Infosys Springboard — HTML5, CSS3, JavaScript, ReactJS |
+| 🌐 Networking | Simplilearn — CCNA 200-301 Network Fundamentals |
+| 🐍 Fundamentals | UniAthena — Basics of Python · GeeksforGeeks — course completion |
+| 💼 Professional | TCS iON Career Edge — IT Primer, Interview & Job Readiness, Young Professional · Coursera — Project Management with ClickUp · Skill India 5-Day Bootcamp · Google Analytics Certification |
+
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-telemetry.svg" alt="09 — Telemetry"/>
 
 <div align="center">
 
@@ -242,7 +285,7 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
   <img width="95%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/output/github-contribution-grid-snake-dark.svg" alt="Contribution graph"/>
 </p>
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-contact.svg" alt="09 — Contact"/>
+<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/sec-contact.svg" alt="10 — Contact"/>
 
 <div align="center">
 
