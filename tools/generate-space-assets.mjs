@@ -394,100 +394,32 @@ ${defs()}
 }
 
 // ============================================================================
-// PORTRAIT MODULE (embedded avatar)
+// PORTRAIT NAMEPLATE (shown under the avatar image; no embedded raster, since
+// GitHub's SVG CSP `default-src 'none'` blocks data: images)
 // ============================================================================
-const MEDIA = path.join(__dirname, '.media');
-const b64 = (f) => 'data:image/jpeg;base64,' + fs.readFileSync(path.join(MEDIA, f)).toString('base64');
-
 function portrait() {
-  const w = 520, h = 620;
-  const ix = 24, iy = 24, iw = 472, ih = 452;
-  let avatar = '';
-  try { avatar = b64('avatar.jpg'); } catch { avatar = ''; }
+  const w = 520, h = 172;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="Aditya Dixit">
 ${defs()}
-  <defs><clipPath id="ph"><rect x="${ix}" y="${iy}" width="${iw}" height="${ih}" rx="8"/></clipPath></defs>
   <rect width="${w}" height="${h}" fill="${C.bg}"/>
   ${gridLayer(w, h)}
   <rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="12" fill="${C.panel}" stroke="#1d2b3d"/>
-  <g clip-path="url(#ph)">
-    <image href="${avatar}" x="${ix}" y="${iy}" width="${iw}" height="${ih}" preserveAspectRatio="xMidYMin slice"/>
-    <rect x="${ix}" y="${iy}" width="${iw}" height="${ih}" fill="url(#imgFade)"/>
-    <rect x="${ix}" y="0" width="${iw}" height="2" fill="#7fc4ff" opacity="0.5">
-      <animate attributeName="y" values="${iy};${iy + ih};${iy}" dur="7s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.5;0.5;0" dur="7s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-  <rect x="${ix}" y="${iy}" width="${iw}" height="${ih}" rx="8" fill="none" stroke="#24405c"/>
   <g fill="none" stroke="${C.accent}" stroke-width="2">
-    <path d="M${ix - 5},${iy + 22} L${ix - 5},${iy - 5} L${ix + 22},${iy - 5}"/>
-    <path d="M${ix + iw - 22},${iy - 5} L${ix + iw + 5},${iy - 5} L${ix + iw + 5},${iy + 22}"/>
-    <path d="M${ix - 5},${iy + ih - 22} L${ix - 5},${iy + ih + 5} L${ix + 22},${iy + ih + 5}"/>
-    <path d="M${ix + iw - 22},${iy + ih + 5} L${ix + iw + 5},${iy + ih + 5} L${ix + iw + 5},${iy + ih - 22}"/>
+    <path d="M14,34 L14,16 L32,16"/>
+    <path d="${w - 32},16 L${w - 14},16 L${w - 14},34"/>
+    <path d="M14,${h - 34} L14,${h - 16} L32,${h - 16}"/>
+    <path d="${w - 32},${h - 16} L${w - 14},${h - 16} L${w - 14},${h - 34}"/>
   </g>
-  <g transform="translate(${ix + 14},${iy + 22})">
-    <rect x="-8" y="-11" width="96" height="21" rx="5" fill="#05070c" fill-opacity="0.65" stroke="#1d2b3d"/>
-    <circle cx="2" cy="0" r="2.6" fill="${C.ok}" class="pf-pulse"/>
-    <text x="12" y="3.5" font-family="${MONO}" font-size="8.5" letter-spacing="1.4" fill="#c9d9ee">ONLINE · 2026</text>
+  <g transform="translate(30,40)">
+    <rect x="-8" y="-11" width="104" height="21" rx="5" fill="#05070c" stroke="#1d2b3d"/>
+    <circle cx="2" cy="0" r="2.8" fill="${C.ok}" class="pf-pulse"/>
+    <text x="13" y="3.5" font-family="${MONO}" font-size="8.5" letter-spacing="1.4" fill="#c9d9ee">ONLINE · 2026</text>
   </g>
-  <text x="34" y="${iy + ih + 40}" font-family="${SANS}" font-size="21" font-weight="700" fill="${C.text}">Aditya Dixit</text>
-  <text x="34" y="${iy + ih + 62}" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.muted}">FULL-STACK &amp; MACHINE-INTELLIGENCE ENGINEERING</text>
-  <text x="34" y="${iy + ih + 82}" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.faint}">26.44°N / 80.33°E · KANPUR, IN</text>
-  <text x="${w - 30}" y="${iy + ih + 62}" text-anchor="end" font-family="${MONO}" font-size="9" letter-spacing="1.4" fill="${C.faint}">REF 2026</text>
-  <line x1="24" y1="${h - 26}" x2="126" y2="${h - 26}" stroke="${C.accent}" stroke-width="2"/>
-</svg>`;
-}
-
-// ============================================================================
-// CREDENTIALS BOARD (embedded certificate scans)
-// ============================================================================
-const CERTS = [
-  { idx: '01', issuer: 'JP MORGAN CHASE & CO.', title: 'Software Engineering Job Simulation', meta: 'Forage · 2025', img: 'cert-jpmorgan.jpg' },
-  { idx: '02', issuer: 'DELOITTE', title: 'Technology Job Simulation', meta: 'Forage · 2025', img: 'cert-deloitte.jpg' },
-  { idx: '03', issuer: 'ORACLE UNIVERSITY', title: 'Agentic AI Certified Foundations Associate', meta: 'Oracle · 2025', img: 'cert-oracle.jpg' },
-  { idx: '04', issuer: 'TRYST · IIT DELHI', title: 'MERN Full-Stack Web Development', meta: 'Course Central · 2025', img: 'cert-mern.jpg' },
-];
-
-function credentials() {
-  const w = 1200;
-  const pad = 40, gap = 24, cw = 548, ch = 432;
-  const x2 = pad + cw + gap, y2 = pad + ch + gap;
-  const totalH = y2 + ch + pad;
-  const card = (c, x, y, i) => {
-    const px = x + 16, py = y + 54, pw = cw - 32, ph = 296;
-    let img = '';
-    try { img = b64(c.img); } catch { img = ''; }
-    return `<g>
-      <rect x="${x}" y="${y}" width="${cw}" height="${ch}" rx="10" fill="${C.panel}" stroke="#1d2b3d"/>
-      <text x="${x + 20}" y="${y + 30}" font-family="${MONO}" font-size="12" font-weight="700" fill="${C.accent}">${c.idx}</text>
-      <text x="${x + cw - 20}" y="${y + 30}" text-anchor="end" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.muted}">${esc(c.issuer)}</text>
-      <line x1="${x + 16}" y1="${y + 44}" x2="${x + cw - 16}" y2="${y + 44}" stroke="${C.gridHi}"/>
-      <rect x="${px}" y="${py}" width="${pw}" height="${ph}" rx="6" fill="#eef2f7" stroke="#c7d2de"/>
-      <g clip-path="url(#cc${i})">
-        <image href="${img}" x="${px}" y="${py}" width="${pw}" height="${ph}" preserveAspectRatio="xMidYMid meet"/>
-      </g>
-      <rect x="${px}" y="${py}" width="${pw}" height="${ph}" rx="6" fill="none" stroke="#c7d2de"/>
-      <text x="${x + 20}" y="${y + ch - 52}" font-family="${SANS}" font-size="14.5" font-weight="700" fill="${C.text}">${esc(c.title)}</text>
-      <text x="${x + 20}" y="${y + ch - 32}" font-family="${MONO}" font-size="9.5" letter-spacing="1" fill="${C.muted}">${esc(c.meta)}</text>
-      <line x1="${x + 16}" y1="${y + ch - 20}" x2="${x + cw - 16}" y2="${y + ch - 20}" stroke="${C.gridHi}"/>
-      <rect x="0" y="${y + ch - 21}" width="120" height="2" fill="url(#ruleFade)">
-        <animateTransform attributeName="transform" type="translate" values="${x + 16} 0;${x + cw - 136} 0;${x + 16} 0" dur="${8 + i}s" repeatCount="indefinite"/>
-      </rect>
-      <circle cx="${x + cw - 24}" cy="${y + 26}" r="2.4" fill="${C.ok}">
-        <animate attributeName="opacity" values="1;0.25;1" dur="${2.6 + i * 0.4}s" repeatCount="indefinite"/>
-      </circle>
-    </g>`;
-  };
-  let clips = '';
-  CERTS.forEach((_, i) => { const x = i % 2 ? x2 : pad, y = i < 2 ? pad : y2; clips += `<clipPath id="cc${i}"><rect x="${x + 16}" y="${y + 54}" width="${cw - 32}" height="296" rx="6"/></clipPath>`; });
-  let cards = '';
-  CERTS.forEach((c, i) => { const x = i % 2 ? x2 : pad, y = i < 2 ? pad : y2; cards += card(c, x, y, i); });
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${totalH}" width="${w}" height="${totalH}" role="img" aria-label="Certifications">
-${defs()}
-  <defs>${clips}</defs>
-  <rect width="${w}" height="${totalH}" fill="${C.bg}"/>
-  ${gridLayer(w, totalH)}
-  ${cards}
+  <text x="30" y="102" font-family="${SANS}" font-size="22" font-weight="700" fill="${C.text}">Aditya Dixit</text>
+  <text x="30" y="124" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.muted}">FULL-STACK &amp; MACHINE-INTELLIGENCE ENGINEERING</text>
+  <text x="30" y="146" font-family="${MONO}" font-size="9.5" letter-spacing="1.2" fill="${C.faint}">26.44°N / 80.33°E · KANPUR, IN</text>
+  <text x="${w - 30}" y="124" text-anchor="end" font-family="${MONO}" font-size="9" letter-spacing="1.4" fill="${C.faint}">REF 2026</text>
+  <line x1="30" y1="158" x2="130" y2="158" stroke="${C.accent}" stroke-width="2"/>
 </svg>`;
 }
 
@@ -561,7 +493,6 @@ const files = {
   'portrait.svg': portrait(),
   'band.svg': band(31415),
   'rule.svg': rule(),
-  'credentials.svg': credentials(),
   'proj-varshadrishti.svg': varshadrishti(),
   'footer.svg': footer(),
 };

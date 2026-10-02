@@ -25,7 +25,7 @@
 
 <table>
 <tr>
-<td width="30%" valign="top"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/portrait.svg" width="100%" alt="Aditya Dixit"/></td>
+<td width="30%" valign="top"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/avatar.jpg" width="100%" alt="Aditya Dixit"/><br/><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/portrait.svg" width="100%" alt="Aditya Dixit nameplate"/></td>
 <td width="70%" valign="top">
 
 I am a software engineer focused on **production systems** — the kind that carry real users, real payments and real data. My work sits at the intersection of **full-stack engineering** and **applied machine intelligence**: rigorous backends, careful data models and interfaces, with AI treated as an engineering discipline rather than a novelty.
@@ -258,7 +258,24 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
 
 ### Featured certifications
 
-<img width="100%" src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/credentials.svg" alt="Featured certifications"/>
+<table>
+<tr>
+<td width="50%" valign="top"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/certs/cert-jpmorgan.jpg" width="100%" alt="JP Morgan Software Engineering certificate"/><br/>
+<b>JP Morgan Chase &amp; Co.</b> — Software Engineering Job Simulation<br/>
+<sub>Forage · 2025</sub></td>
+<td width="50%" valign="top"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/certs/cert-deloitte.jpg" width="100%" alt="Deloitte Technology certificate"/><br/>
+<b>Deloitte</b> — Technology Job Simulation<br/>
+<sub>Forage · 2025</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/certs/cert-oracle.jpg" width="100%" alt="Oracle Agentic AI certificate"/><br/>
+<b>Oracle University</b> — Agentic AI Certified Foundations Associate<br/>
+<sub>Oracle · 2025</sub></td>
+<td width="50%" valign="top"><img src="https://raw.githubusercontent.com/Aditya-dxt/Aditya-dxt/main/assets/profile/certs/cert-mern.jpg" width="100%" alt="MERN Full-Stack certificate"/><br/>
+<b>Tryst, IIT Delhi</b> — MERN Full-Stack Web Development<br/>
+<sub>Course Central · 2025</sub></td>
+</tr>
+</table>
 
 ### Supporting certifications
 
@@ -302,7 +319,7 @@ Premium editorial commerce front end with 3D glassmorphism and scroll-driven mot
 </p>
 
 <p align="center">
-  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Aditya-dxt&theme=react-dark&hide_border=true&bg_color=05070C&color=4AA8FF&line=2F5478&point=E8A33D" alt="Contribution activity"/>
+  <img width="95%" src="https://ghchart.rshah.org/4aa8ff/Aditya-dxt" alt="Contribution activity"/>
 </p>
 
 <p align="center">
